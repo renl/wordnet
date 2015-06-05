@@ -7,6 +7,7 @@ import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
+import android.graphics.Point;
 import android.graphics.Rect;
 import android.util.AttributeSet;
 import android.util.Log;
@@ -71,7 +72,7 @@ public class MainGamePanel extends SurfaceView implements SurfaceHolder.Callback
     private static final int REPLAY_SCREEN = 2;
     private static final int END_SCREEN = 3;
     private int gameState = TITLE_SCREEN;
-    private static final int LETTER_SIZE = 60;
+    private static final Point LETTER_SIZE = new Point(40,60);
     private static final int CAPTURED_SIZE = 60;
     private static final int BULLET_SIZE = 40;
     private String[] wordBonus;
@@ -99,32 +100,32 @@ public class MainGamePanel extends SurfaceView implements SurfaceHolder.Callback
         character = Bitmap.createScaledBitmap(character, gam.toScale(50), gam.toScale(50), true);
         thrownnet = Bitmap.createScaledBitmap(thrownnet, gam.toScale(BULLET_SIZE), gam.toScale(BULLET_SIZE), true);
         capturenet = Bitmap.createScaledBitmap(capturenet, gam.toScale(60), gam.toScale(60), true);
-        bA = Bitmap.createScaledBitmap(bA, gam.toScale(LETTER_SIZE), gam.toScale(LETTER_SIZE), true);
-        bB = Bitmap.createScaledBitmap(bB, gam.toScale(LETTER_SIZE), gam.toScale(LETTER_SIZE), true);
-        bC = Bitmap.createScaledBitmap(bC, gam.toScale(LETTER_SIZE), gam.toScale(LETTER_SIZE), true);
-        bD = Bitmap.createScaledBitmap(bD, gam.toScale(LETTER_SIZE), gam.toScale(LETTER_SIZE), true);
-        bE = Bitmap.createScaledBitmap(bE, gam.toScale(LETTER_SIZE), gam.toScale(LETTER_SIZE), true);
-        bF = Bitmap.createScaledBitmap(bF, gam.toScale(LETTER_SIZE), gam.toScale(LETTER_SIZE), true);
-        bG = Bitmap.createScaledBitmap(bG, gam.toScale(LETTER_SIZE), gam.toScale(LETTER_SIZE), true);
-        bH = Bitmap.createScaledBitmap(bH, gam.toScale(LETTER_SIZE), gam.toScale(LETTER_SIZE), true);
-        bI = Bitmap.createScaledBitmap(bI, gam.toScale(LETTER_SIZE), gam.toScale(LETTER_SIZE), true);
-        bJ = Bitmap.createScaledBitmap(bJ, gam.toScale(LETTER_SIZE), gam.toScale(LETTER_SIZE), true);
-        bK = Bitmap.createScaledBitmap(bK, gam.toScale(LETTER_SIZE), gam.toScale(LETTER_SIZE), true);
-        bL = Bitmap.createScaledBitmap(bL, gam.toScale(LETTER_SIZE), gam.toScale(LETTER_SIZE), true);
-        bM = Bitmap.createScaledBitmap(bM, gam.toScale(LETTER_SIZE), gam.toScale(LETTER_SIZE), true);
-        bN = Bitmap.createScaledBitmap(bN, gam.toScale(LETTER_SIZE), gam.toScale(LETTER_SIZE), true);
-        bO = Bitmap.createScaledBitmap(bO, gam.toScale(LETTER_SIZE), gam.toScale(LETTER_SIZE), true);
-        bP = Bitmap.createScaledBitmap(bP, gam.toScale(LETTER_SIZE), gam.toScale(LETTER_SIZE), true);
-        bQ = Bitmap.createScaledBitmap(bQ, gam.toScale(LETTER_SIZE), gam.toScale(LETTER_SIZE), true);
-        bR = Bitmap.createScaledBitmap(bR, gam.toScale(LETTER_SIZE), gam.toScale(LETTER_SIZE), true);
-        bS = Bitmap.createScaledBitmap(bS, gam.toScale(LETTER_SIZE), gam.toScale(LETTER_SIZE), true);
-        bT = Bitmap.createScaledBitmap(bT, gam.toScale(LETTER_SIZE), gam.toScale(LETTER_SIZE), true);
-        bU = Bitmap.createScaledBitmap(bU, gam.toScale(LETTER_SIZE), gam.toScale(LETTER_SIZE), true);
-        bV = Bitmap.createScaledBitmap(bV, gam.toScale(LETTER_SIZE), gam.toScale(LETTER_SIZE), true);
-        bW = Bitmap.createScaledBitmap(bW, gam.toScale(LETTER_SIZE), gam.toScale(LETTER_SIZE), true);
-        bX = Bitmap.createScaledBitmap(bX, gam.toScale(LETTER_SIZE), gam.toScale(LETTER_SIZE), true);
-        bY = Bitmap.createScaledBitmap(bY, gam.toScale(LETTER_SIZE), gam.toScale(LETTER_SIZE), true);
-        bZ = Bitmap.createScaledBitmap(bZ, gam.toScale(LETTER_SIZE), gam.toScale(LETTER_SIZE), true);
+        bA = Bitmap.createScaledBitmap(bA, gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
+        bB = Bitmap.createScaledBitmap(bB, gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
+        bC = Bitmap.createScaledBitmap(bC, gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
+        bD = Bitmap.createScaledBitmap(bD, gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
+        bE = Bitmap.createScaledBitmap(bE, gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
+        bF = Bitmap.createScaledBitmap(bF, gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
+        bG = Bitmap.createScaledBitmap(bG, gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
+        bH = Bitmap.createScaledBitmap(bH, gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
+        bI = Bitmap.createScaledBitmap(bI, gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
+        bJ = Bitmap.createScaledBitmap(bJ, gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
+        bK = Bitmap.createScaledBitmap(bK, gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
+        bL = Bitmap.createScaledBitmap(bL, gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
+        bM = Bitmap.createScaledBitmap(bM, gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
+        bN = Bitmap.createScaledBitmap(bN, gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
+        bO = Bitmap.createScaledBitmap(bO, gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
+        bP = Bitmap.createScaledBitmap(bP, gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
+        bQ = Bitmap.createScaledBitmap(bQ, gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
+        bR = Bitmap.createScaledBitmap(bR, gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
+        bS = Bitmap.createScaledBitmap(bS, gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
+        bT = Bitmap.createScaledBitmap(bT, gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
+        bU = Bitmap.createScaledBitmap(bU, gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
+        bV = Bitmap.createScaledBitmap(bV, gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
+        bW = Bitmap.createScaledBitmap(bW, gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
+        bX = Bitmap.createScaledBitmap(bX, gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
+        bY = Bitmap.createScaledBitmap(bY, gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
+        bZ = Bitmap.createScaledBitmap(bZ, gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
         Arrays.fill(slotTracker, 0);
 
         for (int i = 0; i < 5; i++) {
@@ -350,88 +351,90 @@ public class MainGamePanel extends SurfaceView implements SurfaceHolder.Callback
             int slot = getSlot();
             if (slot != -1) {
 //                Log.d(TAG, "Creating letter");
-                Rect rect = new Rect(letterSlot(slot, SLOT_SPACING) - LETTER_SIZE / 2,
-                        500 - LETTER_SIZE / 2,
-                        letterSlot(slot, SLOT_SPACING) + LETTER_SIZE / 2,
-                        500 + LETTER_SIZE / 2);
-                switch (randGen.nextInt(26)) {
-                    case 0:
-                        letters.add(new Letter(bA, 'A', -Math.PI / 2, rect));
+                Rect rect = new Rect(letterSlot(slot, SLOT_SPACING) - LETTER_SIZE.x / 2,
+                        500 - LETTER_SIZE.y / 2,
+                        letterSlot(slot, SLOT_SPACING) + LETTER_SIZE.x / 2,
+                        500 + LETTER_SIZE.y / 2);
+                String word = selectedWords.get(randGen.nextInt(selectedWords.size()));
+                switch (word.charAt(randGen.nextInt(word.length()))) {
+//                switch (word[randGen.nextInt(word.length())]) {
+                    case 'A':
+                        letters.add(new Letter(bA, 'A', Math.toRadians(270), rect));
                         break;
-                    case 1:
-                        letters.add(new Letter(bB, 'B', -Math.PI / 2, rect));
+                    case 'B':
+                        letters.add(new Letter(bB, 'B', Math.toRadians(270), rect));
                         break;
-                    case 2:
-                        letters.add(new Letter(bC, 'C', -Math.PI / 2, rect));
+                    case 'C':
+                        letters.add(new Letter(bC, 'C', Math.toRadians(270), rect));
                         break;
-                    case 3:
-                        letters.add(new Letter(bD, 'D', -Math.PI / 2, rect));
+                    case 'D':
+                        letters.add(new Letter(bD, 'D', Math.toRadians(270), rect));
                         break;
-                    case 4:
-                        letters.add(new Letter(bE, 'E', -Math.PI / 2, rect));
+                    case 'E':
+                        letters.add(new Letter(bE, 'E', Math.toRadians(270), rect));
                         break;
-                    case 5:
-                        letters.add(new Letter(bF, 'F', -Math.PI / 2, rect));
+                    case 'F':
+                        letters.add(new Letter(bF, 'F', Math.toRadians(270), rect));
                         break;
-                    case 6:
-                        letters.add(new Letter(bG, 'G', -Math.PI / 2, rect));
+                    case 'G':
+                        letters.add(new Letter(bG, 'G', Math.toRadians(270), rect));
                         break;
-                    case 7:
-                        letters.add(new Letter(bH, 'H', -Math.PI / 2, rect));
+                    case 'H':
+                        letters.add(new Letter(bH, 'H', Math.toRadians(270), rect));
                         break;
-                    case 8:
-                        letters.add(new Letter(bI, 'I', -Math.PI / 2, rect));
+                    case 'I':
+                        letters.add(new Letter(bI, 'I', Math.toRadians(270), rect));
                         break;
-                    case 9:
-                        letters.add(new Letter(bJ, 'J', -Math.PI / 2, rect));
+                    case 'J':
+                        letters.add(new Letter(bJ, 'J', Math.toRadians(270), rect));
                         break;
-                    case 10:
-                        letters.add(new Letter(bK, 'K', -Math.PI / 2, rect));
+                    case 'K':
+                        letters.add(new Letter(bK, 'K', Math.toRadians(270), rect));
                         break;
-                    case 11:
-                        letters.add(new Letter(bL, 'L', -Math.PI / 2, rect));
+                    case 'L':
+                        letters.add(new Letter(bL, 'L', Math.toRadians(270), rect));
                         break;
-                    case 12:
-                        letters.add(new Letter(bM, 'M', -Math.PI / 2, rect));
+                    case 'M':
+                        letters.add(new Letter(bM, 'M', Math.toRadians(270), rect));
                         break;
-                    case 13:
-                        letters.add(new Letter(bN, 'N', -Math.PI / 2, rect));
+                    case 'N':
+                        letters.add(new Letter(bN, 'N', Math.toRadians(270), rect));
                         break;
-                    case 14:
-                        letters.add(new Letter(bO, 'O', -Math.PI / 2, rect));
+                    case 'O':
+                        letters.add(new Letter(bO, 'O', Math.toRadians(270), rect));
                         break;
-                    case 15:
-                        letters.add(new Letter(bP, 'P', -Math.PI / 2, rect));
+                    case 'P':
+                        letters.add(new Letter(bP, 'P', Math.toRadians(270), rect));
                         break;
-                    case 16:
-                        letters.add(new Letter(bQ, 'Q', -Math.PI / 2, rect));
+                    case 'Q':
+                        letters.add(new Letter(bQ, 'Q', Math.toRadians(270), rect));
                         break;
-                    case 17:
-                        letters.add(new Letter(bR, 'R', -Math.PI / 2, rect));
+                    case 'R':
+                        letters.add(new Letter(bR, 'R', Math.toRadians(270), rect));
                         break;
-                    case 18:
-                        letters.add(new Letter(bS, 'S', -Math.PI / 2, rect));
+                    case 'S':
+                        letters.add(new Letter(bS, 'S', Math.toRadians(270), rect));
                         break;
-                    case 19:
-                        letters.add(new Letter(bT, 'T', -Math.PI / 2, rect));
+                    case 'T':
+                        letters.add(new Letter(bT, 'T', Math.toRadians(270), rect));
                         break;
-                    case 20:
-                        letters.add(new Letter(bU, 'U', -Math.PI / 2, rect));
+                    case 'U':
+                        letters.add(new Letter(bU, 'U', Math.toRadians(270), rect));
                         break;
-                    case 21:
-                        letters.add(new Letter(bV, 'V', -Math.PI / 2, rect));
+                    case 'V':
+                        letters.add(new Letter(bV, 'V', Math.toRadians(270), rect));
                         break;
-                    case 22:
-                        letters.add(new Letter(bW, 'W', -Math.PI / 2, rect));
+                    case 'W':
+                        letters.add(new Letter(bW, 'W', Math.toRadians(270), rect));
                         break;
-                    case 23:
-                        letters.add(new Letter(bX, 'X', -Math.PI / 2, rect));
+                    case 'X':
+                        letters.add(new Letter(bX, 'X', Math.toRadians(270), rect));
                         break;
-                    case 24:
-                        letters.add(new Letter(bY, 'Y', -Math.PI / 2, rect));
+                    case 'Y':
+                        letters.add(new Letter(bY, 'Y', Math.toRadians(270), rect));
                         break;
-                    case 25:
-                        letters.add(new Letter(bZ, 'Z', -Math.PI / 2, rect));
+                    case 'Z':
+                        letters.add(new Letter(bZ, 'Z', Math.toRadians(270), rect));
                         break;
                 }
             }
