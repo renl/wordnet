@@ -33,36 +33,7 @@ public class MainGamePanel extends SurfaceView implements SurfaceHolder.Callback
     private List<Bullet> bulletsToAdd = new ArrayList<Bullet>();
     private List<Letter> letters = new ArrayList<Letter>();
     private List<Captured> captures = new ArrayList<Captured>();
-    private Bitmap bA = BitmapFactory.decodeResource(getResources(), R.drawable.a);
-    private Bitmap bB = BitmapFactory.decodeResource(getResources(), R.drawable.b);
-    private Bitmap bC = BitmapFactory.decodeResource(getResources(), R.drawable.c);
-    private Bitmap bD = BitmapFactory.decodeResource(getResources(), R.drawable.d);
-    private Bitmap bE = BitmapFactory.decodeResource(getResources(), R.drawable.e);
-    private Bitmap bF = BitmapFactory.decodeResource(getResources(), R.drawable.f);
-    private Bitmap bG = BitmapFactory.decodeResource(getResources(), R.drawable.g);
-    private Bitmap bH = BitmapFactory.decodeResource(getResources(), R.drawable.h);
-    private Bitmap bI = BitmapFactory.decodeResource(getResources(), R.drawable.i);
-    private Bitmap bJ = BitmapFactory.decodeResource(getResources(), R.drawable.j);
-    private Bitmap bK = BitmapFactory.decodeResource(getResources(), R.drawable.k);
-    private Bitmap bL = BitmapFactory.decodeResource(getResources(), R.drawable.l);
-    private Bitmap bM = BitmapFactory.decodeResource(getResources(), R.drawable.m);
-    private Bitmap bN = BitmapFactory.decodeResource(getResources(), R.drawable.n);
-    private Bitmap bO = BitmapFactory.decodeResource(getResources(), R.drawable.o);
-    private Bitmap bP = BitmapFactory.decodeResource(getResources(), R.drawable.p);
-    private Bitmap bQ = BitmapFactory.decodeResource(getResources(), R.drawable.q);
-    private Bitmap bR = BitmapFactory.decodeResource(getResources(), R.drawable.r);
-    private Bitmap bS = BitmapFactory.decodeResource(getResources(), R.drawable.s);
-    private Bitmap bT = BitmapFactory.decodeResource(getResources(), R.drawable.t);
-    private Bitmap bU = BitmapFactory.decodeResource(getResources(), R.drawable.u);
-    private Bitmap bV = BitmapFactory.decodeResource(getResources(), R.drawable.v);
-    private Bitmap bW = BitmapFactory.decodeResource(getResources(), R.drawable.w);
-    private Bitmap bX = BitmapFactory.decodeResource(getResources(), R.drawable.x);
-    private Bitmap bY = BitmapFactory.decodeResource(getResources(), R.drawable.y);
-    private Bitmap bZ = BitmapFactory.decodeResource(getResources(), R.drawable.z);
-    private Bitmap background = BitmapFactory.decodeResource(getResources(), R.drawable.background);
-    private Bitmap character = BitmapFactory.decodeResource(getResources(), R.drawable.character);
-    private Bitmap thrownnet = BitmapFactory.decodeResource(getResources(), R.drawable.thrownnet);
-    private Bitmap capturenet = BitmapFactory.decodeResource(getResources(), R.drawable.capturenet);
+    private GraphicsHandler gh;
     private Random randGen = new Random();
     private float scale;
     private GameAreaManager gam;
@@ -73,9 +44,7 @@ public class MainGamePanel extends SurfaceView implements SurfaceHolder.Callback
     private static final int REPLAY_SCREEN = 2;
     private static final int END_SCREEN = 3;
     private int gameState = TITLE_SCREEN;
-    private static final Point LETTER_SIZE = new Point(40, 60);
-    private static final int CAPTURED_SIZE = 60;
-    private static final int BULLET_SIZE = 40;
+
     private String[] wordBonus;
     private String capturedLetters = "";
     private List<String> selectedWords = new ArrayList<String>();
@@ -101,36 +70,7 @@ public class MainGamePanel extends SurfaceView implements SurfaceHolder.Callback
         wordBonus = context.getResources().getStringArray(R.array.wordBonus);
         gam = new GameAreaManager(context.getResources().getDisplayMetrics().widthPixels, context.getResources().getDisplayMetrics().heightPixels);
         scale = gam.getScale();
-        background = Bitmap.createScaledBitmap(background, gam.getWidth(), gam.getHeight(), true);
-        character = Bitmap.createScaledBitmap(character, gam.toScale(50), gam.toScale(50), true);
-        thrownnet = Bitmap.createScaledBitmap(thrownnet, gam.toScale(BULLET_SIZE), gam.toScale(BULLET_SIZE), true);
-        capturenet = Bitmap.createScaledBitmap(capturenet, gam.toScale(60), gam.toScale(60), true);
-        bA = Bitmap.createScaledBitmap(bA, gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
-        bB = Bitmap.createScaledBitmap(bB, gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
-        bC = Bitmap.createScaledBitmap(bC, gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
-        bD = Bitmap.createScaledBitmap(bD, gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
-        bE = Bitmap.createScaledBitmap(bE, gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
-        bF = Bitmap.createScaledBitmap(bF, gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
-        bG = Bitmap.createScaledBitmap(bG, gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
-        bH = Bitmap.createScaledBitmap(bH, gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
-        bI = Bitmap.createScaledBitmap(bI, gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
-        bJ = Bitmap.createScaledBitmap(bJ, gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
-        bK = Bitmap.createScaledBitmap(bK, gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
-        bL = Bitmap.createScaledBitmap(bL, gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
-        bM = Bitmap.createScaledBitmap(bM, gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
-        bN = Bitmap.createScaledBitmap(bN, gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
-        bO = Bitmap.createScaledBitmap(bO, gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
-        bP = Bitmap.createScaledBitmap(bP, gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
-        bQ = Bitmap.createScaledBitmap(bQ, gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
-        bR = Bitmap.createScaledBitmap(bR, gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
-        bS = Bitmap.createScaledBitmap(bS, gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
-        bT = Bitmap.createScaledBitmap(bT, gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
-        bU = Bitmap.createScaledBitmap(bU, gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
-        bV = Bitmap.createScaledBitmap(bV, gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
-        bW = Bitmap.createScaledBitmap(bW, gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
-        bX = Bitmap.createScaledBitmap(bX, gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
-        bY = Bitmap.createScaledBitmap(bY, gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
-        bZ = Bitmap.createScaledBitmap(bZ, gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
+        gh = new GraphicsHandler(context, gam);
         Arrays.fill(slotTracker, 0);
 
         letterPool = new String();
@@ -199,12 +139,9 @@ public class MainGamePanel extends SurfaceView implements SurfaceHolder.Callback
                     swosh.start();
                 }
                 double angle = Math.atan2(gam.dY2bY((int) event.getY()) - 750, gam.dX2bX((int) event.getX()) - 240);
-                bulletsToAdd.add(new Bullet(thrownnet,
+                bulletsToAdd.add(new Bullet(gh.getThrownnet(),
                         angle,
-                        new Rect(240 - BULLET_SIZE / 2,
-                                750 - BULLET_SIZE / 2,
-                                240 + BULLET_SIZE / 2,
-                                750 + BULLET_SIZE / 2)
+                        gh.genBulletRect(240, 750)
                 ));
             }
         }
@@ -281,10 +218,10 @@ public class MainGamePanel extends SurfaceView implements SurfaceHolder.Callback
         Paint paint = new Paint();
         paint.setStyle(Paint.Style.FILL);
         paint.setColor(Color.RED);
-        canvas.drawBitmap(background, gam.dix(0), gam.diy(0), null);
-        canvas.drawBitmap(character,
-                gam.getCenterX() - (character.getWidth() / 2),
-                gam.getBottom() - character.getHeight(),
+        canvas.drawBitmap(gh.getBackground(), gam.dix(0), gam.diy(0), null);
+        canvas.drawBitmap(gh.getCharacter(),
+                gam.getCenterX() - (gh.getCharacter().getWidth() / 2),
+                gam.getBottom() - gh.getCharacter().getHeight(),
                 null);
         paint.setColor(Color.GRAY);
         canvas.drawRect(gam.getRight() - gam.toScale(100), gam.getBottom() - gam.toScale(50),
@@ -377,89 +314,86 @@ public class MainGamePanel extends SurfaceView implements SurfaceHolder.Callback
         if (randGen.nextInt(100) <= 5) {
             int slot = getSlot();
             if (slot != -1) {
-                Rect rect = new Rect(letterSlot(slot, SLOT_SPACING) - LETTER_SIZE.x / 2,
-                        500 - LETTER_SIZE.y / 2,
-                        letterSlot(slot, SLOT_SPACING) + LETTER_SIZE.x / 2,
-                        500 + LETTER_SIZE.y / 2);
+                Rect rect = gh.genLetterRect(letterSlot(slot, SLOT_SPACING), 500);
                 if (letterPoolInd >= letterPool.length()) letterPoolInd = 0;
                 switch (letterPool.charAt(letterPoolInd++)) {
                     case 'A':
-                        letters.add(new Letter(bA, 'A', Math.toRadians(270), rect));
+                        letters.add(new Letter(gh.getbA(), 'A', Math.toRadians(270), rect));
                         break;
                     case 'B':
-                        letters.add(new Letter(bB, 'B', Math.toRadians(270), rect));
+                        letters.add(new Letter(gh.getbB(), 'B', Math.toRadians(270), rect));
                         break;
                     case 'C':
-                        letters.add(new Letter(bC, 'C', Math.toRadians(270), rect));
+                        letters.add(new Letter(gh.getbC(), 'C', Math.toRadians(270), rect));
                         break;
                     case 'D':
-                        letters.add(new Letter(bD, 'D', Math.toRadians(270), rect));
+                        letters.add(new Letter(gh.getbD(), 'D', Math.toRadians(270), rect));
                         break;
                     case 'E':
-                        letters.add(new Letter(bE, 'E', Math.toRadians(270), rect));
+                        letters.add(new Letter(gh.getbE(), 'E', Math.toRadians(270), rect));
                         break;
                     case 'F':
-                        letters.add(new Letter(bF, 'F', Math.toRadians(270), rect));
+                        letters.add(new Letter(gh.getbF(), 'F', Math.toRadians(270), rect));
                         break;
                     case 'G':
-                        letters.add(new Letter(bG, 'G', Math.toRadians(270), rect));
+                        letters.add(new Letter(gh.getbG(), 'G', Math.toRadians(270), rect));
                         break;
                     case 'H':
-                        letters.add(new Letter(bH, 'H', Math.toRadians(270), rect));
+                        letters.add(new Letter(gh.getbH(), 'H', Math.toRadians(270), rect));
                         break;
                     case 'I':
-                        letters.add(new Letter(bI, 'I', Math.toRadians(270), rect));
+                        letters.add(new Letter(gh.getbI(), 'I', Math.toRadians(270), rect));
                         break;
                     case 'J':
-                        letters.add(new Letter(bJ, 'J', Math.toRadians(270), rect));
+                        letters.add(new Letter(gh.getbJ(), 'J', Math.toRadians(270), rect));
                         break;
                     case 'K':
-                        letters.add(new Letter(bK, 'K', Math.toRadians(270), rect));
+                        letters.add(new Letter(gh.getbK(), 'K', Math.toRadians(270), rect));
                         break;
                     case 'L':
-                        letters.add(new Letter(bL, 'L', Math.toRadians(270), rect));
+                        letters.add(new Letter(gh.getbL(), 'L', Math.toRadians(270), rect));
                         break;
                     case 'M':
-                        letters.add(new Letter(bM, 'M', Math.toRadians(270), rect));
+                        letters.add(new Letter(gh.getbM(), 'M', Math.toRadians(270), rect));
                         break;
                     case 'N':
-                        letters.add(new Letter(bN, 'N', Math.toRadians(270), rect));
+                        letters.add(new Letter(gh.getbN(), 'N', Math.toRadians(270), rect));
                         break;
                     case 'O':
-                        letters.add(new Letter(bO, 'O', Math.toRadians(270), rect));
+                        letters.add(new Letter(gh.getbO(), 'O', Math.toRadians(270), rect));
                         break;
                     case 'P':
-                        letters.add(new Letter(bP, 'P', Math.toRadians(270), rect));
+                        letters.add(new Letter(gh.getbP(), 'P', Math.toRadians(270), rect));
                         break;
                     case 'Q':
-                        letters.add(new Letter(bQ, 'Q', Math.toRadians(270), rect));
+                        letters.add(new Letter(gh.getbQ(), 'Q', Math.toRadians(270), rect));
                         break;
                     case 'R':
-                        letters.add(new Letter(bR, 'R', Math.toRadians(270), rect));
+                        letters.add(new Letter(gh.getbR(), 'R', Math.toRadians(270), rect));
                         break;
                     case 'S':
-                        letters.add(new Letter(bS, 'S', Math.toRadians(270), rect));
+                        letters.add(new Letter(gh.getbS(), 'S', Math.toRadians(270), rect));
                         break;
                     case 'T':
-                        letters.add(new Letter(bT, 'T', Math.toRadians(270), rect));
+                        letters.add(new Letter(gh.getbT(), 'T', Math.toRadians(270), rect));
                         break;
                     case 'U':
-                        letters.add(new Letter(bU, 'U', Math.toRadians(270), rect));
+                        letters.add(new Letter(gh.getbU(), 'U', Math.toRadians(270), rect));
                         break;
                     case 'V':
-                        letters.add(new Letter(bV, 'V', Math.toRadians(270), rect));
+                        letters.add(new Letter(gh.getbV(), 'V', Math.toRadians(270), rect));
                         break;
                     case 'W':
-                        letters.add(new Letter(bW, 'W', Math.toRadians(270), rect));
+                        letters.add(new Letter(gh.getbW(), 'W', Math.toRadians(270), rect));
                         break;
                     case 'X':
-                        letters.add(new Letter(bX, 'X', Math.toRadians(270), rect));
+                        letters.add(new Letter(gh.getbX(), 'X', Math.toRadians(270), rect));
                         break;
                     case 'Y':
-                        letters.add(new Letter(bY, 'Y', Math.toRadians(270), rect));
+                        letters.add(new Letter(gh.getbY(), 'Y', Math.toRadians(270), rect));
                         break;
                     case 'Z':
-                        letters.add(new Letter(bZ, 'Z', Math.toRadians(270), rect));
+                        letters.add(new Letter(gh.getbZ(), 'Z', Math.toRadians(270), rect));
                         break;
                 }
             }
@@ -495,11 +429,8 @@ public class MainGamePanel extends SurfaceView implements SurfaceHolder.Callback
                         if (capturedLetters.length() > 10) {
                             capturedLetters = capturedLetters.substring(1);
                         }
-                        captures.add(new Captured(capturenet,
-                                new Rect(thisLetter.getRect().centerX() - CAPTURED_SIZE / 2,
-                                        thisLetter.getRect().centerY() - CAPTURED_SIZE / 2,
-                                        thisLetter.getRect().centerX() + CAPTURED_SIZE / 2,
-                                        thisLetter.getRect().centerY() + CAPTURED_SIZE / 2),
+                        captures.add(new Captured(gh.getCapturenet(),
+                                gh.genCapturedRect(thisLetter.getRect().centerX(), thisLetter.getRect().centerY()),
                                 50));
                     }
                 }
