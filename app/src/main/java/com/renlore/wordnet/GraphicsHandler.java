@@ -104,6 +104,65 @@ public class GraphicsHandler {
                 x + CAPTURED_SIZE / 2,
                 y + CAPTURED_SIZE / 2);
     }
+
+    public Bitmap getLetterBMfromChar(char c) {
+        switch (c) {
+            case 'A':
+                return getbA();
+            case 'B':
+                return getbB();
+            case 'C':
+                return getbC();
+            case 'D':
+                return getbD();
+            case 'E':
+                return getbE();
+            case 'F':
+                return getbF();
+            case 'G':
+                return getbG();
+            case 'H':
+                return getbH();
+            case 'I':
+                return getbI();
+            case 'J':
+                return getbJ();
+            case 'K':
+                return getbK();
+            case 'L':
+                return getbL();
+            case 'M':
+                return getbM();
+            case 'N':
+                return getbN();
+            case 'O':
+                return getbO();
+            case 'P':
+                return getbP();
+            case 'Q':
+                return getbQ();
+            case 'R':
+                return getbR();
+            case 'S':
+                return getbS();
+            case 'T':
+                return getbT();
+            case 'U':
+                return getbU();
+            case 'V':
+                return getbV();
+            case 'W':
+                return getbW();
+            case 'X':
+                return getbX();
+            case 'Y':
+                return getbY();
+            case 'Z':
+                return getbZ();
+        }
+        return getbA();
+    }
+
     public Bitmap getbA() {
         return bA;
     }

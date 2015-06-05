@@ -91,7 +91,7 @@ public class MainGamePanel extends SurfaceView implements SurfaceHolder.Callback
         swosh = MediaPlayer.create(context.getApplicationContext(), R.raw.swosh);
         achieve = MediaPlayer.create(context.getApplicationContext(), R.raw.achievement);
         music = MediaPlayer.create(context.getApplicationContext(), R.raw.whimsicalpopsicle);
-        music.setVolume(0.5f, 0.5f);
+        music.setVolume(0.3f, 0.3f);
         music.start();
         music.setLooping(true);
     }
@@ -316,86 +316,8 @@ public class MainGamePanel extends SurfaceView implements SurfaceHolder.Callback
             if (slot != -1) {
                 Rect rect = gh.genLetterRect(letterSlot(slot, SLOT_SPACING), 500);
                 if (letterPoolInd >= letterPool.length()) letterPoolInd = 0;
-                switch (letterPool.charAt(letterPoolInd++)) {
-                    case 'A':
-                        letters.add(new Letter(gh.getbA(), 'A', Math.toRadians(270), rect));
-                        break;
-                    case 'B':
-                        letters.add(new Letter(gh.getbB(), 'B', Math.toRadians(270), rect));
-                        break;
-                    case 'C':
-                        letters.add(new Letter(gh.getbC(), 'C', Math.toRadians(270), rect));
-                        break;
-                    case 'D':
-                        letters.add(new Letter(gh.getbD(), 'D', Math.toRadians(270), rect));
-                        break;
-                    case 'E':
-                        letters.add(new Letter(gh.getbE(), 'E', Math.toRadians(270), rect));
-                        break;
-                    case 'F':
-                        letters.add(new Letter(gh.getbF(), 'F', Math.toRadians(270), rect));
-                        break;
-                    case 'G':
-                        letters.add(new Letter(gh.getbG(), 'G', Math.toRadians(270), rect));
-                        break;
-                    case 'H':
-                        letters.add(new Letter(gh.getbH(), 'H', Math.toRadians(270), rect));
-                        break;
-                    case 'I':
-                        letters.add(new Letter(gh.getbI(), 'I', Math.toRadians(270), rect));
-                        break;
-                    case 'J':
-                        letters.add(new Letter(gh.getbJ(), 'J', Math.toRadians(270), rect));
-                        break;
-                    case 'K':
-                        letters.add(new Letter(gh.getbK(), 'K', Math.toRadians(270), rect));
-                        break;
-                    case 'L':
-                        letters.add(new Letter(gh.getbL(), 'L', Math.toRadians(270), rect));
-                        break;
-                    case 'M':
-                        letters.add(new Letter(gh.getbM(), 'M', Math.toRadians(270), rect));
-                        break;
-                    case 'N':
-                        letters.add(new Letter(gh.getbN(), 'N', Math.toRadians(270), rect));
-                        break;
-                    case 'O':
-                        letters.add(new Letter(gh.getbO(), 'O', Math.toRadians(270), rect));
-                        break;
-                    case 'P':
-                        letters.add(new Letter(gh.getbP(), 'P', Math.toRadians(270), rect));
-                        break;
-                    case 'Q':
-                        letters.add(new Letter(gh.getbQ(), 'Q', Math.toRadians(270), rect));
-                        break;
-                    case 'R':
-                        letters.add(new Letter(gh.getbR(), 'R', Math.toRadians(270), rect));
-                        break;
-                    case 'S':
-                        letters.add(new Letter(gh.getbS(), 'S', Math.toRadians(270), rect));
-                        break;
-                    case 'T':
-                        letters.add(new Letter(gh.getbT(), 'T', Math.toRadians(270), rect));
-                        break;
-                    case 'U':
-                        letters.add(new Letter(gh.getbU(), 'U', Math.toRadians(270), rect));
-                        break;
-                    case 'V':
-                        letters.add(new Letter(gh.getbV(), 'V', Math.toRadians(270), rect));
-                        break;
-                    case 'W':
-                        letters.add(new Letter(gh.getbW(), 'W', Math.toRadians(270), rect));
-                        break;
-                    case 'X':
-                        letters.add(new Letter(gh.getbX(), 'X', Math.toRadians(270), rect));
-                        break;
-                    case 'Y':
-                        letters.add(new Letter(gh.getbY(), 'Y', Math.toRadians(270), rect));
-                        break;
-                    case 'Z':
-                        letters.add(new Letter(gh.getbZ(), 'Z', Math.toRadians(270), rect));
-                        break;
-                }
+                char c = letterPool.charAt(letterPoolInd++);
+                letters.add(new Letter(gh.getLetterBMfromChar(c), c, Math.toRadians(270), rect));
             }
         }
 
