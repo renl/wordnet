@@ -216,6 +216,10 @@ public class MainGamePanel extends SurfaceView implements SurfaceHolder.Callback
 
     private void onTouchEventEndScreen(MotionEvent event) {
         if (event.getAction() == MotionEvent.ACTION_DOWN) {
+            music.release();
+            swosh.release();
+            achieve.release();
+            netted.release();
             thread.setRunning(false);
             ((Activity) getContext()).finish();
         }
