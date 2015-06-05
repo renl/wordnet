@@ -81,6 +81,7 @@ public class MainGamePanel extends SurfaceView implements SurfaceHolder.Callback
     private List<String> selectedWords = new ArrayList<String>();
 
     private MediaPlayer music, swosh, netted, achieve;
+    private String letterPool;
 
     public MainGamePanel(Context context, AttributeSet attrs) {
         super(context, attrs);
@@ -131,10 +132,16 @@ public class MainGamePanel extends SurfaceView implements SurfaceHolder.Callback
         bZ = Bitmap.createScaledBitmap(bZ, gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
         Arrays.fill(slotTracker, 0);
 
+        letterPool = new String();
         for (int i = 0; i < 5; i++) {
             String word = wordBonus[randGen.nextInt(wordBonus.length)];
             while (selectedWords.contains(word)) {
                 word = wordBonus[randGen.nextInt(wordBonus.length)];
+            }
+            for (char letter : word.toCharArray()) {
+                if (!letterPool.contains(Character.toString(letter))) {
+                    letterPool += letter;
+                }
             }
             selectedWords.add(word);
         }
@@ -365,14 +372,11 @@ public class MainGamePanel extends SurfaceView implements SurfaceHolder.Callback
         if (randGen.nextInt(100) <= 5) {
             int slot = getSlot();
             if (slot != -1) {
-//                Log.d(TAG, "Creating letter");
                 Rect rect = new Rect(letterSlot(slot, SLOT_SPACING) - LETTER_SIZE.x / 2,
                         500 - LETTER_SIZE.y / 2,
                         letterSlot(slot, SLOT_SPACING) + LETTER_SIZE.x / 2,
                         500 + LETTER_SIZE.y / 2);
-                String word = selectedWords.get(randGen.nextInt(selectedWords.size()));
-                switch (word.charAt(randGen.nextInt(word.length()))) {
-//                switch (word[randGen.nextInt(word.length())]) {
+                switch (letterPool.charAt(randGen.nextInt(letterPool.length()))) {
                     case 'A':
                         letters.add(new Letter(bA, 'A', Math.toRadians(270), rect));
                         break;
@@ -473,6 +477,7 @@ public class MainGamePanel extends SurfaceView implements SurfaceHolder.Callback
             } else {
                 for (Letter thisLetter : letters) {
                     if (thisLetter.getRect().contains(thisBullet.getHitboxRect())) {
+                        Log.d(TAG, letterPool);
                         if (netted.isPlaying()) {
                             netted.seekTo(0);
                         } else {
@@ -506,15 +511,29 @@ public class MainGamePanel extends SurfaceView implements SurfaceHolder.Callback
                 foundString.add(thisString);
             }
         }
-        selectedWords.removeAll(foundString);
-        while (selectedWords.size() < 5) {
-            String word = wordBonus[randGen.nextInt(wordBonus.length)];
-            while (selectedWords.contains(word)) {
-                word = wordBonus[randGen.nextInt(wordBonus.length)];
+        if (!foundString.isEmpty()) {
+            letterPool = new String();
+            selectedWords.removeAll(foundString);
+            for (String word : selectedWords) {
+                for (char letter : word.toCharArray()) {
+                    if (!letterPool.contains(Character.toString(letter))) {
+                        letterPool += letter;
+                    }
+                }
             }
-            selectedWords.add(word);
+            while (selectedWords.size() < 5) {
+                String word = wordBonus[randGen.nextInt(wordBonus.length)];
+                while (selectedWords.contains(word)) {
+                    word = wordBonus[randGen.nextInt(wordBonus.length)];
+                }
+                selectedWords.add(word);
+                for (char letter : word.toCharArray()) {
+                    if (!letterPool.contains(Character.toString(letter))) {
+                        letterPool += letter;
+                    }
+                }
+            }
         }
-
         List<Captured> foundCaptured = new ArrayList<Captured>();
         for (Captured thisCaptured : captures) {
             if (thisCaptured.update() <= 0) {
