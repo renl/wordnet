@@ -9,6 +9,7 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Point;
 import android.graphics.Rect;
+import android.media.MediaPlayer;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.MotionEvent;
@@ -72,12 +73,14 @@ public class MainGamePanel extends SurfaceView implements SurfaceHolder.Callback
     private static final int REPLAY_SCREEN = 2;
     private static final int END_SCREEN = 3;
     private int gameState = TITLE_SCREEN;
-    private static final Point LETTER_SIZE = new Point(40,60);
+    private static final Point LETTER_SIZE = new Point(40, 60);
     private static final int CAPTURED_SIZE = 60;
     private static final int BULLET_SIZE = 40;
     private String[] wordBonus;
     private String capturedLetters = "";
     private List<String> selectedWords = new ArrayList<String>();
+
+    private MediaPlayer music, swosh, netted, achieve;
 
     public MainGamePanel(Context context, AttributeSet attrs) {
         super(context, attrs);
@@ -135,6 +138,14 @@ public class MainGamePanel extends SurfaceView implements SurfaceHolder.Callback
             }
             selectedWords.add(word);
         }
+
+        netted = MediaPlayer.create(context.getApplicationContext(), R.raw.netted);
+        swosh = MediaPlayer.create(context.getApplicationContext(), R.raw.swosh);
+        achieve = MediaPlayer.create(context.getApplicationContext(), R.raw.achievement);
+        music = MediaPlayer.create(context.getApplicationContext(), R.raw.whimsicalpopsicle);
+        music.setVolume(0.5f, 0.5f);
+        music.start();
+        music.setLooping(true);
     }
 
     @Override
@@ -174,7 +185,11 @@ public class MainGamePanel extends SurfaceView implements SurfaceHolder.Callback
                 gameState = END_SCREEN;
             } else {
                 Log.d(TAG, "X: " + event.getX() + ", Y: " + event.getY());
-
+                if (swosh.isPlaying()) {
+                    swosh.seekTo(0);
+                } else {
+                    swosh.start();
+                }
                 double angle = Math.atan2(gam.dY2bY((int) event.getY()) - 750, gam.dX2bX((int) event.getX()) - 240);
                 bulletsToAdd.add(new Bullet(thrownnet,
                         angle,
@@ -284,7 +299,7 @@ public class MainGamePanel extends SurfaceView implements SurfaceHolder.Callback
         canvas.drawText(selectedWords.get(2), gam.dix(150), gam.diy(680), paint);
         canvas.drawText(selectedWords.get(3), gam.dix(300), gam.diy(680), paint);
         canvas.drawText(selectedWords.get(4), gam.dix(300), gam.diy(730), paint);
-        paint.setColor(Color.WHITE);
+        paint.setColor(Color.BLACK);
         canvas.drawRect(0, 0, gam.getDeviceWidth(), gam.getTop(), paint);
         canvas.drawRect(0, 0, gam.getLeft(), gam.getDeviceHeight(), paint);
         canvas.drawRect(0, gam.getBottom(), gam.getDeviceWidth(), gam.getDeviceHeight(), paint);
@@ -458,6 +473,11 @@ public class MainGamePanel extends SurfaceView implements SurfaceHolder.Callback
             } else {
                 for (Letter thisLetter : letters) {
                     if (thisLetter.getRect().contains(thisBullet.getHitboxRect())) {
+                        if (netted.isPlaying()) {
+                            netted.seekTo(0);
+                        } else {
+                            netted.start();
+                        }
                         foundBullets.add(thisBullet);
                         foundLetters.add(thisLetter);
                         capturedLetters += thisLetter.getLetter();
@@ -480,6 +500,9 @@ public class MainGamePanel extends SurfaceView implements SurfaceHolder.Callback
         List<String> foundString = new ArrayList<String>();
         for (String thisString : selectedWords) {
             if (capturedLetters.contains(thisString)) {
+                if (!achieve.isPlaying()) {
+                    achieve.start();
+                }
                 foundString.add(thisString);
             }
         }
