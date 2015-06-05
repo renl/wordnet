@@ -2,14 +2,10 @@ package com.renlore.wordnet;
 
 import android.app.Activity;
 import android.content.Context;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
-import android.graphics.Point;
 import android.graphics.Rect;
-import android.media.MediaPlayer;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.MotionEvent;
@@ -34,6 +30,7 @@ public class MainGamePanel extends SurfaceView implements SurfaceHolder.Callback
     private List<Letter> letters = new ArrayList<Letter>();
     private List<Captured> captures = new ArrayList<Captured>();
     private GraphicsHandler gh;
+    private AudioHandler ah;
     private Random randGen = new Random();
     private float scale;
     private GameAreaManager gam;
@@ -49,7 +46,6 @@ public class MainGamePanel extends SurfaceView implements SurfaceHolder.Callback
     private String capturedLetters = "";
     private List<String> selectedWords = new ArrayList<String>();
 
-    private MediaPlayer music, swosh, netted, achieve;
     private String letterPool;
     private int letterPoolInd = 0;
 
@@ -71,8 +67,8 @@ public class MainGamePanel extends SurfaceView implements SurfaceHolder.Callback
         gam = new GameAreaManager(context.getResources().getDisplayMetrics().widthPixels, context.getResources().getDisplayMetrics().heightPixels);
         scale = gam.getScale();
         gh = new GraphicsHandler(context, gam);
+        ah = new AudioHandler(context, gam);
         Arrays.fill(slotTracker, 0);
-
         letterPool = new String();
         for (int i = 0; i < 5; i++) {
             String word = wordBonus[randGen.nextInt(wordBonus.length)];
@@ -86,14 +82,6 @@ public class MainGamePanel extends SurfaceView implements SurfaceHolder.Callback
             }
             selectedWords.add(word);
         }
-
-        netted = MediaPlayer.create(context.getApplicationContext(), R.raw.netted);
-        swosh = MediaPlayer.create(context.getApplicationContext(), R.raw.swosh);
-        achieve = MediaPlayer.create(context.getApplicationContext(), R.raw.achievement);
-        music = MediaPlayer.create(context.getApplicationContext(), R.raw.whimsicalpopsicle);
-        music.setVolume(0.3f, 0.3f);
-        music.start();
-        music.setLooping(true);
     }
 
     @Override
@@ -133,11 +121,7 @@ public class MainGamePanel extends SurfaceView implements SurfaceHolder.Callback
                 gameState = END_SCREEN;
             } else {
                 Log.d(TAG, "X: " + event.getX() + ", Y: " + event.getY());
-                if (swosh.isPlaying()) {
-                    swosh.seekTo(0);
-                } else {
-                    swosh.start();
-                }
+                ah.playSwosh();
                 double angle = Math.atan2(gam.dY2bY((int) event.getY()) - 750, gam.dX2bX((int) event.getX()) - 240);
                 bulletsToAdd.add(new Bullet(gh.getThrownnet(),
                         angle,
@@ -153,10 +137,7 @@ public class MainGamePanel extends SurfaceView implements SurfaceHolder.Callback
 
     private void onTouchEventEndScreen(MotionEvent event) {
         if (event.getAction() == MotionEvent.ACTION_DOWN) {
-            music.release();
-            swosh.release();
-            achieve.release();
-            netted.release();
+            ah.releaseAll();
             thread.setRunning(false);
             ((Activity) getContext()).finish();
         }
@@ -340,11 +321,7 @@ public class MainGamePanel extends SurfaceView implements SurfaceHolder.Callback
                 for (Letter thisLetter : letters) {
                     if (thisLetter.getRect().contains(thisBullet.getHitboxRect())) {
                         Log.d(TAG, letterPool);
-                        if (netted.isPlaying()) {
-                            netted.seekTo(0);
-                        } else {
-                            netted.start();
-                        }
+                        ah.playNetted();
                         foundBullets.add(thisBullet);
                         foundLetters.add(thisLetter);
                         capturedLetters += thisLetter.getLetter();
@@ -364,9 +341,7 @@ public class MainGamePanel extends SurfaceView implements SurfaceHolder.Callback
         List<String> foundString = new ArrayList<String>();
         for (String thisString : selectedWords) {
             if (capturedLetters.contains(thisString)) {
-                if (!achieve.isPlaying()) {
-                    achieve.start();
-                }
+                ah.playAchieve();
                 foundString.add(thisString);
             }
         }
