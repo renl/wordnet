@@ -82,6 +82,7 @@ public class MainGamePanel extends SurfaceView implements SurfaceHolder.Callback
 
     private MediaPlayer music, swosh, netted, achieve;
     private String letterPool;
+    private int letterPoolInd = 0;
 
     public MainGamePanel(Context context, AttributeSet attrs) {
         super(context, attrs);
@@ -376,7 +377,8 @@ public class MainGamePanel extends SurfaceView implements SurfaceHolder.Callback
                         500 - LETTER_SIZE.y / 2,
                         letterSlot(slot, SLOT_SPACING) + LETTER_SIZE.x / 2,
                         500 + LETTER_SIZE.y / 2);
-                switch (letterPool.charAt(randGen.nextInt(letterPool.length()))) {
+                if (letterPoolInd >= letterPool.length()) letterPoolInd = 0;
+                switch (letterPool.charAt(letterPoolInd++)) {
                     case 'A':
                         letters.add(new Letter(bA, 'A', Math.toRadians(270), rect));
                         break;
