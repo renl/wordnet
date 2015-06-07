@@ -9,13 +9,14 @@ import java.util.List;
  * Created by Ng on 6/5/2015.
  */
 public class Waypoint {
-    private List<Point> waypoints = new ArrayList<Point>();
+    private List<Point> waypoints;
     private Point currentLocation;
     private double tolerence;
 
     public Waypoint(Point currentLocation, double tolerence) {
         this.currentLocation = currentLocation;
         this.tolerence = tolerence;
+        waypoints = new ArrayList<Point>();
     }
 
     public void addWP(Point wp) {
@@ -34,7 +35,7 @@ public class Waypoint {
     }
 
     public double getHeading() {
-        return Math.atan2(waypoints.get(0).y - currentLocation.y, waypoints.get(0).y - currentLocation.y);
+        return Math.atan2(waypoints.get(0).y - currentLocation.y, waypoints.get(0).x - currentLocation.x);
     }
 
     public boolean waypointAvail() {

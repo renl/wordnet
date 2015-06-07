@@ -5,6 +5,7 @@ import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
+import android.graphics.Point;
 import android.graphics.Rect;
 import android.util.AttributeSet;
 import android.util.Log;
@@ -28,6 +29,7 @@ public class MainGamePanel extends SurfaceView implements SurfaceHolder.Callback
     private List<Bullet> bullets = new ArrayList<Bullet>();
     private List<Bullet> bulletsToAdd = new ArrayList<Bullet>();
     private List<Letter> letters = new ArrayList<Letter>();
+    private List<Letter> caughtLetters = new ArrayList<Letter>();
     private List<Captured> captures = new ArrayList<Captured>();
     private GraphicsHandler gh;
     private AudioHandler ah;
@@ -220,6 +222,9 @@ public class MainGamePanel extends SurfaceView implements SurfaceHolder.Callback
         for (Captured thisCaptured : captures) {
             canvas.drawBitmap(thisCaptured.getBitmap(), null, gam.toScaleRect(thisCaptured.getRect()), null);
         }
+        for (Letter thisLetter : caughtLetters) {
+            canvas.drawBitmap(thisLetter.getBitmap(), null, gam.toScaleRect(thisLetter.getRect()), null);
+        }
         paint.setColor(Color.RED);
         paint.setTextSize((int) (48 * scale));
         canvas.drawText(capturedLetters, gam.dix(0), gam.diy(600), paint);
@@ -301,8 +306,16 @@ public class MainGamePanel extends SurfaceView implements SurfaceHolder.Callback
                 letters.add(new Letter(gh.getLetterBMfromChar(c), c, Math.toRadians(270), rect));
             }
         }
-
         List<Letter> foundLetters = new ArrayList<Letter>();
+        for (Letter thisLetter : caughtLetters) {
+            thisLetter.update();
+            if (thisLetter.wpReached()) {
+                foundLetters.add(thisLetter);
+            }
+        }
+        caughtLetters.removeAll(foundLetters);
+        foundLetters.clear();
+
         for (Letter thisLetter : letters) {
             thisLetter.update();
             if (thisLetter.getRect().bottom <= 0) {
@@ -323,7 +336,10 @@ public class MainGamePanel extends SurfaceView implements SurfaceHolder.Callback
                         Log.d(TAG, letterPool);
                         ah.playNetted();
                         foundBullets.add(thisBullet);
+                        thisLetter.addWP(new Point(240, 750));
+                        thisLetter.setSpeed(10);
                         foundLetters.add(thisLetter);
+                        caughtLetters.add(thisLetter);
                         capturedLetters += thisLetter.getLetter();
                         if (capturedLetters.length() > 10) {
                             capturedLetters = capturedLetters.substring(1);
@@ -337,6 +353,7 @@ public class MainGamePanel extends SurfaceView implements SurfaceHolder.Callback
         }
         bullets.removeAll(foundBullets);
         letters.removeAll(foundLetters);
+
 
         List<String> foundString = new ArrayList<String>();
         for (String thisString : selectedWords) {

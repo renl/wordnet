@@ -2,6 +2,7 @@ package com.renlore.wordnet;
 
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
+import android.graphics.Point;
 import android.graphics.Rect;
 
 import java.util.Random;
@@ -20,6 +21,8 @@ public class Letter {
     private Rect rect;
     private boolean wobble;
     private Random randGen = new Random();
+    private Waypoint wp;
+    private Point currentLocation;
 
     public void setDir(double dir) {
         this.dir = dir;
@@ -54,16 +57,6 @@ public class Letter {
         return speed;
     }
 
-    public Letter(Bitmap bitmap, char letter, double dir, int x, int y) {
-        this.bitmap = bitmap;
-        this.letter = letter;
-        this.dir = dir;
-        this.x = x;
-        this.y = y;
-        this.rect = new Rect(x, y, x + 60, y + 60);
-        this.wobble = randGen.nextBoolean();
-    }
-
     public void setBitmap(Bitmap bitmap) {
         this.bitmap = bitmap;
     }
@@ -83,6 +76,9 @@ public class Letter {
         this.rect = rect;
         setX(rect.centerX());
         setY(rect.centerY());
+        this.wobble = randGen.nextBoolean();
+        this.currentLocation = new Point(this.x, this.y);
+        this.wp = new Waypoint(this.currentLocation, 20);
     }
 
     public char getLetter() {
@@ -93,16 +89,30 @@ public class Letter {
         this.letter = letter;
     }
 
+    public boolean isWobble() {
+        return wobble;
+    }
+
+    public void setWobble(boolean wobble) {
+        this.wobble = wobble;
+    }
+
     public void update() {
-        if (wobble) {
-            dir += 0.1;
-            if (dir > Math.toRadians(315)) {
-                wobble = !wobble;
-            }
+        if (wp.waypointAvail()) {
+            setDir(wp.getHeading());
+            wp.update(currentLocation);
         } else {
-            dir -= 0.1;
-            if (dir < Math.toRadians(225)) {
-                wobble = !wobble;
+            if (wobble) {
+                dir += 0.1;
+                if (dir > Math.toRadians(315)) {
+                    wobble = !wobble;
+                }
+
+            } else {
+                dir -= 0.1;
+                if (dir < Math.toRadians(225)) {
+                    wobble = !wobble;
+                }
             }
         }
         int dx = (int) (speed * Math.cos(dir));
@@ -110,6 +120,15 @@ public class Letter {
         rect.offset(dx, dy);
         setX(rect.centerX());
         setY(rect.centerY());
+        currentLocation.set(x, y);
+    }
+
+    public boolean wpReached() {
+        return !wp.waypointAvail();
+    }
+
+    public void addWP(Point point) {
+        this.wp.addWP(point);
     }
 
     public Bitmap getBitmap() {
