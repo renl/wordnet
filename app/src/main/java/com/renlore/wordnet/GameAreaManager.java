@@ -6,61 +6,61 @@ import android.graphics.Rect;
  * Created by Ng on 6/2/2015.
  */
 public class GameAreaManager {
-    private int deviceWidth;
-    private int deviceHeight;
+    private static int deviceWidth;
+    private static int deviceHeight;
     private static final int baseWidth = 480;
     private static final int baseHeight = 800;
-    private float scaleWidth, scaleHeight;
-    private float scale;
+    private static float scaleWidth, scaleHeight;
+    private static float scale;
     private static final int WIDTH_FIT = 0;
     private static final int HEIGHT_FIT = 1;
-    private int fitDim;
-    private int top;
-    private int bottom;
-    private int left;
-    private int right;
-    private int width;
-    private int height;
-    private int centerX, centerY;
+    private static int fitDim;
+    private static int top;
+    private static int bottom;
+    private static int left;
+    private static int right;
+    private static int width;
+    private static int height;
+    private static int centerX, centerY;
 
-    public int getTop() {
+    public static int getTop() {
         return top;
     }
 
-    public int getBottom() {
+    public static int getBottom() {
         return bottom;
     }
 
-    public int getLeft() {
+    public static int getLeft() {
         return left;
     }
 
-    public int getRight() {
+    public static int getRight() {
         return right;
     }
 
-    public int getWidth() {
+    public static int getWidth() {
         return width;
     }
 
-    public int getHeight() {
+    public static int getHeight() {
         return height;
     }
 
-    public int getDeviceWidth() {
+    public static int getDeviceWidth() {
         return deviceWidth;
     }
 
-    public void setDeviceWidth(int deviceWidth) {
-        this.deviceWidth = deviceWidth;
+    public static void setDeviceWidth(int deviceWidth) {
+        deviceWidth = deviceWidth;
     }
 
-    public int getDeviceHeight() {
+    public static int getDeviceHeight() {
         return deviceHeight;
     }
 
-    public void setDeviceHeight(int deviceHeight) {
-        this.deviceHeight = deviceHeight;
+    public static void setDeviceHeight(int deviceHeight) {
+        deviceHeight = deviceHeight;
     }
 
     public static int getBaseWidth() {
@@ -71,31 +71,31 @@ public class GameAreaManager {
         return baseHeight;
     }
 
-    public float getScaleWidth() {
+    public static float getScaleWidth() {
         return scaleWidth;
     }
 
-    public float getScaleHeight() {
+    public static float getScaleHeight() {
         return scaleHeight;
     }
 
-    public float getScale() {
+    public static float getScale() {
         return scale;
     }
 
-    public int getFitDim() {
+    public static int getFitDim() {
         return fitDim;
     }
 
-    public int getCenterX() {
+    public static int getCenterX() {
         return centerX;
     }
 
-    public int getCenterY() {
+    public static int getCenterY() {
         return centerY;
     }
 
-    public int dX2bX(int x) {
+    public static int dX2bX(int x) {
         if (x < left) {
             return 0;
         } else if (x > right) {
@@ -105,7 +105,7 @@ public class GameAreaManager {
         }
     }
 
-    public int dY2bY(int y) {
+    public static int dY2bY(int y) {
         if (y < top) {
             return 0;
         } else if (y > bottom) {
@@ -115,7 +115,7 @@ public class GameAreaManager {
         }
     }
 
-    public void calcScales() {
+    public static void calcScales() {
         scaleWidth = (float) deviceWidth / (float) baseWidth;
         scaleHeight = (float) deviceHeight / (float) baseHeight;
         centerX = deviceWidth / 2;
@@ -133,7 +133,7 @@ public class GameAreaManager {
         }
     }
 
-    private void calcCriticalPointsHeightFit() {
+    private static void calcCriticalPointsHeightFit() {
         width = (int) (baseWidth * scale + 0.5f);
         height = (int) (baseHeight * scale + 0.5f);
         top = 0;
@@ -142,7 +142,7 @@ public class GameAreaManager {
         right = left + width;
     }
 
-    private void calcCriticalPointsWidthFit() {
+    private static void calcCriticalPointsWidthFit() {
         width = (int) (baseWidth * scale + 0.5f);
         height = (int) (baseHeight * scale + 0.5f);
         top = (deviceHeight - height) / 2;
@@ -151,7 +151,7 @@ public class GameAreaManager {
         right = width;
     }
 
-    public int dix(int x) {
+    public static int dix(int x) {
         if (fitDim == WIDTH_FIT) {
             return (int) (x * scale);
         } else {
@@ -159,7 +159,7 @@ public class GameAreaManager {
         }
     }
 
-    public Rect toScaleRect(Rect rect) {
+    public static Rect toScaleRect(Rect rect) {
         Rect scaledRect = new Rect(rect);
         scaledRect.left *= scale;
         scaledRect.top *= scale;
@@ -169,11 +169,11 @@ public class GameAreaManager {
         return scaledRect;
     }
 
-    public int toScale(int num) {
+    public static int toScale(int num) {
         return (int) (num * scale);
     }
 
-    public int diy(int y) {
+    public static int diy(int y) {
         if (fitDim == WIDTH_FIT) {
             return (int) (y * scale + top);
         } else {
@@ -181,6 +181,11 @@ public class GameAreaManager {
         }
     }
 
+    public  static void init() {
+        deviceHeight = WordNet.context.getResources().getDisplayMetrics().heightPixels;
+        deviceWidth = WordNet.context.getResources().getDisplayMetrics().widthPixels;
+        calcScales();
+    }
     public GameAreaManager(int deviceWidth, int deviceHeight) {
 
         this.deviceWidth = deviceWidth;

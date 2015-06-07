@@ -1,6 +1,5 @@
 package com.renlore.wordnet;
 
-import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Point;
@@ -15,97 +14,93 @@ public class GraphicsHandler {
     private static final int BULLET_SIZE = 40;
     private static final int CHARACTER_SIZE = 50;
 
-    private Bitmap bA;
-    private Bitmap bB;
-    private Bitmap bC;
-    private Bitmap bD;
-    private Bitmap bE;
-    private Bitmap bF;
-    private Bitmap bG;
-    private Bitmap bH;
-    private Bitmap bI;
-    private Bitmap bJ;
-    private Bitmap bK;
-    private Bitmap bL;
-    private Bitmap bM;
-    private Bitmap bN;
-    private Bitmap bO;
-    private Bitmap bP;
-    private Bitmap bQ;
-    private Bitmap bR;
-    private Bitmap bS;
-    private Bitmap bT;
-    private Bitmap bU;
-    private Bitmap bV;
-    private Bitmap bW;
-    private Bitmap bX;
-    private Bitmap bY;
-    private Bitmap bZ;
-    private Bitmap background;
-    private Bitmap character;
-    private Bitmap thrownnet;
-    private Bitmap capturenet;
-    private Context context;
-    private GameAreaManager gam;
+    private static Bitmap bA;
+    private static Bitmap bB;
+    private static Bitmap bC;
+    private static Bitmap bD;
+    private static Bitmap bE;
+    private static Bitmap bF;
+    private static Bitmap bG;
+    private static Bitmap bH;
+    private static Bitmap bI;
+    private static Bitmap bJ;
+    private static Bitmap bK;
+    private static Bitmap bL;
+    private static Bitmap bM;
+    private static Bitmap bN;
+    private static Bitmap bO;
+    private static Bitmap bP;
+    private static Bitmap bQ;
+    private static Bitmap bR;
+    private static Bitmap bS;
+    private static Bitmap bT;
+    private static Bitmap bU;
+    private static Bitmap bV;
+    private static Bitmap bW;
+    private static Bitmap bX;
+    private static Bitmap bY;
+    private static Bitmap bZ;
+    private static Bitmap background;
+    private static Bitmap character;
+    private static Bitmap thrownnet;
+    private static Bitmap capturenet;
 
-    public GraphicsHandler(Context context, GameAreaManager gam) {
-        this.context = context;
-        this.gam = gam;
-        bA = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(context.getResources(), R.drawable.a), gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
-        bB = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(context.getResources(), R.drawable.b), gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
-        bC = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(context.getResources(), R.drawable.c), gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
-        bD = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(context.getResources(), R.drawable.d), gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
-        bE = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(context.getResources(), R.drawable.e), gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
-        bF = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(context.getResources(), R.drawable.f), gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
-        bG = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(context.getResources(), R.drawable.g), gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
-        bH = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(context.getResources(), R.drawable.h), gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
-        bI = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(context.getResources(), R.drawable.i), gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
-        bJ = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(context.getResources(), R.drawable.j), gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
-        bK = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(context.getResources(), R.drawable.k), gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
-        bL = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(context.getResources(), R.drawable.l), gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
-        bM = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(context.getResources(), R.drawable.m), gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
-        bN = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(context.getResources(), R.drawable.n), gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
-        bO = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(context.getResources(), R.drawable.o), gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
-        bP = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(context.getResources(), R.drawable.p), gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
-        bQ = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(context.getResources(), R.drawable.q), gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
-        bR = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(context.getResources(), R.drawable.r), gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
-        bS = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(context.getResources(), R.drawable.s), gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
-        bT = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(context.getResources(), R.drawable.t), gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
-        bU = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(context.getResources(), R.drawable.u), gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
-        bV = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(context.getResources(), R.drawable.v), gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
-        bW = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(context.getResources(), R.drawable.w), gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
-        bX = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(context.getResources(), R.drawable.x), gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
-        bY = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(context.getResources(), R.drawable.y), gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
-        bZ = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(context.getResources(), R.drawable.z), gam.toScale(LETTER_SIZE.x), gam.toScale(LETTER_SIZE.y), true);
-        background = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(context.getResources(), R.drawable.background), gam.getWidth(), gam.getHeight(), true);
-        character = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(context.getResources(), R.drawable.character), gam.toScale(CHARACTER_SIZE), gam.toScale(CHARACTER_SIZE), true);
-        thrownnet = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(context.getResources(), R.drawable.thrownnet), gam.toScale(BULLET_SIZE), gam.toScale(BULLET_SIZE), true);
-        capturenet = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(context.getResources(), R.drawable.capturenet), gam.toScale(CAPTURED_SIZE), gam.toScale(CAPTURED_SIZE), true);
+    public static void load() {
+        bA = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(WordNet.context.getResources(), R.drawable.a), GameAreaManager.toScale(LETTER_SIZE.x), GameAreaManager.toScale(LETTER_SIZE.y), true);
+        bB = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(WordNet.context.getResources(), R.drawable.b), GameAreaManager.toScale(LETTER_SIZE.x), GameAreaManager.toScale(LETTER_SIZE.y), true);
+        bC = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(WordNet.context.getResources(), R.drawable.c), GameAreaManager.toScale(LETTER_SIZE.x), GameAreaManager.toScale(LETTER_SIZE.y), true);
+        bD = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(WordNet.context.getResources(), R.drawable.d), GameAreaManager.toScale(LETTER_SIZE.x), GameAreaManager.toScale(LETTER_SIZE.y), true);
+        bE = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(WordNet.context.getResources(), R.drawable.e), GameAreaManager.toScale(LETTER_SIZE.x), GameAreaManager.toScale(LETTER_SIZE.y), true);
+        bF = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(WordNet.context.getResources(), R.drawable.f), GameAreaManager.toScale(LETTER_SIZE.x), GameAreaManager.toScale(LETTER_SIZE.y), true);
+        bG = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(WordNet.context.getResources(), R.drawable.g), GameAreaManager.toScale(LETTER_SIZE.x), GameAreaManager.toScale(LETTER_SIZE.y), true);
+        bH = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(WordNet.context.getResources(), R.drawable.h), GameAreaManager.toScale(LETTER_SIZE.x), GameAreaManager.toScale(LETTER_SIZE.y), true);
+        bI = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(WordNet.context.getResources(), R.drawable.i), GameAreaManager.toScale(LETTER_SIZE.x), GameAreaManager.toScale(LETTER_SIZE.y), true);
+        bJ = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(WordNet.context.getResources(), R.drawable.j), GameAreaManager.toScale(LETTER_SIZE.x), GameAreaManager.toScale(LETTER_SIZE.y), true);
+        bK = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(WordNet.context.getResources(), R.drawable.k), GameAreaManager.toScale(LETTER_SIZE.x), GameAreaManager.toScale(LETTER_SIZE.y), true);
+        bL = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(WordNet.context.getResources(), R.drawable.l), GameAreaManager.toScale(LETTER_SIZE.x), GameAreaManager.toScale(LETTER_SIZE.y), true);
+        bM = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(WordNet.context.getResources(), R.drawable.m), GameAreaManager.toScale(LETTER_SIZE.x), GameAreaManager.toScale(LETTER_SIZE.y), true);
+        bN = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(WordNet.context.getResources(), R.drawable.n), GameAreaManager.toScale(LETTER_SIZE.x), GameAreaManager.toScale(LETTER_SIZE.y), true);
+        bO = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(WordNet.context.getResources(), R.drawable.o), GameAreaManager.toScale(LETTER_SIZE.x), GameAreaManager.toScale(LETTER_SIZE.y), true);
+        bP = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(WordNet.context.getResources(), R.drawable.p), GameAreaManager.toScale(LETTER_SIZE.x), GameAreaManager.toScale(LETTER_SIZE.y), true);
+        bQ = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(WordNet.context.getResources(), R.drawable.q), GameAreaManager.toScale(LETTER_SIZE.x), GameAreaManager.toScale(LETTER_SIZE.y), true);
+        bR = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(WordNet.context.getResources(), R.drawable.r), GameAreaManager.toScale(LETTER_SIZE.x), GameAreaManager.toScale(LETTER_SIZE.y), true);
+        bS = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(WordNet.context.getResources(), R.drawable.s), GameAreaManager.toScale(LETTER_SIZE.x), GameAreaManager.toScale(LETTER_SIZE.y), true);
+        bT = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(WordNet.context.getResources(), R.drawable.t), GameAreaManager.toScale(LETTER_SIZE.x), GameAreaManager.toScale(LETTER_SIZE.y), true);
+        bU = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(WordNet.context.getResources(), R.drawable.u), GameAreaManager.toScale(LETTER_SIZE.x), GameAreaManager.toScale(LETTER_SIZE.y), true);
+        bV = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(WordNet.context.getResources(), R.drawable.v), GameAreaManager.toScale(LETTER_SIZE.x), GameAreaManager.toScale(LETTER_SIZE.y), true);
+        bW = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(WordNet.context.getResources(), R.drawable.w), GameAreaManager.toScale(LETTER_SIZE.x), GameAreaManager.toScale(LETTER_SIZE.y), true);
+        bX = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(WordNet.context.getResources(), R.drawable.x), GameAreaManager.toScale(LETTER_SIZE.x), GameAreaManager.toScale(LETTER_SIZE.y), true);
+        bY = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(WordNet.context.getResources(), R.drawable.y), GameAreaManager.toScale(LETTER_SIZE.x), GameAreaManager.toScale(LETTER_SIZE.y), true);
+        bZ = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(WordNet.context.getResources(), R.drawable.z), GameAreaManager.toScale(LETTER_SIZE.x), GameAreaManager.toScale(LETTER_SIZE.y), true);
+        background = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(WordNet.context.getResources(), R.drawable.background), GameAreaManager.getWidth(), GameAreaManager.getHeight(), true);
+        character = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(WordNet.context.getResources(), R.drawable.character), GameAreaManager.toScale(CHARACTER_SIZE), GameAreaManager.toScale(CHARACTER_SIZE), true);
+        thrownnet = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(WordNet.context.getResources(), R.drawable.thrownnet), GameAreaManager.toScale(BULLET_SIZE), GameAreaManager.toScale(BULLET_SIZE), true);
+        capturenet = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(WordNet.context.getResources(), R.drawable.capturenet), GameAreaManager.toScale(CAPTURED_SIZE), GameAreaManager.toScale(CAPTURED_SIZE), true);
 
     }
 
-    public Rect genBulletRect(int x, int y) {
+    public static Rect genBulletRect(int x, int y) {
         return new Rect(x - BULLET_SIZE / 2,
                 y - BULLET_SIZE / 2,
                 x + BULLET_SIZE / 2,
                 y + BULLET_SIZE / 2);
     }
 
-    public Rect genLetterRect(int x, int y) {
+    public static Rect genLetterRect(int x, int y) {
         return new Rect(x - LETTER_SIZE.x / 2,
                 y - LETTER_SIZE.y / 2,
                 x + LETTER_SIZE.x / 2,
                 y + LETTER_SIZE.y / 2);
     }
 
-    public Rect genCapturedRect(int x, int y) {
+    public static Rect genCapturedRect(int x, int y) {
         return new Rect(x - CAPTURED_SIZE / 2,
                 y - CAPTURED_SIZE / 2,
                 x + CAPTURED_SIZE / 2,
                 y + CAPTURED_SIZE / 2);
     }
 
-    public Bitmap getLetterBMfromChar(char c) {
+    public static Bitmap getLetterBMfromChar(char c) {
         switch (c) {
             case 'A':
                 return getbA();
@@ -163,123 +158,123 @@ public class GraphicsHandler {
         return getbA();
     }
 
-    public Bitmap getbA() {
+    public static Bitmap getbA() {
         return bA;
     }
 
-    public Bitmap getbB() {
+    public static Bitmap getbB() {
         return bB;
     }
 
-    public Bitmap getbC() {
+    public static Bitmap getbC() {
         return bC;
     }
 
-    public Bitmap getbD() {
+    public static Bitmap getbD() {
         return bD;
     }
 
-    public Bitmap getbE() {
+    public static Bitmap getbE() {
         return bE;
     }
 
-    public Bitmap getbF() {
+    public static Bitmap getbF() {
         return bF;
     }
 
-    public Bitmap getbG() {
+    public static Bitmap getbG() {
         return bG;
     }
 
-    public Bitmap getbH() {
+    public static Bitmap getbH() {
         return bH;
     }
 
-    public Bitmap getbI() {
+    public static Bitmap getbI() {
         return bI;
     }
 
-    public Bitmap getbJ() {
+    public static Bitmap getbJ() {
         return bJ;
     }
 
-    public Bitmap getbK() {
+    public static Bitmap getbK() {
         return bK;
     }
 
-    public Bitmap getbL() {
+    public static Bitmap getbL() {
         return bL;
     }
 
-    public Bitmap getbM() {
+    public static Bitmap getbM() {
         return bM;
     }
 
-    public Bitmap getbN() {
+    public static Bitmap getbN() {
         return bN;
     }
 
-    public Bitmap getbO() {
+    public static Bitmap getbO() {
         return bO;
     }
 
-    public Bitmap getbP() {
+    public static Bitmap getbP() {
         return bP;
     }
 
-    public Bitmap getbQ() {
+    public static Bitmap getbQ() {
         return bQ;
     }
 
-    public Bitmap getbR() {
+    public static Bitmap getbR() {
         return bR;
     }
 
-    public Bitmap getbS() {
+    public static Bitmap getbS() {
         return bS;
     }
 
-    public Bitmap getbT() {
+    public static Bitmap getbT() {
         return bT;
     }
 
-    public Bitmap getbU() {
+    public static Bitmap getbU() {
         return bU;
     }
 
-    public Bitmap getbV() {
+    public static Bitmap getbV() {
         return bV;
     }
 
-    public Bitmap getbW() {
+    public static Bitmap getbW() {
         return bW;
     }
 
-    public Bitmap getbX() {
+    public static Bitmap getbX() {
         return bX;
     }
 
-    public Bitmap getbY() {
+    public static Bitmap getbY() {
         return bY;
     }
 
-    public Bitmap getbZ() {
+    public static Bitmap getbZ() {
         return bZ;
     }
 
-    public Bitmap getBackground() {
+    public static Bitmap getBackground() {
         return background;
     }
 
-    public Bitmap getCharacter() {
+    public static Bitmap getCharacter() {
         return character;
     }
 
-    public Bitmap getThrownnet() {
+    public static Bitmap getThrownnet() {
         return thrownnet;
     }
 
-    public Bitmap getCapturenet() {
+    public static Bitmap getCapturenet() {
         return capturenet;
     }
 }

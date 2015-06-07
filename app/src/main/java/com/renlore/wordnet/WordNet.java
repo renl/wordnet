@@ -1,6 +1,7 @@
 package com.renlore.wordnet;
 
 import android.app.Activity;
+import android.content.Context;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
@@ -20,14 +21,14 @@ public class WordNet extends Activity {
     private final static int baseX = 1080;
     private final static int baseY = 1920;
     private final static float baseProportion = 1920 / 1080;
-    private SurfaceView surfaceView;
+    public static Context context;
+    public static MainGamePanel gamePanel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        surfaceView = (SurfaceView) findViewById(R.id.gamePanel);
 
         DisplayMetrics display = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(display);
@@ -36,8 +37,9 @@ public class WordNet extends Activity {
         float screenProportion =  (float)screenHeight / (float)screenWidth;
 
         Log.d(TAG, "Width: " + screenWidth + ", Height: " + screenHeight + ", Proportion: " + screenProportion);
-
-        setContentView(new MainGamePanel(this));
+        this.context = this;
+        gamePanel = new MainGamePanel(this);
+        setContentView(gamePanel);
 //        setContentView(R.layout.activity_word_net);
     }
 
