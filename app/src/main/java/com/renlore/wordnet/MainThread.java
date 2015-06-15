@@ -39,7 +39,10 @@ public class MainThread extends Thread {
                     this.gamePanel.render(canvas);
                     if (System.currentTimeMillis() < nextFrameTime) {
                         try {
-                            Thread.sleep((int)(nextFrameTime-System.currentTimeMillis()));
+                            timeDiff = nextFrameTime - System.currentTimeMillis();
+                            if (timeDiff > 0) {
+                                Thread.sleep((int) (timeDiff));
+                            }
                         } catch (InterruptedException e) {
                             e.printStackTrace();
                         }

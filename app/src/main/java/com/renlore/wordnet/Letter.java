@@ -104,13 +104,13 @@ public class Letter {
         } else {
             if (wobble) {
                 dir += 0.1;
-                if (dir > Math.toRadians(315)) {
+                if (dir > Math.toRadians(45)) {
                     wobble = !wobble;
                 }
 
             } else {
                 dir -= 0.1;
-                if (dir < Math.toRadians(225)) {
+                if (dir < Math.toRadians(-45)) {
                     wobble = !wobble;
                 }
             }

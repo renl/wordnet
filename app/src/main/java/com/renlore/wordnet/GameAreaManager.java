@@ -8,8 +8,8 @@ import android.graphics.Rect;
 public class GameAreaManager {
     private static int deviceWidth;
     private static int deviceHeight;
-    private static final int baseWidth = 480;
-    private static final int baseHeight = 800;
+    private static final int baseWidth = 800;
+    private static final int baseHeight = 480;
     private static float scaleWidth, scaleHeight;
     private static float scale;
     private static final int WIDTH_FIT = 0;
@@ -22,6 +22,17 @@ public class GameAreaManager {
     private static int width;
     private static int height;
     private static int centerX, centerY;
+    private static final int baseCenterX = baseWidth / 2;
+
+    public static int getBaseCenterX() {
+        return baseCenterX;
+    }
+
+    public static int getBaseCenterY() {
+        return baseCenterY;
+    }
+
+    private static final int baseCenterY = baseHeight / 2;
 
     public static int getTop() {
         return top;

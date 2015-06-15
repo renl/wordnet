@@ -18,7 +18,7 @@ import java.util.Random;
  */
 public class PlayState extends State {
     private static final String TAG = PlayState.class.getSimpleName();
-    private static final int NUM_SLOTS = 11;
+    private static final int NUM_SLOTS = 4;
     private static final int SLOT_SPACING = 40;
     private List<Bullet> bullets = new ArrayList<Bullet>();
     private List<Bullet> bulletsToAdd = new ArrayList<Bullet>();
@@ -72,23 +72,27 @@ public class PlayState extends State {
         }
     }
 
-    @Override
-    public void update() {
+    private void addLetters() {
         for (int i = 0; i < NUM_SLOTS; i++) {
             slotTracker[i]++;
         }
-        bullets.addAll(bulletsToAdd);
-        bulletsToAdd.clear();
         if (randGen.nextInt(100) <= 5) {
             int slot = getSlot();
             if (slot != -1) {
-                Rect rect = GraphicsHandler.genLetterRect(letterSlot(slot, SLOT_SPACING), 500);
+                Rect rect = GraphicsHandler.genLetterRect(ObjectsInfo.balloonStartPoint.x, letterSlot(slot, SLOT_SPACING));
                 if (letterPoolInd >= letterPool.length()) letterPoolInd = 0;
                 char c = letterPool.charAt(letterPoolInd++);
-                letters.add(new Letter(GraphicsHandler.getLetterBMfromChar(c), c, Math.toRadians(270), rect));
+                letters.add(new Letter(GraphicsHandler.getLetterBMfromChar(c), c, ObjectsInfo.balloonDir, rect));
             }
         }
-        List<Letter> foundLetters = new ArrayList<Letter>();
+    }
+
+    private void addBullets() {
+        bullets.addAll(bulletsToAdd);
+        bulletsToAdd.clear();
+    }
+
+    private void updateCaughtLetters(List<Letter> foundLetters) {
         for (Letter thisLetter : caughtLetters) {
             thisLetter.update();
             if (thisLetter.wpReached()) {
@@ -97,7 +101,9 @@ public class PlayState extends State {
         }
         caughtLetters.removeAll(foundLetters);
         foundLetters.clear();
+    }
 
+    private void updateLetter(List<Letter> foundLetters) {
         for (Letter thisLetter : letters) {
             thisLetter.update();
             if (thisLetter.getRect().bottom <= 0) {
@@ -106,11 +112,13 @@ public class PlayState extends State {
         }
         letters.removeAll(foundLetters);
         foundLetters.clear();
+    }
 
-        List<Bullet> foundBullets = new ArrayList<Bullet>();
+    private void updateBullets(List<Bullet> foundBullets, List<Letter> foundLetters) {
         for (Bullet thisBullet : bullets) {
             thisBullet.update();
-            if (thisBullet.getY() <= 0 || thisBullet.getX() <= 0 || thisBullet.getX() >= 480) {
+            if (!ObjectsInfo.bulletActiveZone.contains(thisBullet.getDrawRect())) {
+//            if (thisBullet.getY() <= 0 || thisBullet.getX() <= 0 || thisBullet.getX() >= 480) {
                 foundBullets.add(thisBullet);
             } else {
                 for (Letter thisLetter : letters) {
@@ -118,7 +126,7 @@ public class PlayState extends State {
                         Log.d(TAG, letterPool);
                         AudioHandler.playNetted();
                         foundBullets.add(thisBullet);
-                        thisLetter.addWP(new Point(240, 750));
+                        thisLetter.addWP(ObjectsInfo.balloonReceivePoint);
                         thisLetter.setSpeed(10);
                         foundLetters.add(thisLetter);
                         caughtLetters.add(thisLetter);
@@ -128,16 +136,16 @@ public class PlayState extends State {
                         }
                         captures.add(new Captured(GraphicsHandler.getCapturenet(),
                                 GraphicsHandler.genCapturedRect(thisLetter.getRect().centerX(), thisLetter.getRect().centerY()),
-                                50));
+                                50, thisLetter));
                     }
                 }
             }
         }
         bullets.removeAll(foundBullets);
         letters.removeAll(foundLetters);
+    }
 
-
-        List<String> foundString = new ArrayList<String>();
+    private void updateWordCapture(List<String> foundString) {
         for (String thisString : selectedWords) {
             if (capturedLetters.contains(thisString)) {
                 AudioHandler.playAchieve();
@@ -167,13 +175,31 @@ public class PlayState extends State {
                 }
             }
         }
-        List<Captured> foundCaptured = new ArrayList<Captured>();
+    }
+
+    private void updateCaptured(List<Captured> foundCaptured) {
         for (Captured thisCaptured : captures) {
             if (thisCaptured.update() <= 0) {
                 foundCaptured.add(thisCaptured);
             }
         }
         captures.removeAll(foundCaptured);
+    }
+
+    @Override
+    public void update() {
+        List<Letter> foundLetters = new ArrayList<Letter>();
+        List<Bullet> foundBullets = new ArrayList<Bullet>();
+        List<String> foundString = new ArrayList<String>();
+        List<Captured> foundCaptured = new ArrayList<Captured>();
+
+        addBullets();
+        addLetters();
+        updateCaughtLetters(foundLetters);
+        updateLetter(foundLetters);
+        updateBullets(foundBullets, foundLetters);
+        updateWordCapture(foundString);
+        updateCaptured(foundCaptured);
     }
 
     @Override
@@ -184,7 +210,7 @@ public class PlayState extends State {
         canvas.drawBitmap(GraphicsHandler.getBackground(), GameAreaManager.dix(0), GameAreaManager.diy(0), null);
         canvas.drawBitmap(GraphicsHandler.getCharacter(),
                 GameAreaManager.getCenterX() - (GraphicsHandler.getCharacter().getWidth() / 2),
-                GameAreaManager.getBottom() - GraphicsHandler.getCharacter().getHeight(),
+                GameAreaManager.diy(420) - GraphicsHandler.getCharacter().getHeight(),
                 null);
         paint.setColor(Color.GRAY);
         canvas.drawRect(GameAreaManager.getRight() - GameAreaManager.toScale(100), GameAreaManager.getBottom() - GameAreaManager.toScale(50),
@@ -207,13 +233,13 @@ public class PlayState extends State {
         }
         paint.setColor(Color.RED);
         paint.setTextSize((int) (48 * GameAreaManager.getScale()));
-        canvas.drawText(capturedLetters, GameAreaManager.dix(0), GameAreaManager.diy(600), paint);
+        canvas.drawText(capturedLetters, GameAreaManager.dix(0), GameAreaManager.diy(350), paint);
         paint.setTextSize((int) (40 * GameAreaManager.getScale()));
-        canvas.drawText(selectedWords.get(0), GameAreaManager.dix(0), GameAreaManager.diy(680), paint);
-        canvas.drawText(selectedWords.get(1), GameAreaManager.dix(0), GameAreaManager.diy(730), paint);
-        canvas.drawText(selectedWords.get(2), GameAreaManager.dix(150), GameAreaManager.diy(680), paint);
-        canvas.drawText(selectedWords.get(3), GameAreaManager.dix(300), GameAreaManager.diy(680), paint);
-        canvas.drawText(selectedWords.get(4), GameAreaManager.dix(300), GameAreaManager.diy(730), paint);
+        canvas.drawText(selectedWords.get(0), GameAreaManager.dix(0), GameAreaManager.diy(400), paint);
+        canvas.drawText(selectedWords.get(1), GameAreaManager.dix(150), GameAreaManager.diy(400), paint);
+        canvas.drawText(selectedWords.get(2), GameAreaManager.dix(300), GameAreaManager.diy(400), paint);
+        canvas.drawText(selectedWords.get(3), GameAreaManager.dix(450), GameAreaManager.diy(400), paint);
+        canvas.drawText(selectedWords.get(4), GameAreaManager.dix(600), GameAreaManager.diy(400), paint);
         paint.setColor(Color.BLACK);
         canvas.drawRect(0, 0, GameAreaManager.getDeviceWidth(), GameAreaManager.getTop(), paint);
         canvas.drawRect(0, 0, GameAreaManager.getLeft(), GameAreaManager.getDeviceHeight(), paint);
@@ -229,10 +255,10 @@ public class PlayState extends State {
             } else {
                 Log.d(TAG, "X: " + e.getX() + ", Y: " + e.getY());
                 AudioHandler.playSwosh();
-                double angle = Math.atan2(GameAreaManager.dY2bY((int) e.getY()) - 750, GameAreaManager.dX2bX((int) e.getX()) - 240);
+                double angle = Math.atan2(GameAreaManager.dY2bY((int) e.getY()) - 370, GameAreaManager.dX2bX((int) e.getX()) - GameAreaManager.getBaseCenterX());
                 bulletsToAdd.add(new Bullet(GraphicsHandler.getThrownnet(),
                         angle,
-                        GraphicsHandler.genBulletRect(240, 750)
+                        GraphicsHandler.genBulletRect(GameAreaManager.getBaseCenterX(), 370)
                 ));
             }
         }

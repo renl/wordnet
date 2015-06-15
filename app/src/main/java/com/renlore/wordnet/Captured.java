@@ -10,6 +10,7 @@ public class Captured {
     private Bitmap bitmap;
     private Rect rect;
     private int lifespan;
+    private Letter letter;
 
     public int update() {
         if (lifespan > 0) {
@@ -17,7 +18,9 @@ public class Captured {
         }
         return lifespan;
     }
-    public Captured(Bitmap bitmap, Rect rect, int lifespan) {
+
+    public Captured(Bitmap bitmap, Rect rect, int lifespan, Letter letter) {
+        this.letter = letter;
         this.bitmap = bitmap;
         this.rect = rect;
         this.lifespan = lifespan;
