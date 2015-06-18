@@ -3,7 +3,9 @@ package com.renlore.wordnet;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Point;
+import android.graphics.PointF;
 import android.graphics.Rect;
+import android.graphics.RectF;
 
 import java.util.Random;
 
@@ -13,26 +15,28 @@ import java.util.Random;
 public class Letter {
     private static final String TAG = Letter.class.getSimpleName();
     private double dir;
-    private int x;
-    private int y;
+    private double wobbleDir;
+    private float x;
+    private float y;
     private int speed = 2;
     private char letter;
     private Bitmap bitmap;
-    private Rect rect;
+    private RectF rect;
     private boolean wobble;
     private Random randGen = new Random();
     private Waypoint wp;
-    private Point currentLocation;
+    private PointF currentLocation;
 
     public void setDir(double dir) {
         this.dir = dir;
+        this.wobbleDir = dir;
     }
 
-    public void setX(int x) {
+    public void setX(float x) {
         this.x = x;
     }
 
-    public void setY(int y) {
+    public void setY(float y) {
         this.y = y;
     }
 
@@ -45,11 +49,11 @@ public class Letter {
         return dir;
     }
 
-    public int getX() {
+    public float getX() {
         return x;
     }
 
-    public int getY() {
+    public float getY() {
         return y;
     }
 
@@ -62,10 +66,12 @@ public class Letter {
     }
 
     public Rect getRect() {
-        return rect;
+        Rect retRect = new Rect();
+        rect.roundOut(retRect);
+        return retRect;
     }
 
-    public void setRect(Rect rect) {
+    public void setRect(RectF rect) {
         this.rect = rect;
     }
 
@@ -73,11 +79,12 @@ public class Letter {
         this.bitmap = bitmap;
         this.letter = letter;
         this.dir = dir;
-        this.rect = rect;
+        this.wobbleDir = dir;
+        this.rect = new RectF(rect);
         setX(rect.centerX());
         setY(rect.centerY());
         this.wobble = randGen.nextBoolean();
-        this.currentLocation = new Point(this.x, this.y);
+        this.currentLocation = new PointF(this.x, this.y);
         this.wp = new Waypoint(this.currentLocation, 20);
     }
 
@@ -103,20 +110,20 @@ public class Letter {
             wp.update(currentLocation);
         } else {
             if (wobble) {
-                dir += 0.1;
-                if (dir > Math.toRadians(45)) {
+                wobbleDir += 5;
+                if (wobbleDir > dir + 45) {
                     wobble = !wobble;
                 }
 
             } else {
-                dir -= 0.1;
-                if (dir < Math.toRadians(-45)) {
+                wobbleDir -= 5;
+                if (wobbleDir < dir - 45) {
                     wobble = !wobble;
                 }
             }
         }
-        int dx = (int) (speed * Math.cos(dir));
-        int dy = (int) (speed * Math.sin(dir));
+        float dx = (float) (speed * Math.cos(Math.toRadians(wobbleDir)));
+        float dy = (float) (speed * Math.sin(Math.toRadians(wobbleDir)));
         rect.offset(dx, dy);
         setX(rect.centerX());
         setY(rect.centerY());
@@ -128,7 +135,7 @@ public class Letter {
     }
 
     public void addWP(Point point) {
-        this.wp.addWP(point);
+        this.wp.addWP(new PointF(point));
     }
 
     public Bitmap getBitmap() {

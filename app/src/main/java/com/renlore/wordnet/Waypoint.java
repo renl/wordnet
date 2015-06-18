@@ -1,6 +1,7 @@
 package com.renlore.wordnet;
 
 import android.graphics.Point;
+import android.graphics.PointF;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,21 +10,21 @@ import java.util.List;
  * Created by Ng on 6/5/2015.
  */
 public class Waypoint {
-    private List<Point> waypoints;
-    private Point currentLocation;
+    private List<PointF> waypoints;
+    private PointF currentLocation;
     private double tolerence;
 
-    public Waypoint(Point currentLocation, double tolerence) {
+    public Waypoint(PointF currentLocation, double tolerence) {
         this.currentLocation = currentLocation;
         this.tolerence = tolerence;
-        waypoints = new ArrayList<Point>();
+        waypoints = new ArrayList<PointF>();
     }
 
-    public void addWP(Point wp) {
+    public void addWP(PointF wp) {
         waypoints.add(wp);
     }
 
-    public void update(Point currentLocation) {
+    public void update(PointF currentLocation) {
         this.currentLocation = currentLocation;
         if (!waypoints.isEmpty()) {
             double dist = Math.hypot((double) (currentLocation.x - waypoints.get(0).x),
@@ -35,7 +36,7 @@ public class Waypoint {
     }
 
     public double getHeading() {
-        return Math.atan2(waypoints.get(0).y - currentLocation.y, waypoints.get(0).x - currentLocation.x);
+        return Math.toDegrees(Math.atan2(waypoints.get(0).y - currentLocation.y, waypoints.get(0).x - currentLocation.x));
     }
 
     public boolean waypointAvail() {

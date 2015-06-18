@@ -4,19 +4,10 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string-array name="wordBonus">
-        <item>AAHS</item>
-        <item>AALS</item>
-        <item>ABAS</item>
-        <item>ABBA</item>
-        <item>ABBE</item>
-        <item>ABED</item>
-        <item>ABET</item>
         <item>ABLE</item>
         <item>ABLY</item>
         <item>ABOS</item>
-        <item>ABRI</item>
         <item>ABUT</item>
-        <item>ABYE</item>
         <item>ABYS</item>
         <item>ACED</item>
         <item>ACES</item>
@@ -26,32 +17,21 @@
         <item>ACME</item>
         <item>ACNE</item>
         <item>ACRE</item>
-        <item>ACTA</item>
         <item>ACTS</item>
         <item>ACYL</item>
         <item>ADDS</item>
-        <item>ADIT</item>
-        <item>ADOS</item>
         <item>ADZE</item>
         <item>AEON</item>
         <item>AERO</item>
         <item>AERY</item>
         <item>AFAR</item>
         <item>AGAR</item>
-        <item>AGAS</item>
         <item>AGED</item>
-        <item>AGEE</item>
         <item>AGER</item>
         <item>AGES</item>
         <item>AGHA</item>
-        <item>AGIN</item>
-        <item>AGIO</item>
-        <item>AGLY</item>
-        <item>AGMA</item>
         <item>AGOG</item>
-        <item>AGON</item>
         <item>AGUE</item>
-        <item>AHED</item>
         <item>AHEM</item>
         <item>AHIS</item>
         <item>AHOY</item>
@@ -59,113 +39,71 @@
         <item>AIDS</item>
         <item>AILS</item>
         <item>AIMS</item>
-        <item>AINS</item>
-        <item>AIRN</item>
         <item>AIRS</item>
-        <item>AIRT</item>
         <item>AIRY</item>
-        <item>AITS</item>
         <item>AJAR</item>
-        <item>AJEE</item>
-        <item>AKEE</item>
         <item>AKIN</item>
         <item>ALAE</item>
-        <item>ALAN</item>
         <item>ALAR</item>
         <item>ALAS</item>
         <item>ALBA</item>
-        <item>ALBS</item>
-        <item>ALEC</item>
         <item>ALEE</item>
-        <item>ALEF</item>
         <item>ALES</item>
-        <item>ALFA</item>
         <item>ALGA</item>
-        <item>ALIF</item>
         <item>ALIT</item>
         <item>ALKY</item>
-        <item>ALLS</item>
         <item>ALLY</item>
         <item>ALMA</item>
-        <item>ALME</item>
         <item>ALMS</item>
         <item>ALOE</item>
-        <item>ALOW</item>
         <item>ALPS</item>
         <item>ALSO</item>
         <item>ALTO</item>
         <item>ALTS</item>
         <item>ALUM</item>
         <item>AMAH</item>
-        <item>AMAS</item>
         <item>AMBO</item>
         <item>AMEN</item>
-        <item>AMIA</item>
         <item>AMID</item>
-        <item>AMIE</item>
-        <item>AMIN</item>
-        <item>AMIR</item>
-        <item>AMIS</item>
         <item>AMMO</item>
         <item>AMOK</item>
         <item>AMPS</item>
-        <item>AMUS</item>
         <item>AMYL</item>
         <item>ANAL</item>
-        <item>ANAS</item>
         <item>ANDS</item>
-        <item>ANES</item>
         <item>ANEW</item>
-        <item>ANGA</item>
-        <item>ANIL</item>
-        <item>ANIS</item>
         <item>ANKH</item>
-        <item>ANNA</item>
-        <item>ANOA</item>
         <item>ANON</item>
-        <item>ANSA</item>
         <item>ANTA</item>
         <item>ANTE</item>
         <item>ANTI</item>
         <item>ANTS</item>
         <item>ANUS</item>
         <item>APED</item>
-        <item>APER</item>
         <item>APES</item>
         <item>APEX</item>
-        <item>APOD</item>
-        <item>APOS</item>
         <item>APPS</item>
         <item>APSE</item>
         <item>AQUA</item>
         <item>ARAK</item>
         <item>ARBS</item>
         <item>ARCH</item>
-        <item>ARCO</item>
         <item>ARCS</item>
         <item>AREA</item>
-        <item>ARES</item>
-        <item>ARFS</item>
         <item>ARIA</item>
         <item>ARID</item>
         <item>ARIL</item>
         <item>ARKS</item>
         <item>ARMS</item>
         <item>ARMY</item>
-        <item>ARSE</item>
         <item>ARTS</item>
         <item>ARTY</item>
         <item>ARUM</item>
-        <item>ARVO</item>
         <item>ARYL</item>
         <item>ASCI</item>
-        <item>ASEA</item>
         <item>ASHY</item>
         <item>ASKS</item>
         <item>ASPS</item>
-        <item>ATAP</item>
-        <item>ATES</item>
-        <item>ATMA</item>
         <item>ATOM</item>
         <item>ATOP</item>
         <item>AUKS</item>
@@ -174,20 +112,14 @@
         <item>AURA</item>
         <item>AUTO</item>
         <item>AVER</item>
-        <item>AVES</item>
         <item>AVID</item>
-        <item>AVOS</item>
         <item>AVOW</item>
         <item>AWAY</item>
         <item>AWED</item>
-        <item>AWEE</item>
         <item>AWES</item>
         <item>AWLS</item>
         <item>AWNS</item>
-        <item>AWNY</item>
-        <item>AWOL</item>
         <item>AWRY</item>
-        <item>AXAL</item>
         <item>AXED</item>
         <item>AXEL</item>
         <item>AXES</item>
@@ -197,20 +129,13 @@
         <item>AXON</item>
         <item>AYAH</item>
         <item>AYES</item>
-        <item>AYIN</item>
         <item>AZAN</item>
-        <item>AZON</item>
-        <item>BAAL</item>
         <item>BAAS</item>
         <item>BABA</item>
         <item>BABE</item>
-        <item>BABU</item>
         <item>BABY</item>
-        <item>BACH</item>
         <item>BACK</item>
         <item>BADE</item>
-        <item>BADS</item>
-        <item>BAFF</item>
         <item>BAGS</item>
         <item>BAHT</item>
         <item>BAIL</item>
@@ -221,12 +146,9 @@
         <item>BALK</item>
         <item>BALL</item>
         <item>BALM</item>
-        <item>BALS</item>
-        <item>BAMS</item>
         <item>BAND</item>
         <item>BANE</item>
         <item>BANG</item>
-        <item>BANI</item>
         <item>BANK</item>
         <item>BANS</item>
         <item>BAPS</item>
@@ -235,14 +157,12 @@
         <item>BARE</item>
         <item>BARF</item>
         <item>BARK</item>
-        <item>BARM</item>
         <item>BARN</item>
         <item>BARS</item>
         <item>BASE</item>
         <item>BASH</item>
         <item>BASK</item>
         <item>BASS</item>
-        <item>BAST</item>
         <item>BATE</item>
         <item>BATH</item>
         <item>BATS</item>
@@ -260,7 +180,6 @@
         <item>BEAU</item>
         <item>BECK</item>
         <item>BEDS</item>
-        <item>BEDU</item>
         <item>BEEF</item>
         <item>BEEN</item>
         <item>BEEP</item>
@@ -277,17 +196,12 @@
         <item>BENS</item>
         <item>BENT</item>
         <item>BERG</item>
-        <item>BERK</item>
         <item>BERM</item>
         <item>BEST</item>
         <item>BETA</item>
-        <item>BETH</item>
         <item>BETS</item>
         <item>BEVY</item>
-        <item>BEYS</item>
-        <item>BHUT</item>
         <item>BIAS</item>
-        <item>BIBB</item>
         <item>BIBS</item>
         <item>BICE</item>
         <item>BIDE</item>
@@ -295,40 +209,26 @@
         <item>BIDS</item>
         <item>BIER</item>
         <item>BIFF</item>
-        <item>BIGS</item>
         <item>BIKE</item>
         <item>BILE</item>
         <item>BILK</item>
         <item>BILL</item>
-        <item>BIMA</item>
         <item>BIND</item>
         <item>BINE</item>
         <item>BINS</item>
-        <item>BINT</item>
-        <item>BIOG</item>
         <item>BIOS</item>
         <item>BIRD</item>
-        <item>BIRK</item>
-        <item>BIRL</item>
         <item>BIRO</item>
         <item>BIRR</item>
-        <item>BISE</item>
-        <item>BISK</item>
         <item>BITE</item>
         <item>BITS</item>
         <item>BITT</item>
-        <item>BIZE</item>
         <item>BLAB</item>
-        <item>BLAE</item>
         <item>BLAH</item>
-        <item>BLAM</item>
         <item>BLAT</item>
-        <item>BLAW</item>
         <item>BLEB</item>
         <item>BLED</item>
-        <item>BLET</item>
         <item>BLEW</item>
-        <item>BLIN</item>
         <item>BLIP</item>
         <item>BLOB</item>
         <item>BLOC</item>
@@ -346,10 +246,8 @@
         <item>BODE</item>
         <item>BODS</item>
         <item>BODY</item>
-        <item>BOFF</item>
         <item>BOGS</item>
         <item>BOGY</item>
-        <item>BOHO</item>
         <item>BOIL</item>
         <item>BOLA</item>
         <item>BOLD</item>
@@ -373,21 +271,15 @@
         <item>BOPS</item>
         <item>BORA</item>
         <item>BORE</item>
-        <item>BORK</item>
         <item>BORN</item>
-        <item>BORT</item>
         <item>BOSH</item>
-        <item>BOSK</item>
         <item>BOSS</item>
-        <item>BOTA</item>
         <item>BOTH</item>
         <item>BOTS</item>
-        <item>BOTT</item>
         <item>BOUT</item>
         <item>BOWL</item>
         <item>BOWS</item>
         <item>BOXY</item>
-        <item>BOYO</item>
         <item>BOYS</item>
         <item>BOZO</item>
         <item>BRAD</item>
@@ -399,48 +291,34 @@
         <item>BRAW</item>
         <item>BRAY</item>
         <item>BRED</item>
-        <item>BREE</item>
-        <item>BREN</item>
         <item>BREW</item>
         <item>BRIE</item>
         <item>BRIG</item>
         <item>BRIM</item>
-        <item>BRIN</item>
         <item>BRIO</item>
         <item>BRIS</item>
         <item>BRIT</item>
-        <item>BROO</item>
         <item>BROS</item>
         <item>BROW</item>
-        <item>BRRR</item>
         <item>BRUT</item>
-        <item>BRUX</item>
         <item>BUBO</item>
         <item>BUBS</item>
-        <item>BUBU</item>
         <item>BUCK</item>
         <item>BUDS</item>
         <item>BUFF</item>
         <item>BUGS</item>
-        <item>BUHL</item>
-        <item>BUHR</item>
         <item>BULB</item>
         <item>BULK</item>
         <item>BULL</item>
-        <item>BUMF</item>
         <item>BUMP</item>
         <item>BUMS</item>
-        <item>BUNA</item>
         <item>BUND</item>
         <item>BUNG</item>
         <item>BUNK</item>
-        <item>BUNN</item>
         <item>BUNS</item>
         <item>BUNT</item>
         <item>BUOY</item>
-        <item>BURA</item>
         <item>BURB</item>
-        <item>BURD</item>
         <item>BURG</item>
         <item>BURL</item>
         <item>BURN</item>
@@ -453,14 +331,12 @@
         <item>BUSS</item>
         <item>BUST</item>
         <item>BUSY</item>
-        <item>BUTE</item>
         <item>BUTS</item>
         <item>BUTT</item>
         <item>BUYS</item>
         <item>BUZZ</item>
         <item>BYES</item>
         <item>BYRE</item>
-        <item>BYRL</item>
         <item>BYTE</item>
         <item>CABS</item>
         <item>CACA</item>
@@ -468,19 +344,14 @@
         <item>CADI</item>
         <item>CADS</item>
         <item>CAFE</item>
-        <item>CAFF</item>
         <item>CAGE</item>
         <item>CAGY</item>
-        <item>CAID</item>
-        <item>CAIN</item>
         <item>CAKE</item>
         <item>CAKY</item>
         <item>CALF</item>
         <item>CALK</item>
         <item>CALL</item>
         <item>CALM</item>
-        <item>CALO</item>
-        <item>CALX</item>
         <item>CAME</item>
         <item>CAMO</item>
         <item>CAMP</item>
@@ -489,7 +360,6 @@
         <item>CANS</item>
         <item>CANT</item>
         <item>CAPE</item>
-        <item>CAPH</item>
         <item>CAPO</item>
         <item>CAPS</item>
         <item>CARB</item>
@@ -497,9 +367,7 @@
         <item>CARE</item>
         <item>CARK</item>
         <item>CARL</item>
-        <item>CARN</item>
         <item>CARP</item>
-        <item>CARR</item>
         <item>CARS</item>
         <item>CART</item>
         <item>CASA</item>
@@ -520,30 +388,20 @@
         <item>CEES</item>
         <item>CEIL</item>
         <item>CELL</item>
-        <item>CELS</item>
-        <item>CELT</item>
         <item>CENT</item>
-        <item>CEPE</item>
         <item>CEPS</item>
-        <item>CERE</item>
         <item>CERO</item>
-        <item>CESS</item>
-        <item>CETE</item>
         <item>CHAD</item>
         <item>CHAI</item>
-        <item>CHAM</item>
-        <item>CHAO</item>
         <item>CHAP</item>
         <item>CHAR</item>
         <item>CHAT</item>
         <item>CHAW</item>
-        <item>CHAY</item>
         <item>CHEF</item>
         <item>CHEW</item>
         <item>CHEZ</item>
         <item>CHIA</item>
         <item>CHIC</item>
-        <item>CHID</item>
         <item>CHIN</item>
         <item>CHIP</item>
         <item>CHIS</item>
@@ -557,13 +415,10 @@
         <item>CIAO</item>
         <item>CIGS</item>
         <item>CINE</item>
-        <item>CION</item>
-        <item>CIRE</item>
         <item>CIST</item>
         <item>CITE</item>
         <item>CITY</item>
         <item>CLAD</item>
-        <item>CLAG</item>
         <item>CLAM</item>
         <item>CLAN</item>
         <item>CLAP</item>
@@ -574,7 +429,6 @@
         <item>CLIP</item>
         <item>CLOD</item>
         <item>CLOG</item>
-        <item>CLON</item>
         <item>CLOP</item>
         <item>CLOT</item>
         <item>CLOY</item>
@@ -586,25 +440,19 @@
         <item>COBB</item>
         <item>COBS</item>
         <item>COCA</item>
-        <item>COCK</item>
         <item>COCO</item>
         <item>CODA</item>
         <item>CODE</item>
         <item>CODS</item>
         <item>COED</item>
-        <item>COFF</item>
-        <item>COFT</item>
         <item>COGS</item>
-        <item>COHO</item>
         <item>COIF</item>
         <item>COIL</item>
         <item>COIN</item>
         <item>COIR</item>
         <item>COKE</item>
-        <item>COKY</item>
         <item>COLA</item>
         <item>COLD</item>
-        <item>COLE</item>
         <item>COLS</item>
         <item>COLT</item>
         <item>COLY</item>
@@ -618,7 +466,6 @@
         <item>CONN</item>
         <item>CONS</item>
         <item>CONY</item>
-        <item>COOF</item>
         <item>COOK</item>
         <item>COOL</item>
         <item>COON</item>
@@ -630,25 +477,17 @@
         <item>COPY</item>
         <item>CORD</item>
         <item>CORE</item>
-        <item>CORF</item>
         <item>CORK</item>
         <item>CORM</item>
         <item>CORN</item>
-        <item>CORS</item>
-        <item>CORY</item>
-        <item>COSH</item>
-        <item>COSS</item>
         <item>COST</item>
-        <item>COSY</item>
         <item>COTE</item>
         <item>COTS</item>
         <item>COUP</item>
         <item>COVE</item>
         <item>COWL</item>
         <item>COWS</item>
-        <item>COWY</item>
         <item>COXA</item>
-        <item>COYS</item>
         <item>COZY</item>
         <item>CRAB</item>
         <item>CRAG</item>
@@ -658,8 +497,6 @@
         <item>CRED</item>
         <item>CREW</item>
         <item>CRIB</item>
-        <item>CRIS</item>
-        <item>CRIT</item>
         <item>CROC</item>
         <item>CROP</item>
         <item>CROW</item>
@@ -672,8 +509,6 @@
         <item>CUED</item>
         <item>CUES</item>
         <item>CUFF</item>
-        <item>CUIF</item>
-        <item>CUKE</item>
         <item>CULL</item>
         <item>CULM</item>
         <item>CULT</item>
@@ -682,10 +517,7 @@
         <item>CURB</item>
         <item>CURD</item>
         <item>CURE</item>
-        <item>CURF</item>
         <item>CURL</item>
-        <item>CURN</item>
-        <item>CURR</item>
         <item>CURS</item>
         <item>CURT</item>
         <item>CUSK</item>
@@ -704,14 +536,11 @@
         <item>DADA</item>
         <item>DADO</item>
         <item>DADS</item>
-        <item>DAFF</item>
         <item>DAFT</item>
         <item>DAGO</item>
-        <item>DAGS</item>
         <item>DAHL</item>
         <item>DAHS</item>
         <item>DAIS</item>
-        <item>DAKS</item>
         <item>DALE</item>
         <item>DALS</item>
         <item>DAME</item>
@@ -720,9 +549,7 @@
         <item>DAMS</item>
         <item>DANG</item>
         <item>DANK</item>
-        <item>DANS</item>
         <item>DAPS</item>
-        <item>DARB</item>
         <item>DARE</item>
         <item>DARK</item>
         <item>DARN</item>
@@ -730,14 +557,8 @@
         <item>DASH</item>
         <item>DATA</item>
         <item>DATE</item>
-        <item>DATO</item>
         <item>DAUB</item>
-        <item>DAUT</item>
-        <item>DAVY</item>
-        <item>DAWK</item>
         <item>DAWN</item>
-        <item>DAWS</item>
-        <item>DAWT</item>
         <item>DAYS</item>
         <item>DAZE</item>
         <item>DEAD</item>
@@ -753,51 +574,34 @@
         <item>DEEM</item>
         <item>DEEP</item>
         <item>DEER</item>
-        <item>DEES</item>
-        <item>DEET</item>
-        <item>DEFI</item>
         <item>DEFT</item>
         <item>DEFY</item>
-        <item>DEIL</item>
         <item>DEKE</item>
         <item>DELE</item>
-        <item>DELF</item>
         <item>DELI</item>
         <item>DELL</item>
-        <item>DELS</item>
-        <item>DELT</item>
         <item>DEME</item>
         <item>DEMO</item>
         <item>DEMY</item>
         <item>DENE</item>
-        <item>DENI</item>
         <item>DENS</item>
         <item>DENT</item>
         <item>DENY</item>
-        <item>DERE</item>
-        <item>DERM</item>
         <item>DESK</item>
         <item>DEVA</item>
-        <item>DEVS</item>
         <item>DEWS</item>
         <item>DEWY</item>
-        <item>DEXY</item>
-        <item>DEYS</item>
-        <item>DHAK</item>
         <item>DHAL</item>
         <item>DHOW</item>
         <item>DIAL</item>
         <item>DIBS</item>
         <item>DICE</item>
-        <item>DICK</item>
         <item>DIDO</item>
-        <item>DIDY</item>
         <item>DIED</item>
         <item>DIEL</item>
         <item>DIES</item>
         <item>DIET</item>
         <item>DIFF</item>
-        <item>DIFS</item>
         <item>DIGS</item>
         <item>DIKE</item>
         <item>DILL</item>
@@ -806,29 +610,19 @@
         <item>DINE</item>
         <item>DING</item>
         <item>DINK</item>
-        <item>DINO</item>
         <item>DINS</item>
         <item>DINT</item>
         <item>DIOL</item>
         <item>DIPS</item>
-        <item>DIPT</item>
         <item>DIRE</item>
         <item>DIRK</item>
-        <item>DIRL</item>
         <item>DIRT</item>
         <item>DISC</item>
         <item>DISH</item>
         <item>DISK</item>
-        <item>DISS</item>
-        <item>DITA</item>
-        <item>DITE</item>
-        <item>DITS</item>
         <item>DITZ</item>
         <item>DIVA</item>
         <item>DIVE</item>
-        <item>DJIN</item>
-        <item>DOAT</item>
-        <item>DOBY</item>
         <item>DOCK</item>
         <item>DOCS</item>
         <item>DODO</item>
@@ -837,30 +631,20 @@
         <item>DOFF</item>
         <item>DOGE</item>
         <item>DOGS</item>
-        <item>DOGY</item>
-        <item>DOIT</item>
         <item>DOJO</item>
         <item>DOLE</item>
         <item>DOLL</item>
-        <item>DOLS</item>
         <item>DOLT</item>
         <item>DOME</item>
-        <item>DOMS</item>
-        <item>DONA</item>
         <item>DONE</item>
         <item>DONG</item>
         <item>DONS</item>
         <item>DOOM</item>
         <item>DOOR</item>
-        <item>DOPA</item>
         <item>DOPE</item>
         <item>DOPY</item>
-        <item>DORE</item>
         <item>DORK</item>
         <item>DORM</item>
-        <item>DORP</item>
-        <item>DORR</item>
-        <item>DORS</item>
         <item>DORY</item>
         <item>DOSE</item>
         <item>DOSS</item>
@@ -868,13 +652,9 @@
         <item>DOTE</item>
         <item>DOTH</item>
         <item>DOTS</item>
-        <item>DOTY</item>
-        <item>DOUM</item>
         <item>DOUR</item>
-        <item>DOUX</item>
         <item>DOVE</item>
         <item>DOWN</item>
-        <item>DOWS</item>
         <item>DOXY</item>
         <item>DOZE</item>
         <item>DOZY</item>
@@ -886,7 +666,6 @@
         <item>DRAY</item>
         <item>DREE</item>
         <item>DREG</item>
-        <item>DREK</item>
         <item>DREW</item>
         <item>DRIB</item>
         <item>DRIP</item>
@@ -894,12 +673,9 @@
         <item>DRUB</item>
         <item>DRUG</item>
         <item>DRUM</item>
-        <item>DRYS</item>
-        <item>DUAD</item>
         <item>DUAL</item>
         <item>DUBS</item>
         <item>DUCE</item>
-        <item>DUCI</item>
         <item>DUCK</item>
         <item>DUCT</item>
         <item>DUDE</item>
@@ -909,7 +685,6 @@
         <item>DUET</item>
         <item>DUFF</item>
         <item>DUGS</item>
-        <item>DUIT</item>
         <item>DUKE</item>
         <item>DULL</item>
         <item>DULY</item>
@@ -920,15 +695,10 @@
         <item>DUNG</item>
         <item>DUNK</item>
         <item>DUNS</item>
-        <item>DUNT</item>
         <item>DUOS</item>
         <item>DUPE</item>
         <item>DUPS</item>
         <item>DURA</item>
-        <item>DURE</item>
-        <item>DURN</item>
-        <item>DURO</item>
-        <item>DURR</item>
         <item>DUSK</item>
         <item>DUST</item>
         <item>DUTY</item>
@@ -945,17 +715,12 @@
         <item>EASE</item>
         <item>EAST</item>
         <item>EASY</item>
-        <item>EATH</item>
         <item>EATS</item>
-        <item>EAUX</item>
         <item>EAVE</item>
         <item>EBBS</item>
         <item>EBON</item>
-        <item>ECHE</item>
         <item>ECHO</item>
-        <item>ECHT</item>
         <item>ECRU</item>
-        <item>ECUS</item>
         <item>EDDO</item>
         <item>EDDY</item>
         <item>EDGE</item>
@@ -964,44 +729,28 @@
         <item>EDIT</item>
         <item>EELS</item>
         <item>EELY</item>
-        <item>EERY</item>
         <item>EFFS</item>
         <item>EFTS</item>
         <item>EGAD</item>
-        <item>EGAL</item>
-        <item>EGER</item>
         <item>EGGS</item>
         <item>EGGY</item>
         <item>EGIS</item>
         <item>EGOS</item>
-        <item>EIDE</item>
         <item>EKED</item>
         <item>EKES</item>
-        <item>ELAN</item>
-        <item>ELDS</item>
-        <item>ELHI</item>
         <item>ELKS</item>
         <item>ELLS</item>
         <item>ELMS</item>
-        <item>ELMY</item>
         <item>ELSE</item>
-        <item>EMES</item>
-        <item>EMEU</item>
         <item>EMIC</item>
         <item>EMIR</item>
         <item>EMIT</item>
-        <item>EMMY</item>
         <item>EMUS</item>
-        <item>EMYD</item>
         <item>ENDS</item>
-        <item>ENGS</item>
         <item>ENOL</item>
-        <item>ENOW</item>
-        <item>ENUF</item>
         <item>ENVY</item>
         <item>EONS</item>
         <item>EPEE</item>
-        <item>EPHA</item>
         <item>EPIC</item>
         <item>EPOS</item>
         <item>ERAS</item>
@@ -1009,17 +758,12 @@
         <item>ERGS</item>
         <item>ERNE</item>
         <item>ERNS</item>
-        <item>EROS</item>
         <item>ERRS</item>
-        <item>ERST</item>
-        <item>ESES</item>
-        <item>ESNE</item>
         <item>ESPY</item>
         <item>ETAS</item>
         <item>ETCH</item>
         <item>ETHS</item>
         <item>ETIC</item>
-        <item>ETNA</item>
         <item>ETUI</item>
         <item>EURO</item>
         <item>EVEN</item>
@@ -1030,25 +774,17 @@
         <item>EWES</item>
         <item>EXAM</item>
         <item>EXEC</item>
-        <item>EXED</item>
         <item>EXES</item>
         <item>EXIT</item>
         <item>EXON</item>
         <item>EXPO</item>
-        <item>EYAS</item>
         <item>EYED</item>
         <item>EYEN</item>
-        <item>EYER</item>
         <item>EYES</item>
-        <item>EYNE</item>
-        <item>EYRA</item>
-        <item>EYRE</item>
         <item>EYRY</item>
-        <item>FABS</item>
         <item>FACE</item>
         <item>FACT</item>
         <item>FADE</item>
-        <item>FADO</item>
         <item>FADS</item>
         <item>FAGS</item>
         <item>FAIL</item>
@@ -1056,87 +792,63 @@
         <item>FAIR</item>
         <item>FAKE</item>
         <item>FALL</item>
-        <item>FALX</item>
         <item>FAME</item>
         <item>FANE</item>
         <item>FANG</item>
-        <item>FANO</item>
         <item>FANS</item>
-        <item>FARD</item>
         <item>FARE</item>
-        <item>FARL</item>
         <item>FARM</item>
         <item>FARO</item>
-        <item>FART</item>
-        <item>FASH</item>
         <item>FAST</item>
         <item>FATE</item>
         <item>FATS</item>
         <item>FAUN</item>
         <item>FAUX</item>
         <item>FAVA</item>
-        <item>FAVE</item>
         <item>FAWN</item>
         <item>FAYS</item>
         <item>FAZE</item>
-        <item>FEAL</item>
         <item>FEAR</item>
         <item>FEAT</item>
         <item>FECK</item>
         <item>FEDS</item>
-        <item>FEEB</item>
         <item>FEED</item>
         <item>FEEL</item>
         <item>FEES</item>
         <item>FEET</item>
-        <item>FEHS</item>
         <item>FELL</item>
         <item>FELT</item>
-        <item>FEME</item>
-        <item>FEMS</item>
         <item>FEND</item>
         <item>FENS</item>
-        <item>FEOD</item>
-        <item>FERE</item>
         <item>FERN</item>
         <item>FESS</item>
         <item>FEST</item>
         <item>FETA</item>
         <item>FETE</item>
-        <item>FETS</item>
         <item>FEUD</item>
         <item>FEUS</item>
-        <item>FIAR</item>
         <item>FIAT</item>
         <item>FIBS</item>
-        <item>FICE</item>
         <item>FICO</item>
-        <item>FIDO</item>
         <item>FIDS</item>
         <item>FIEF</item>
         <item>FIFE</item>
         <item>FIGS</item>
-        <item>FILA</item>
         <item>FILE</item>
         <item>FILL</item>
         <item>FILM</item>
         <item>FILO</item>
-        <item>FILS</item>
         <item>FIND</item>
         <item>FINE</item>
         <item>FINK</item>
-        <item>FINO</item>
         <item>FINS</item>
         <item>FIRE</item>
         <item>FIRM</item>
-        <item>FIRN</item>
         <item>FIRS</item>
-        <item>FISC</item>
         <item>FISH</item>
         <item>FIST</item>
         <item>FITS</item>
         <item>FIVE</item>
-        <item>FIXT</item>
         <item>FIZZ</item>
         <item>FLAB</item>
         <item>FLAG</item>
@@ -1153,10 +865,8 @@
         <item>FLEE</item>
         <item>FLEW</item>
         <item>FLEX</item>
-        <item>FLEY</item>
         <item>FLIC</item>
         <item>FLIP</item>
-        <item>FLIR</item>
         <item>FLIT</item>
         <item>FLOC</item>
         <item>FLOE</item>
@@ -1174,13 +884,10 @@
         <item>FOES</item>
         <item>FOGS</item>
         <item>FOGY</item>
-        <item>FOHN</item>
         <item>FOIL</item>
-        <item>FOIN</item>
         <item>FOLD</item>
         <item>FOLK</item>
         <item>FOND</item>
-        <item>FONS</item>
         <item>FONT</item>
         <item>FOOD</item>
         <item>FOOL</item>
@@ -1193,14 +900,10 @@
         <item>FORK</item>
         <item>FORM</item>
         <item>FORT</item>
-        <item>FOSS</item>
         <item>FOUL</item>
         <item>FOUR</item>
         <item>FOWL</item>
         <item>FOXY</item>
-        <item>FOYS</item>
-        <item>FOZY</item>
-        <item>FRAE</item>
         <item>FRAG</item>
         <item>FRAP</item>
         <item>FRAT</item>
@@ -1209,20 +912,12 @@
         <item>FRET</item>
         <item>FRIG</item>
         <item>FRIT</item>
-        <item>FRIZ</item>
         <item>FROE</item>
         <item>FROG</item>
         <item>FROM</item>
-        <item>FROW</item>
-        <item>FRUG</item>
-        <item>FUBS</item>
-        <item>FUCI</item>
-        <item>FUCK</item>
         <item>FUDS</item>
         <item>FUEL</item>
         <item>FUGS</item>
-        <item>FUGU</item>
-        <item>FUJI</item>
         <item>FULL</item>
         <item>FUME</item>
         <item>FUMY</item>
@@ -1235,17 +930,9 @@
         <item>FUSE</item>
         <item>FUSS</item>
         <item>FUTZ</item>
-        <item>FUZE</item>
         <item>FUZZ</item>
-        <item>FYCE</item>
-        <item>FYKE</item>
         <item>GABS</item>
-        <item>GABY</item>
-        <item>GADI</item>
         <item>GADS</item>
-        <item>GAED</item>
-        <item>GAEN</item>
-        <item>GAES</item>
         <item>GAFF</item>
         <item>GAGA</item>
         <item>GAGE</item>
@@ -1256,28 +943,19 @@
         <item>GALE</item>
         <item>GALL</item>
         <item>GALS</item>
-        <item>GAMA</item>
-        <item>GAMB</item>
         <item>GAME</item>
-        <item>GAMP</item>
         <item>GAMS</item>
         <item>GAMY</item>
-        <item>GANE</item>
         <item>GANG</item>
-        <item>GAOL</item>
         <item>GAPE</item>
         <item>GAPS</item>
-        <item>GAPY</item>
         <item>GARB</item>
         <item>GARS</item>
         <item>GASH</item>
         <item>GASP</item>
-        <item>GAST</item>
         <item>GATE</item>
         <item>GATS</item>
         <item>GAUD</item>
-        <item>GAUM</item>
-        <item>GAUN</item>
         <item>GAUR</item>
         <item>GAVE</item>
         <item>GAWK</item>
@@ -1285,15 +963,12 @@
         <item>GAYS</item>
         <item>GAZE</item>
         <item>GEAR</item>
-        <item>GECK</item>
-        <item>GEDS</item>
         <item>GEED</item>
         <item>GEEK</item>
         <item>GEES</item>
         <item>GEEZ</item>
         <item>GELD</item>
         <item>GELS</item>
-        <item>GELT</item>
         <item>GEMS</item>
         <item>GENE</item>
         <item>GENS</item>
@@ -1301,20 +976,10 @@
         <item>GENU</item>
         <item>GERM</item>
         <item>GEST</item>
-        <item>GETA</item>
         <item>GETS</item>
-        <item>GEUM</item>
-        <item>GHAT</item>
         <item>GHEE</item>
-        <item>GHIS</item>
         <item>GIBE</item>
-        <item>GIBS</item>
-        <item>GIDS</item>
-        <item>GIED</item>
-        <item>GIEN</item>
-        <item>GIES</item>
         <item>GIFT</item>
-        <item>GIGA</item>
         <item>GIGS</item>
         <item>GILD</item>
         <item>GILL</item>
@@ -1322,23 +987,16 @@
         <item>GIMP</item>
         <item>GINK</item>
         <item>GINS</item>
-        <item>GIPS</item>
         <item>GIRD</item>
         <item>GIRL</item>
-        <item>GIRN</item>
-        <item>GIRO</item>
         <item>GIRT</item>
         <item>GIST</item>
-        <item>GITE</item>
-        <item>GITS</item>
         <item>GIVE</item>
         <item>GLAD</item>
         <item>GLAM</item>
-        <item>GLED</item>
         <item>GLEE</item>
         <item>GLEG</item>
         <item>GLEN</item>
-        <item>GLEY</item>
         <item>GLIA</item>
         <item>GLIB</item>
         <item>GLIM</item>
@@ -1350,7 +1008,6 @@
         <item>GLUG</item>
         <item>GLUM</item>
         <item>GLUT</item>
-        <item>GNAR</item>
         <item>GNAT</item>
         <item>GNAW</item>
         <item>GNUS</item>
@@ -1361,10 +1018,8 @@
         <item>GOBO</item>
         <item>GOBS</item>
         <item>GOBY</item>
-        <item>GODS</item>
         <item>GOER</item>
         <item>GOES</item>
-        <item>GOGO</item>
         <item>GOLD</item>
         <item>GOLF</item>
         <item>GONE</item>
@@ -1374,50 +1029,36 @@
         <item>GOOK</item>
         <item>GOON</item>
         <item>GOOP</item>
-        <item>GOOS</item>
         <item>GORE</item>
-        <item>GORM</item>
-        <item>GORP</item>
         <item>GORY</item>
         <item>GOSH</item>
         <item>GOTH</item>
         <item>GOUT</item>
-        <item>GOWD</item>
-        <item>GOWK</item>
         <item>GOWN</item>
         <item>GOYS</item>
         <item>GRAB</item>
         <item>GRAD</item>
         <item>GRAM</item>
         <item>GRAN</item>
-        <item>GRAT</item>
         <item>GRAY</item>
-        <item>GREE</item>
         <item>GREW</item>
         <item>GREY</item>
         <item>GRID</item>
-        <item>GRIG</item>
         <item>GRIM</item>
         <item>GRIN</item>
         <item>GRIP</item>
         <item>GRIT</item>
         <item>GROG</item>
-        <item>GROK</item>
         <item>GROT</item>
         <item>GROW</item>
         <item>GRUB</item>
-        <item>GRUE</item>
-        <item>GRUM</item>
         <item>GUAN</item>
         <item>GUAR</item>
         <item>GUCK</item>
-        <item>GUDE</item>
         <item>GUFF</item>
-        <item>GUID</item>
         <item>GULF</item>
         <item>GULL</item>
         <item>GULP</item>
-        <item>GULS</item>
         <item>GUMS</item>
         <item>GUNK</item>
         <item>GUNS</item>
@@ -1433,46 +1074,26 @@
         <item>GYRE</item>
         <item>GYRI</item>
         <item>GYRO</item>
-        <item>GYVE</item>
-        <item>HAAF</item>
-        <item>HAAR</item>
-        <item>HABU</item>
         <item>HACK</item>
         <item>HADE</item>
-        <item>HADJ</item>
-        <item>HAED</item>
-        <item>HAEM</item>
-        <item>HAEN</item>
-        <item>HAES</item>
-        <item>HAET</item>
         <item>HAFT</item>
         <item>HAGS</item>
-        <item>HAHA</item>
-        <item>HAHS</item>
-        <item>HAIK</item>
         <item>HAIL</item>
         <item>HAIR</item>
-        <item>HAJI</item>
-        <item>HAJJ</item>
         <item>HAKE</item>
-        <item>HAKU</item>
         <item>HALE</item>
         <item>HALF</item>
         <item>HALL</item>
-        <item>HALM</item>
         <item>HALO</item>
         <item>HALT</item>
-        <item>HAME</item>
         <item>HAMS</item>
         <item>HAND</item>
         <item>HANG</item>
         <item>HANK</item>
-        <item>HANT</item>
         <item>HAPS</item>
         <item>HARD</item>
         <item>HARE</item>
         <item>HARK</item>
-        <item>HARL</item>
         <item>HARM</item>
         <item>HARP</item>
         <item>HART</item>
@@ -1495,56 +1116,38 @@
         <item>HEAP</item>
         <item>HEAR</item>
         <item>HEAT</item>
-        <item>HEBE</item>
         <item>HECK</item>
         <item>HEED</item>
         <item>HEEL</item>
         <item>HEFT</item>
-        <item>HEHS</item>
-        <item>HEIL</item>
         <item>HEIR</item>
         <item>HELD</item>
         <item>HELL</item>
         <item>HELM</item>
-        <item>HELO</item>
         <item>HELP</item>
-        <item>HEME</item>
         <item>HEMP</item>
         <item>HEMS</item>
         <item>HENS</item>
-        <item>HENT</item>
         <item>HERB</item>
         <item>HERD</item>
         <item>HERE</item>
-        <item>HERL</item>
         <item>HERM</item>
-        <item>HERN</item>
         <item>HERO</item>
         <item>HERS</item>
-        <item>HEST</item>
-        <item>HETH</item>
-        <item>HETS</item>
         <item>HEWN</item>
         <item>HEWS</item>
         <item>HICK</item>
         <item>HIDE</item>
-        <item>HIED</item>
-        <item>HIES</item>
         <item>HIGH</item>
         <item>HIKE</item>
         <item>HILA</item>
-        <item>HILI</item>
         <item>HILL</item>
         <item>HILT</item>
-        <item>HIMS</item>
         <item>HIND</item>
-        <item>HINS</item>
         <item>HINT</item>
         <item>HIPS</item>
         <item>HIRE</item>
-        <item>HISN</item>
         <item>HISS</item>
-        <item>HIST</item>
         <item>HITS</item>
         <item>HIVE</item>
         <item>HOAR</item>
@@ -1552,26 +1155,19 @@
         <item>HOBO</item>
         <item>HOBS</item>
         <item>HOCK</item>
-        <item>HODS</item>
         <item>HOED</item>
         <item>HOER</item>
         <item>HOES</item>
-        <item>HOGG</item>
         <item>HOGS</item>
         <item>HOKE</item>
         <item>HOLD</item>
         <item>HOLE</item>
-        <item>HOLK</item>
         <item>HOLM</item>
-        <item>HOLP</item>
-        <item>HOLS</item>
         <item>HOLT</item>
         <item>HOLY</item>
         <item>HOME</item>
         <item>HOMO</item>
-        <item>HOMY</item>
         <item>HONE</item>
-        <item>HONG</item>
         <item>HONK</item>
         <item>HONS</item>
         <item>HOOD</item>
@@ -1588,49 +1184,35 @@
         <item>HOTS</item>
         <item>HOUR</item>
         <item>HOVE</item>
-        <item>HOWE</item>
-        <item>HOWF</item>
-        <item>HOWK</item>
         <item>HOWL</item>
-        <item>HOWS</item>
-        <item>HOYA</item>
         <item>HOYS</item>
         <item>HUBS</item>
-        <item>HUCK</item>
         <item>HUED</item>
         <item>HUES</item>
         <item>HUFF</item>
         <item>HUGE</item>
         <item>HUGS</item>
-        <item>HUIC</item>
         <item>HULA</item>
         <item>HULK</item>
         <item>HULL</item>
         <item>HUMP</item>
         <item>HUMS</item>
         <item>HUNG</item>
-        <item>HUNH</item>
         <item>HUNK</item>
-        <item>HUNS</item>
         <item>HUNT</item>
         <item>HURL</item>
         <item>HURT</item>
         <item>HUSH</item>
         <item>HUSK</item>
         <item>HUTS</item>
-        <item>HWAN</item>
-        <item>HYLA</item>
         <item>HYMN</item>
         <item>HYPE</item>
         <item>HYPO</item>
-        <item>HYPS</item>
-        <item>HYTE</item>
         <item>IAMB</item>
         <item>IBEX</item>
         <item>IBIS</item>
         <item>ICED</item>
         <item>ICES</item>
-        <item>ICHS</item>
         <item>ICKY</item>
         <item>ICON</item>
         <item>IDEA</item>
@@ -1639,104 +1221,66 @@
         <item>IDLE</item>
         <item>IDLY</item>
         <item>IDOL</item>
-        <item>IDYL</item>
         <item>IFFY</item>
         <item>IGGS</item>
-        <item>IGLU</item>
-        <item>IKAT</item>
-        <item>IKON</item>
         <item>ILEA</item>
         <item>ILEX</item>
         <item>ILIA</item>
-        <item>ILKA</item>
-        <item>ILKS</item>
         <item>ILLS</item>
-        <item>ILLY</item>
         <item>IMAM</item>
-        <item>IMID</item>
-        <item>IMMY</item>
-        <item>IMPI</item>
         <item>IMPS</item>
-        <item>INBY</item>
         <item>INCH</item>
         <item>INFO</item>
-        <item>INIA</item>
         <item>INKS</item>
         <item>INKY</item>
         <item>INLY</item>
         <item>INNS</item>
-        <item>INRO</item>
         <item>INTI</item>
         <item>INTO</item>
         <item>IONS</item>
         <item>IOTA</item>
-        <item>IRED</item>
-        <item>IRES</item>
-        <item>IRID</item>
         <item>IRIS</item>
         <item>IRKS</item>
         <item>IRON</item>
-        <item>ISBA</item>
         <item>ISLE</item>
         <item>ISMS</item>
         <item>ITCH</item>
         <item>ITEM</item>
         <item>IWIS</item>
         <item>IXIA</item>
-        <item>IZAR</item>
         <item>JABS</item>
         <item>JACK</item>
         <item>JADE</item>
-        <item>JAGG</item>
         <item>JAGS</item>
         <item>JAIL</item>
-        <item>JAKE</item>
         <item>JAMB</item>
         <item>JAMS</item>
         <item>JANE</item>
         <item>JAPE</item>
         <item>JARL</item>
         <item>JARS</item>
-        <item>JATO</item>
-        <item>JAUK</item>
-        <item>JAUP</item>
         <item>JAVA</item>
         <item>JAWS</item>
         <item>JAYS</item>
         <item>JAZZ</item>
         <item>JEAN</item>
-        <item>JEED</item>
         <item>JEEP</item>
         <item>JEER</item>
-        <item>JEES</item>
         <item>JEEZ</item>
         <item>JEFE</item>
-        <item>JEHU</item>
         <item>JELL</item>
-        <item>JEON</item>
         <item>JERK</item>
         <item>JESS</item>
         <item>JEST</item>
-        <item>JETE</item>
         <item>JETS</item>
-        <item>JEUX</item>
-        <item>JEWS</item>
-        <item>JIAO</item>
-        <item>JIBB</item>
         <item>JIBE</item>
         <item>JIBS</item>
         <item>JIFF</item>
         <item>JIGS</item>
-        <item>JILL</item>
         <item>JILT</item>
-        <item>JIMP</item>
-        <item>JINK</item>
         <item>JINN</item>
-        <item>JINS</item>
         <item>JINX</item>
-        <item>JISM</item>
         <item>JIVE</item>
-        <item>JIVY</item>
         <item>JOBS</item>
         <item>JOCK</item>
         <item>JOES</item>
@@ -1745,97 +1289,54 @@
         <item>JOHN</item>
         <item>JOIN</item>
         <item>JOKE</item>
-        <item>JOKY</item>
-        <item>JOLE</item>
         <item>JOLT</item>
         <item>JOSH</item>
         <item>JOSS</item>
         <item>JOTA</item>
         <item>JOTS</item>
-        <item>JOUK</item>
         <item>JOWL</item>
-        <item>JOWS</item>
         <item>JOYS</item>
         <item>JUBA</item>
-        <item>JUBE</item>
-        <item>JUCO</item>
         <item>JUDO</item>
-        <item>JUGA</item>
         <item>JUGS</item>
         <item>JUJU</item>
         <item>JUKE</item>
-        <item>JUKU</item>
         <item>JUMP</item>
         <item>JUNK</item>
-        <item>JUPE</item>
-        <item>JURA</item>
         <item>JURY</item>
         <item>JUST</item>
         <item>JUTE</item>
         <item>JUTS</item>
-        <item>KAAS</item>
-        <item>KABS</item>
-        <item>KADI</item>
-        <item>KAES</item>
-        <item>KAFS</item>
-        <item>KAGU</item>
-        <item>KAIF</item>
-        <item>KAIL</item>
-        <item>KAIN</item>
         <item>KAKA</item>
         <item>KAKI</item>
         <item>KALE</item>
         <item>KAME</item>
         <item>KAMI</item>
         <item>KANA</item>
-        <item>KANE</item>
-        <item>KAON</item>
-        <item>KAPA</item>
-        <item>KAPH</item>
-        <item>KARN</item>
         <item>KART</item>
         <item>KATA</item>
-        <item>KATS</item>
         <item>KAVA</item>
         <item>KAYO</item>
         <item>KAYS</item>
-        <item>KBAR</item>
         <item>KEAS</item>
         <item>KECK</item>
-        <item>KEEF</item>
-        <item>KEEK</item>
         <item>KEEL</item>
         <item>KEEN</item>
         <item>KEEP</item>
-        <item>KEET</item>
-        <item>KEFS</item>
         <item>KEGS</item>
-        <item>KEIR</item>
         <item>KELP</item>
-        <item>KELT</item>
         <item>KEMP</item>
         <item>KENO</item>
         <item>KENS</item>
-        <item>KENT</item>
         <item>KEPI</item>
-        <item>KEPS</item>
         <item>KEPT</item>
-        <item>KERB</item>
         <item>KERF</item>
         <item>KERN</item>
-        <item>KETO</item>
         <item>KEYS</item>
-        <item>KHAF</item>
         <item>KHAN</item>
-        <item>KHAT</item>
-        <item>KHET</item>
-        <item>KHIS</item>
-        <item>KIBE</item>
         <item>KICK</item>
         <item>KIDS</item>
-        <item>KIEF</item>
         <item>KIER</item>
-        <item>KIFS</item>
         <item>KIKE</item>
         <item>KILL</item>
         <item>KILN</item>
@@ -1843,23 +1344,16 @@
         <item>KILT</item>
         <item>KINA</item>
         <item>KIND</item>
-        <item>KINE</item>
         <item>KING</item>
         <item>KINK</item>
-        <item>KINO</item>
-        <item>KINS</item>
         <item>KIPS</item>
         <item>KIRK</item>
-        <item>KIRN</item>
-        <item>KIRS</item>
         <item>KISS</item>
-        <item>KIST</item>
         <item>KITE</item>
         <item>KITH</item>
         <item>KITS</item>
         <item>KIVA</item>
         <item>KIWI</item>
-        <item>KLIK</item>
         <item>KNAP</item>
         <item>KNAR</item>
         <item>KNEE</item>
@@ -1870,39 +1364,16 @@
         <item>KNOT</item>
         <item>KNOW</item>
         <item>KNUR</item>
-        <item>KOAN</item>
-        <item>KOAS</item>
         <item>KOBO</item>
-        <item>KOBS</item>
-        <item>KOEL</item>
         <item>KOHL</item>
-        <item>KOIS</item>
-        <item>KOJI</item>
         <item>KOLA</item>
-        <item>KOLO</item>
-        <item>KONK</item>
         <item>KOOK</item>
-        <item>KOPH</item>
         <item>KOPS</item>
         <item>KORA</item>
         <item>KORE</item>
-        <item>KORS</item>
-        <item>KOSS</item>
-        <item>KOTO</item>
-        <item>KRIS</item>
         <item>KUDO</item>
         <item>KUDU</item>
-        <item>KUES</item>
-        <item>KUFI</item>
-        <item>KUNA</item>
-        <item>KUNE</item>
-        <item>KURU</item>
-        <item>KVAS</item>
-        <item>KYAK</item>
-        <item>KYAR</item>
         <item>KYAT</item>
-        <item>KYES</item>
-        <item>KYTE</item>
         <item>LABS</item>
         <item>LACE</item>
         <item>LACK</item>
@@ -1919,7 +1390,6 @@
         <item>LAKE</item>
         <item>LAKH</item>
         <item>LAKY</item>
-        <item>LALL</item>
         <item>LAMA</item>
         <item>LAMB</item>
         <item>LAME</item>
@@ -1927,11 +1397,9 @@
         <item>LAMS</item>
         <item>LAND</item>
         <item>LANE</item>
-        <item>LANG</item>
         <item>LANK</item>
         <item>LAPS</item>
         <item>LARD</item>
-        <item>LARI</item>
         <item>LARK</item>
         <item>LARS</item>
         <item>LASE</item>
@@ -1940,13 +1408,9 @@
         <item>LAST</item>
         <item>LATE</item>
         <item>LATH</item>
-        <item>LATI</item>
-        <item>LATS</item>
-        <item>LATU</item>
         <item>LAUD</item>
         <item>LAVA</item>
         <item>LAVE</item>
-        <item>LAVS</item>
         <item>LAWN</item>
         <item>LAWS</item>
         <item>LAYS</item>
@@ -1955,36 +1419,24 @@
         <item>LEAD</item>
         <item>LEAF</item>
         <item>LEAK</item>
-        <item>LEAL</item>
         <item>LEAN</item>
         <item>LEAP</item>
-        <item>LEAR</item>
         <item>LEAS</item>
-        <item>LECH</item>
         <item>LEEK</item>
         <item>LEER</item>
         <item>LEES</item>
-        <item>LEET</item>
         <item>LEFT</item>
         <item>LEGS</item>
-        <item>LEHR</item>
         <item>LEIS</item>
-        <item>LEKE</item>
-        <item>LEKS</item>
-        <item>LEKU</item>
         <item>LEND</item>
         <item>LENO</item>
         <item>LENS</item>
         <item>LENT</item>
-        <item>LEPT</item>
         <item>LESS</item>
         <item>LEST</item>
         <item>LETS</item>
-        <item>LEUD</item>
         <item>LEVA</item>
-        <item>LEVO</item>
         <item>LEVY</item>
-        <item>LEWD</item>
         <item>LEYS</item>
         <item>LIAR</item>
         <item>LIBS</item>
@@ -1994,15 +1446,12 @@
         <item>LIDO</item>
         <item>LIDS</item>
         <item>LIED</item>
-        <item>LIEF</item>
         <item>LIEN</item>
-        <item>LIER</item>
         <item>LIES</item>
         <item>LIEU</item>
         <item>LIFE</item>
         <item>LIFT</item>
         <item>LIKE</item>
-        <item>LILO</item>
         <item>LILT</item>
         <item>LILY</item>
         <item>LIMA</item>
@@ -2015,23 +1464,15 @@
         <item>LINE</item>
         <item>LING</item>
         <item>LINK</item>
-        <item>LINN</item>
-        <item>LINO</item>
-        <item>LINS</item>
         <item>LINT</item>
         <item>LINY</item>
         <item>LION</item>
-        <item>LIPA</item>
-        <item>LIPE</item>
         <item>LIPS</item>
         <item>LIRA</item>
         <item>LIRE</item>
-        <item>LIRI</item>
         <item>LISP</item>
         <item>LIST</item>
         <item>LITE</item>
-        <item>LITS</item>
-        <item>LITU</item>
         <item>LIVE</item>
         <item>LOAD</item>
         <item>LOAF</item>
@@ -2040,7 +1481,6 @@
         <item>LOBE</item>
         <item>LOBO</item>
         <item>LOBS</item>
-        <item>LOCA</item>
         <item>LOCH</item>
         <item>LOCI</item>
         <item>LOCK</item>
@@ -2056,7 +1496,6 @@
         <item>LOLL</item>
         <item>LONE</item>
         <item>LONG</item>
-        <item>LOOF</item>
         <item>LOOK</item>
         <item>LOOM</item>
         <item>LOON</item>
@@ -2067,66 +1506,43 @@
         <item>LOPS</item>
         <item>LORD</item>
         <item>LORE</item>
-        <item>LORN</item>
-        <item>LORY</item>
         <item>LOSE</item>
         <item>LOSS</item>
         <item>LOST</item>
-        <item>LOTA</item>
         <item>LOTH</item>
         <item>LOTI</item>
         <item>LOTS</item>
         <item>LOUD</item>
-        <item>LOUP</item>
-        <item>LOUR</item>
         <item>LOUT</item>
         <item>LOVE</item>
-        <item>LOWE</item>
-        <item>LOWN</item>
         <item>LOWS</item>
         <item>LUAU</item>
         <item>LUBE</item>
-        <item>LUCE</item>
         <item>LUCK</item>
-        <item>LUDE</item>
-        <item>LUES</item>
         <item>LUFF</item>
         <item>LUGE</item>
         <item>LUGS</item>
         <item>LULL</item>
         <item>LULU</item>
-        <item>LUMA</item>
         <item>LUMP</item>
-        <item>LUMS</item>
-        <item>LUNA</item>
         <item>LUNE</item>
         <item>LUNG</item>
-        <item>LUNK</item>
-        <item>LUNT</item>
-        <item>LUNY</item>
         <item>LURE</item>
         <item>LURK</item>
         <item>LUSH</item>
         <item>LUST</item>
         <item>LUTE</item>
-        <item>LUTZ</item>
         <item>LUVS</item>
         <item>LUXE</item>
         <item>LWEI</item>
-        <item>LYCH</item>
-        <item>LYES</item>
         <item>LYNX</item>
         <item>LYRE</item>
         <item>LYSE</item>
         <item>MAAR</item>
-        <item>MABE</item>
         <item>MACE</item>
-        <item>MACH</item>
-        <item>MACK</item>
         <item>MACS</item>
         <item>MADE</item>
         <item>MADS</item>
-        <item>MAES</item>
         <item>MAGE</item>
         <item>MAGI</item>
         <item>MAGS</item>
@@ -2134,21 +1550,16 @@
         <item>MAIL</item>
         <item>MAIM</item>
         <item>MAIN</item>
-        <item>MAIR</item>
         <item>MAKE</item>
-        <item>MAKO</item>
         <item>MALE</item>
         <item>MALL</item>
-        <item>MALM</item>
         <item>MALT</item>
         <item>MAMA</item>
         <item>MANA</item>
         <item>MANE</item>
-        <item>MANO</item>
         <item>MANS</item>
         <item>MANY</item>
         <item>MAPS</item>
-        <item>MARA</item>
         <item>MARC</item>
         <item>MARE</item>
         <item>MARK</item>
@@ -2164,14 +1575,9 @@
         <item>MATH</item>
         <item>MATS</item>
         <item>MATT</item>
-        <item>MAUD</item>
         <item>MAUL</item>
-        <item>MAUN</item>
-        <item>MAUT</item>
-        <item>MAWN</item>
         <item>MAWS</item>
         <item>MAXI</item>
-        <item>MAYA</item>
         <item>MAYO</item>
         <item>MAYS</item>
         <item>MAZE</item>
@@ -2181,27 +1587,19 @@
         <item>MEAN</item>
         <item>MEAT</item>
         <item>MEDS</item>
-        <item>MEED</item>
         <item>MEEK</item>
         <item>MEET</item>
         <item>MEGA</item>
         <item>MEGS</item>
         <item>MELD</item>
-        <item>MELL</item>
-        <item>MELS</item>
         <item>MELT</item>
         <item>MEME</item>
         <item>MEMO</item>
         <item>MEMS</item>
         <item>MEND</item>
-        <item>MENO</item>
         <item>MENU</item>
-        <item>MEOU</item>
         <item>MEOW</item>
-        <item>MERC</item>
         <item>MERE</item>
-        <item>MERK</item>
-        <item>MERL</item>
         <item>MESA</item>
         <item>MESH</item>
         <item>MESS</item>
@@ -2212,17 +1610,13 @@
         <item>MEWS</item>
         <item>MEZE</item>
         <item>MHOS</item>
-        <item>MIBS</item>
         <item>MICA</item>
         <item>MICE</item>
         <item>MICK</item>
         <item>MICS</item>
         <item>MIDI</item>
-        <item>MIDS</item>
         <item>MIEN</item>
         <item>MIFF</item>
-        <item>MIGG</item>
-        <item>MIGS</item>
         <item>MIKE</item>
         <item>MILD</item>
         <item>MILE</item>
@@ -2239,58 +1633,41 @@
         <item>MINK</item>
         <item>MINT</item>
         <item>MINX</item>
-        <item>MIPS</item>
         <item>MIRE</item>
-        <item>MIRI</item>
         <item>MIRK</item>
-        <item>MIRS</item>
         <item>MIRY</item>
-        <item>MISE</item>
         <item>MISO</item>
         <item>MISS</item>
         <item>MIST</item>
         <item>MITE</item>
         <item>MITT</item>
-        <item>MITY</item>
         <item>MIXT</item>
         <item>MOAN</item>
-        <item>MOAS</item>
         <item>MOAT</item>
         <item>MOBS</item>
         <item>MOCK</item>
-        <item>MOCS</item>
         <item>MODE</item>
-        <item>MODI</item>
         <item>MODS</item>
-        <item>MOGS</item>
         <item>MOIL</item>
         <item>MOJO</item>
-        <item>MOKE</item>
-        <item>MOLA</item>
         <item>MOLD</item>
         <item>MOLE</item>
         <item>MOLL</item>
-        <item>MOLS</item>
         <item>MOLT</item>
         <item>MOMS</item>
         <item>MONO</item>
         <item>MONS</item>
         <item>MOOD</item>
-        <item>MOOL</item>
         <item>MOON</item>
         <item>MOOR</item>
         <item>MOOS</item>
         <item>MOOT</item>
         <item>MOPE</item>
         <item>MOPS</item>
-        <item>MOPY</item>
-        <item>MORA</item>
         <item>MORE</item>
         <item>MORN</item>
-        <item>MORS</item>
         <item>MORT</item>
         <item>MOSH</item>
-        <item>MOSK</item>
         <item>MOSS</item>
         <item>MOST</item>
         <item>MOTE</item>
@@ -2302,37 +1679,26 @@
         <item>MUCK</item>
         <item>MUDS</item>
         <item>MUFF</item>
-        <item>MUGG</item>
         <item>MUGS</item>
         <item>MULE</item>
         <item>MULL</item>
-        <item>MUMM</item>
         <item>MUMP</item>
         <item>MUMS</item>
-        <item>MUMU</item>
         <item>MUNI</item>
-        <item>MUNS</item>
         <item>MUON</item>
-        <item>MURA</item>
-        <item>MURE</item>
         <item>MURK</item>
-        <item>MURR</item>
         <item>MUSE</item>
         <item>MUSH</item>
         <item>MUSK</item>
         <item>MUSS</item>
         <item>MUST</item>
         <item>MUTE</item>
-        <item>MUTS</item>
         <item>MUTT</item>
-        <item>MYCS</item>
         <item>MYNA</item>
         <item>MYTH</item>
         <item>NAAN</item>
-        <item>NABE</item>
         <item>NABS</item>
         <item>NAGS</item>
-        <item>NAIF</item>
         <item>NAIL</item>
         <item>NAME</item>
         <item>NAPE</item>
@@ -2344,7 +1710,6 @@
         <item>NAVE</item>
         <item>NAVY</item>
         <item>NAYS</item>
-        <item>NAZI</item>
         <item>NEAP</item>
         <item>NEAR</item>
         <item>NEAT</item>
@@ -2352,19 +1717,11 @@
         <item>NECK</item>
         <item>NEED</item>
         <item>NEEM</item>
-        <item>NEEP</item>
-        <item>NEGS</item>
-        <item>NEIF</item>
-        <item>NEMA</item>
-        <item>NENE</item>
         <item>NEON</item>
         <item>NERD</item>
         <item>NESS</item>
         <item>NEST</item>
         <item>NETS</item>
-        <item>NETT</item>
-        <item>NEUK</item>
-        <item>NEUM</item>
         <item>NEVE</item>
         <item>NEVI</item>
         <item>NEWS</item>
@@ -2373,41 +1730,25 @@
         <item>NIBS</item>
         <item>NICE</item>
         <item>NICK</item>
-        <item>NIDE</item>
         <item>NIDI</item>
         <item>NIGH</item>
-        <item>NILL</item>
-        <item>NILS</item>
-        <item>NIMS</item>
         <item>NINE</item>
         <item>NIPA</item>
         <item>NIPS</item>
         <item>NISI</item>
-        <item>NITE</item>
         <item>NITS</item>
-        <item>NIXE</item>
-        <item>NIXY</item>
         <item>NOBS</item>
         <item>NOCK</item>
         <item>NODE</item>
-        <item>NODI</item>
         <item>NODS</item>
         <item>NOEL</item>
         <item>NOES</item>
-        <item>NOGG</item>
-        <item>NOGS</item>
-        <item>NOIL</item>
         <item>NOIR</item>
         <item>NOLO</item>
-        <item>NOMA</item>
-        <item>NOME</item>
-        <item>NOMS</item>
-        <item>NONA</item>
         <item>NONE</item>
         <item>NOOK</item>
         <item>NOON</item>
         <item>NOPE</item>
-        <item>NORI</item>
         <item>NORM</item>
         <item>NOSE</item>
         <item>NOSH</item>
@@ -2417,7 +1758,6 @@
         <item>NOUN</item>
         <item>NOUS</item>
         <item>NOVA</item>
-        <item>NOWS</item>
         <item>NOWT</item>
         <item>NUBS</item>
         <item>NUDE</item>
@@ -2425,101 +1765,61 @@
         <item>NULL</item>
         <item>NUMB</item>
         <item>NUNS</item>
-        <item>NURD</item>
-        <item>NURL</item>
         <item>NUTS</item>
         <item>OAFS</item>
         <item>OAKS</item>
         <item>OAKY</item>
         <item>OARS</item>
-        <item>OAST</item>
         <item>OATH</item>
         <item>OATS</item>
-        <item>OBAS</item>
-        <item>OBES</item>
         <item>OBEY</item>
-        <item>OBIA</item>
         <item>OBIS</item>
         <item>OBIT</item>
         <item>OBOE</item>
-        <item>OBOL</item>
-        <item>OCAS</item>
-        <item>ODAH</item>
-        <item>ODAS</item>
         <item>ODDS</item>
-        <item>ODEA</item>
         <item>ODES</item>
-        <item>ODIC</item>
         <item>ODOR</item>
-        <item>ODYL</item>
         <item>OFAY</item>
         <item>OFFS</item>
-        <item>OGAM</item>
         <item>OGEE</item>
         <item>OGLE</item>
         <item>OGRE</item>
-        <item>OHED</item>
-        <item>OHIA</item>
         <item>OHMS</item>
         <item>OILS</item>
         <item>OILY</item>
         <item>OINK</item>
-        <item>OKAS</item>
         <item>OKAY</item>
-        <item>OKEH</item>
-        <item>OKES</item>
         <item>OKRA</item>
         <item>OLDS</item>
-        <item>OLDY</item>
-        <item>OLEA</item>
         <item>OLEO</item>
-        <item>OLES</item>
         <item>OLIO</item>
         <item>OLLA</item>
         <item>OMEN</item>
-        <item>OMER</item>
         <item>OMIT</item>
         <item>ONCE</item>
         <item>ONES</item>
         <item>ONLY</item>
-        <item>ONOS</item>
         <item>ONTO</item>
         <item>ONUS</item>
         <item>ONYX</item>
         <item>OOHS</item>
         <item>OOPS</item>
-        <item>OOTS</item>
         <item>OOZE</item>
         <item>OOZY</item>
-        <item>OPAH</item>
         <item>OPAL</item>
-        <item>OPED</item>
         <item>OPEN</item>
-        <item>OPES</item>
         <item>OPTS</item>
         <item>OPUS</item>
-        <item>ORAD</item>
         <item>ORAL</item>
         <item>ORBS</item>
-        <item>ORBY</item>
         <item>ORCA</item>
         <item>ORCS</item>
         <item>ORDO</item>
         <item>ORES</item>
-        <item>ORGY</item>
-        <item>ORLE</item>
-        <item>ORRA</item>
         <item>ORTS</item>
-        <item>ORYX</item>
         <item>ORZO</item>
-        <item>OSAR</item>
-        <item>OSES</item>
-        <item>OSSA</item>
-        <item>OTIC</item>
-        <item>OTTO</item>
         <item>OUCH</item>
         <item>OUDS</item>
-        <item>OUPH</item>
         <item>OURS</item>
         <item>OUST</item>
         <item>OUTS</item>
@@ -2532,25 +1832,14 @@
         <item>OWES</item>
         <item>OWLS</item>
         <item>OWNS</item>
-        <item>OWSE</item>
         <item>OXEN</item>
-        <item>OXES</item>
-        <item>OXID</item>
-        <item>OXIM</item>
-        <item>OYER</item>
-        <item>OYES</item>
         <item>OYEZ</item>
-        <item>PACA</item>
         <item>PACE</item>
         <item>PACK</item>
-        <item>PACS</item>
         <item>PACT</item>
-        <item>PACY</item>
-        <item>PADI</item>
         <item>PADS</item>
         <item>PAGE</item>
         <item>PAID</item>
-        <item>PAIK</item>
         <item>PAIL</item>
         <item>PAIN</item>
         <item>PAIR</item>
@@ -2560,44 +1849,33 @@
         <item>PALP</item>
         <item>PALS</item>
         <item>PALY</item>
-        <item>PAMS</item>
         <item>PANE</item>
         <item>PANG</item>
         <item>PANS</item>
         <item>PANT</item>
         <item>PAPA</item>
-        <item>PAPS</item>
         <item>PARA</item>
-        <item>PARD</item>
         <item>PARE</item>
         <item>PARK</item>
-        <item>PARR</item>
         <item>PARS</item>
         <item>PART</item>
-        <item>PASE</item>
-        <item>PASH</item>
         <item>PASS</item>
         <item>PAST</item>
         <item>PATE</item>
         <item>PATH</item>
         <item>PATS</item>
-        <item>PATY</item>
         <item>PAVE</item>
         <item>PAWL</item>
         <item>PAWN</item>
         <item>PAWS</item>
         <item>PAYS</item>
-        <item>PEAG</item>
         <item>PEAK</item>
         <item>PEAL</item>
-        <item>PEAN</item>
         <item>PEAR</item>
         <item>PEAS</item>
         <item>PEAT</item>
-        <item>PECH</item>
         <item>PECK</item>
         <item>PECS</item>
-        <item>PEDS</item>
         <item>PEED</item>
         <item>PEEK</item>
         <item>PEEL</item>
@@ -2606,10 +1884,6 @@
         <item>PEER</item>
         <item>PEES</item>
         <item>PEGS</item>
-        <item>PEHS</item>
-        <item>PEIN</item>
-        <item>PEKE</item>
-        <item>PELE</item>
         <item>PELF</item>
         <item>PELT</item>
         <item>PEND</item>
@@ -2618,60 +1892,40 @@
         <item>PEON</item>
         <item>PEPO</item>
         <item>PEPS</item>
-        <item>PERE</item>
-        <item>PERI</item>
         <item>PERK</item>
         <item>PERM</item>
         <item>PERP</item>
         <item>PERT</item>
-        <item>PERV</item>
         <item>PESO</item>
         <item>PEST</item>
         <item>PETS</item>
         <item>PEWS</item>
-        <item>PFFT</item>
-        <item>PFUI</item>
         <item>PHAT</item>
         <item>PHEW</item>
         <item>PHIS</item>
         <item>PHIZ</item>
-        <item>PHON</item>
         <item>PHOT</item>
-        <item>PHUT</item>
-        <item>PIAL</item>
-        <item>PIAN</item>
-        <item>PIAS</item>
         <item>PICA</item>
-        <item>PICE</item>
         <item>PICK</item>
         <item>PICS</item>
         <item>PIED</item>
         <item>PIER</item>
         <item>PIES</item>
         <item>PIGS</item>
-        <item>PIKA</item>
         <item>PIKE</item>
-        <item>PIKI</item>
         <item>PILE</item>
         <item>PILI</item>
         <item>PILL</item>
-        <item>PILY</item>
         <item>PIMA</item>
         <item>PIMP</item>
-        <item>PINA</item>
         <item>PINE</item>
         <item>PING</item>
         <item>PINK</item>
         <item>PINS</item>
         <item>PINT</item>
-        <item>PINY</item>
         <item>PION</item>
         <item>PIPE</item>
         <item>PIPS</item>
-        <item>PIPY</item>
-        <item>PIRN</item>
-        <item>PISH</item>
-        <item>PISO</item>
         <item>PISS</item>
         <item>PITA</item>
         <item>PITH</item>
@@ -2682,10 +1936,7 @@
         <item>PLAT</item>
         <item>PLAY</item>
         <item>PLEA</item>
-        <item>PLEB</item>
         <item>PLED</item>
-        <item>PLEW</item>
-        <item>PLEX</item>
         <item>PLIE</item>
         <item>PLOD</item>
         <item>PLOP</item>
@@ -2696,12 +1947,9 @@
         <item>PLUM</item>
         <item>PLUS</item>
         <item>POCK</item>
-        <item>POCO</item>
         <item>PODS</item>
         <item>POEM</item>
         <item>POET</item>
-        <item>POGY</item>
-        <item>POIS</item>
         <item>POKE</item>
         <item>POKY</item>
         <item>POLE</item>
@@ -2710,15 +1958,12 @@
         <item>POLS</item>
         <item>POLY</item>
         <item>POME</item>
-        <item>POMO</item>
         <item>POMP</item>
-        <item>POMS</item>
         <item>POND</item>
         <item>PONE</item>
         <item>PONG</item>
         <item>PONS</item>
         <item>PONY</item>
-        <item>POOD</item>
         <item>POOF</item>
         <item>POOH</item>
         <item>POOL</item>
@@ -2740,82 +1985,49 @@
         <item>POUF</item>
         <item>POUR</item>
         <item>POUT</item>
-        <item>POWS</item>
-        <item>POXY</item>
         <item>PRAM</item>
-        <item>PRAO</item>
         <item>PRAT</item>
-        <item>PRAU</item>
         <item>PRAY</item>
-        <item>PREE</item>
         <item>PREP</item>
-        <item>PREX</item>
         <item>PREY</item>
-        <item>PREZ</item>
         <item>PRIG</item>
         <item>PRIM</item>
-        <item>PROA</item>
         <item>PROD</item>
         <item>PROF</item>
-        <item>PROG</item>
         <item>PROM</item>
         <item>PROP</item>
         <item>PROS</item>
         <item>PROW</item>
-        <item>PSIS</item>
-        <item>PSST</item>
-        <item>PTUI</item>
         <item>PUBS</item>
         <item>PUCE</item>
         <item>PUCK</item>
-        <item>PUDS</item>
         <item>PUFF</item>
-        <item>PUGH</item>
         <item>PUGS</item>
         <item>PUJA</item>
         <item>PUKE</item>
         <item>PULA</item>
         <item>PULE</item>
-        <item>PULI</item>
         <item>PULL</item>
         <item>PULP</item>
-        <item>PULS</item>
         <item>PUMA</item>
         <item>PUMP</item>
-        <item>PUNA</item>
-        <item>PUNG</item>
         <item>PUNK</item>
         <item>PUNS</item>
         <item>PUNT</item>
         <item>PUNY</item>
         <item>PUPA</item>
         <item>PUPS</item>
-        <item>PUPU</item>
         <item>PURE</item>
-        <item>PURI</item>
         <item>PURL</item>
         <item>PURR</item>
-        <item>PURS</item>
         <item>PUSH</item>
         <item>PUSS</item>
         <item>PUTS</item>
         <item>PUTT</item>
-        <item>PUTZ</item>
-        <item>PYAS</item>
-        <item>PYES</item>
-        <item>PYIC</item>
-        <item>PYIN</item>
         <item>PYRE</item>
         <item>PYRO</item>
-        <item>QADI</item>
-        <item>QAID</item>
-        <item>QATS</item>
-        <item>QOPH</item>
         <item>QUAD</item>
-        <item>QUAG</item>
-        <item>QUAI</item>
         <item>QUAY</item>
-        <item>QUEY</item>
         <item>QUID</item>
         <item>QUIN</item>
         <item>QUIP</item>
@@ -2825,23 +2037,16 @@
         <item>RACE</item>
         <item>RACK</item>
         <item>RACY</item>
-        <item>RADS</item>
         <item>RAFF</item>
         <item>RAFT</item>
         <item>RAGA</item>
         <item>RAGE</item>
-        <item>RAGG</item>
-        <item>RAGI</item>
         <item>RAGS</item>
-        <item>RAIA</item>
         <item>RAID</item>
         <item>RAIL</item>
         <item>RAIN</item>
-        <item>RAIS</item>
         <item>RAJA</item>
         <item>RAKE</item>
-        <item>RAKI</item>
-        <item>RAKU</item>
         <item>RALE</item>
         <item>RAMI</item>
         <item>RAMP</item>
@@ -2855,16 +2060,11 @@
         <item>RAPS</item>
         <item>RAPT</item>
         <item>RARE</item>
-        <item>RASE</item>
         <item>RASH</item>
         <item>RASP</item>
         <item>RATE</item>
-        <item>RATH</item>
-        <item>RATO</item>
         <item>RATS</item>
         <item>RAVE</item>
-        <item>RAWS</item>
-        <item>RAYA</item>
         <item>RAYS</item>
         <item>RAZE</item>
         <item>RAZZ</item>
@@ -2873,22 +2073,14 @@
         <item>REAM</item>
         <item>REAP</item>
         <item>REAR</item>
-        <item>REBS</item>
-        <item>RECK</item>
         <item>RECS</item>
-        <item>REDD</item>
-        <item>REDE</item>
         <item>REDO</item>
         <item>REDS</item>
         <item>REED</item>
         <item>REEF</item>
         <item>REEK</item>
         <item>REEL</item>
-        <item>REES</item>
         <item>REFS</item>
-        <item>REFT</item>
-        <item>REGS</item>
-        <item>REIF</item>
         <item>REIN</item>
         <item>REIS</item>
         <item>RELY</item>
@@ -2896,17 +2088,12 @@
         <item>REND</item>
         <item>RENT</item>
         <item>REPO</item>
-        <item>REPP</item>
         <item>REPS</item>
-        <item>RESH</item>
         <item>REST</item>
         <item>RETE</item>
         <item>RETS</item>
         <item>REVS</item>
         <item>RHEA</item>
-        <item>RHOS</item>
-        <item>RHUS</item>
-        <item>RIAL</item>
         <item>RIAS</item>
         <item>RIBS</item>
         <item>RICE</item>
@@ -2917,7 +2104,6 @@
         <item>RIEL</item>
         <item>RIFE</item>
         <item>RIFF</item>
-        <item>RIFS</item>
         <item>RIFT</item>
         <item>RIGS</item>
         <item>RILE</item>
@@ -2928,14 +2114,12 @@
         <item>RIND</item>
         <item>RING</item>
         <item>RINK</item>
-        <item>RINS</item>
         <item>RIOT</item>
         <item>RIPE</item>
         <item>RIPS</item>
         <item>RISE</item>
         <item>RISK</item>
         <item>RITE</item>
-        <item>RITZ</item>
         <item>RIVE</item>
         <item>ROAD</item>
         <item>ROAM</item>
@@ -2950,10 +2134,8 @@
         <item>ROES</item>
         <item>ROIL</item>
         <item>ROLE</item>
-        <item>ROLF</item>
         <item>ROLL</item>
         <item>ROMP</item>
-        <item>ROMS</item>
         <item>ROOD</item>
         <item>ROOF</item>
         <item>ROOK</item>
@@ -2963,14 +2145,9 @@
         <item>ROPY</item>
         <item>ROSE</item>
         <item>ROSY</item>
-        <item>ROTA</item>
         <item>ROTE</item>
         <item>ROTI</item>
-        <item>ROTL</item>
-        <item>ROTO</item>
         <item>ROTS</item>
-        <item>ROUE</item>
-        <item>ROUP</item>
         <item>ROUT</item>
         <item>ROUX</item>
         <item>ROVE</item>
@@ -2979,17 +2156,13 @@
         <item>RUBS</item>
         <item>RUBY</item>
         <item>RUCK</item>
-        <item>RUDD</item>
         <item>RUDE</item>
         <item>RUED</item>
-        <item>RUER</item>
         <item>RUES</item>
         <item>RUFF</item>
-        <item>RUGA</item>
         <item>RUGS</item>
         <item>RUIN</item>
         <item>RULE</item>
-        <item>RULY</item>
         <item>RUMP</item>
         <item>RUMS</item>
         <item>RUNE</item>
@@ -3000,70 +2173,47 @@
         <item>RUSH</item>
         <item>RUSK</item>
         <item>RUST</item>
-        <item>RUTH</item>
         <item>RUTS</item>
-        <item>RYAS</item>
         <item>RYES</item>
-        <item>RYKE</item>
-        <item>RYND</item>
-        <item>RYOT</item>
-        <item>SABE</item>
         <item>SABS</item>
         <item>SACK</item>
         <item>SACS</item>
-        <item>SADE</item>
-        <item>SADI</item>
         <item>SAFE</item>
         <item>SAGA</item>
         <item>SAGE</item>
         <item>SAGO</item>
         <item>SAGS</item>
-        <item>SAGY</item>
         <item>SAID</item>
         <item>SAIL</item>
-        <item>SAIN</item>
         <item>SAKE</item>
-        <item>SAKI</item>
         <item>SALE</item>
-        <item>SALL</item>
-        <item>SALP</item>
-        <item>SALS</item>
         <item>SALT</item>
         <item>SAME</item>
-        <item>SAMP</item>
         <item>SAND</item>
         <item>SANE</item>
         <item>SANG</item>
         <item>SANK</item>
         <item>SANS</item>
         <item>SAPS</item>
-        <item>SARD</item>
         <item>SARI</item>
-        <item>SARK</item>
         <item>SASH</item>
         <item>SASS</item>
         <item>SATE</item>
         <item>SATI</item>
-        <item>SAUL</item>
         <item>SAVE</item>
         <item>SAWN</item>
         <item>SAWS</item>
         <item>SAYS</item>
         <item>SCAB</item>
-        <item>SCAD</item>
-        <item>SCAG</item>
         <item>SCAM</item>
         <item>SCAN</item>
         <item>SCAR</item>
         <item>SCAT</item>
-        <item>SCOP</item>
         <item>SCOT</item>
         <item>SCOW</item>
-        <item>SCRY</item>
         <item>SCUD</item>
         <item>SCUM</item>
         <item>SCUP</item>
-        <item>SCUT</item>
         <item>SEAL</item>
         <item>SEAM</item>
         <item>SEAR</item>
@@ -3073,105 +2223,71 @@
         <item>SECT</item>
         <item>SEED</item>
         <item>SEEK</item>
-        <item>SEEL</item>
         <item>SEEM</item>
         <item>SEEN</item>
         <item>SEEP</item>
         <item>SEER</item>
         <item>SEES</item>
         <item>SEGO</item>
-        <item>SEGS</item>
-        <item>SEIF</item>
-        <item>SEIS</item>
         <item>SELF</item>
         <item>SELL</item>
-        <item>SELS</item>
-        <item>SEME</item>
         <item>SEMI</item>
         <item>SEND</item>
-        <item>SENE</item>
         <item>SENT</item>
         <item>SEPT</item>
         <item>SERA</item>
         <item>SERE</item>
         <item>SERF</item>
-        <item>SERS</item>
         <item>SETA</item>
         <item>SETS</item>
         <item>SETT</item>
         <item>SEWN</item>
         <item>SEWS</item>
         <item>SEXT</item>
-        <item>SEXY</item>
         <item>SHAD</item>
         <item>SHAG</item>
         <item>SHAH</item>
         <item>SHAM</item>
         <item>SHAT</item>
-        <item>SHAW</item>
         <item>SHAY</item>
-        <item>SHEA</item>
         <item>SHED</item>
-        <item>SHES</item>
         <item>SHEW</item>
         <item>SHIM</item>
         <item>SHIN</item>
         <item>SHIP</item>
-        <item>SHIT</item>
         <item>SHIV</item>
-        <item>SHMO</item>
         <item>SHOD</item>
         <item>SHOE</item>
-        <item>SHOG</item>
         <item>SHOO</item>
         <item>SHOP</item>
         <item>SHOT</item>
         <item>SHOW</item>
-        <item>SHRI</item>
         <item>SHUL</item>
         <item>SHUN</item>
         <item>SHUT</item>
-        <item>SHWA</item>
-        <item>SIAL</item>
-        <item>SIBB</item>
         <item>SIBS</item>
-        <item>SICE</item>
         <item>SICK</item>
-        <item>SICS</item>
         <item>SIDE</item>
-        <item>SIDH</item>
         <item>SIFT</item>
         <item>SIGH</item>
         <item>SIGN</item>
         <item>SIKA</item>
-        <item>SIKE</item>
         <item>SILD</item>
         <item>SILK</item>
         <item>SILL</item>
         <item>SILO</item>
         <item>SILT</item>
-        <item>SIMA</item>
-        <item>SIMP</item>
         <item>SIMS</item>
         <item>SINE</item>
         <item>SING</item>
-        <item>SINH</item>
         <item>SINK</item>
         <item>SINS</item>
-        <item>SIPE</item>
         <item>SIPS</item>
         <item>SIRE</item>
         <item>SIRS</item>
         <item>SITE</item>
-        <item>SITH</item>
         <item>SITS</item>
         <item>SIZE</item>
-        <item>SIZY</item>
-        <item>SKAG</item>
-        <item>SKAS</item>
-        <item>SKAT</item>
-        <item>SKEE</item>
-        <item>SKEG</item>
         <item>SKEP</item>
         <item>SKEW</item>
         <item>SKID</item>
@@ -3180,7 +2296,6 @@
         <item>SKIP</item>
         <item>SKIS</item>
         <item>SKIT</item>
-        <item>SKUA</item>
         <item>SLAB</item>
         <item>SLAG</item>
         <item>SLAM</item>
@@ -3200,22 +2315,17 @@
         <item>SLOP</item>
         <item>SLOT</item>
         <item>SLOW</item>
-        <item>SLUB</item>
         <item>SLUE</item>
         <item>SLUG</item>
         <item>SLUM</item>
         <item>SLUR</item>
         <item>SLUT</item>
-        <item>SMEW</item>
         <item>SMIT</item>
         <item>SMOG</item>
         <item>SMUG</item>
         <item>SMUT</item>
         <item>SNAG</item>
         <item>SNAP</item>
-        <item>SNAW</item>
-        <item>SNED</item>
-        <item>SNIB</item>
         <item>SNIP</item>
         <item>SNIT</item>
         <item>SNOB</item>
@@ -3224,21 +2334,17 @@
         <item>SNOW</item>
         <item>SNUB</item>
         <item>SNUG</item>
-        <item>SNYE</item>
         <item>SOAK</item>
         <item>SOAP</item>
         <item>SOAR</item>
         <item>SOBA</item>
         <item>SOBS</item>
-        <item>SOCA</item>
         <item>SOCK</item>
         <item>SODA</item>
         <item>SODS</item>
         <item>SOFA</item>
         <item>SOFT</item>
         <item>SOIL</item>
-        <item>SOJA</item>
-        <item>SOKE</item>
         <item>SOLA</item>
         <item>SOLD</item>
         <item>SOLE</item>
@@ -3247,23 +2353,15 @@
         <item>SOLS</item>
         <item>SOMA</item>
         <item>SOME</item>
-        <item>SOMS</item>
-        <item>SONE</item>
         <item>SONG</item>
         <item>SONS</item>
         <item>SOOK</item>
         <item>SOON</item>
         <item>SOOT</item>
-        <item>SOPH</item>
         <item>SOPS</item>
-        <item>SORA</item>
         <item>SORB</item>
-        <item>SORD</item>
         <item>SORE</item>
-        <item>SORI</item>
-        <item>SORN</item>
         <item>SORT</item>
-        <item>SOTH</item>
         <item>SOTS</item>
         <item>SOUK</item>
         <item>SOUL</item>
@@ -3273,8 +2371,6 @@
         <item>SOWN</item>
         <item>SOWS</item>
         <item>SOYA</item>
-        <item>SOYS</item>
-        <item>SPAE</item>
         <item>SPAM</item>
         <item>SPAN</item>
         <item>SPAR</item>
@@ -3286,69 +2382,47 @@
         <item>SPED</item>
         <item>SPEW</item>
         <item>SPIC</item>
-        <item>SPIK</item>
         <item>SPIN</item>
         <item>SPIT</item>
-        <item>SPIV</item>
         <item>SPOT</item>
         <item>SPRY</item>
         <item>SPUD</item>
-        <item>SPUE</item>
         <item>SPUN</item>
         <item>SPUR</item>
-        <item>SRIS</item>
         <item>STAB</item>
         <item>STAG</item>
         <item>STAR</item>
         <item>STAT</item>
-        <item>STAW</item>
         <item>STAY</item>
         <item>STEM</item>
         <item>STEP</item>
         <item>STET</item>
         <item>STEW</item>
-        <item>STEY</item>
         <item>STIR</item>
-        <item>STOA</item>
-        <item>STOB</item>
         <item>STOP</item>
-        <item>STOT</item>
         <item>STOW</item>
         <item>STUB</item>
         <item>STUD</item>
-        <item>STUM</item>
         <item>STUN</item>
-        <item>STYE</item>
-        <item>SUBA</item>
         <item>SUBS</item>
         <item>SUCH</item>
         <item>SUCK</item>
-        <item>SUDD</item>
         <item>SUDS</item>
         <item>SUED</item>
-        <item>SUER</item>
         <item>SUES</item>
         <item>SUET</item>
-        <item>SUGH</item>
         <item>SUIT</item>
-        <item>SUKS</item>
         <item>SULK</item>
-        <item>SULU</item>
         <item>SUMO</item>
         <item>SUMP</item>
         <item>SUMS</item>
         <item>SUNG</item>
         <item>SUNK</item>
-        <item>SUNN</item>
         <item>SUNS</item>
-        <item>SUPE</item>
         <item>SUPS</item>
-        <item>SUQS</item>
-        <item>SURA</item>
         <item>SURD</item>
         <item>SURE</item>
         <item>SURF</item>
-        <item>SUSS</item>
         <item>SWAB</item>
         <item>SWAG</item>
         <item>SWAM</item>
@@ -3358,36 +2432,22 @@
         <item>SWAY</item>
         <item>SWIG</item>
         <item>SWIM</item>
-        <item>SWOB</item>
         <item>SWOP</item>
-        <item>SWOT</item>
         <item>SWUM</item>
         <item>SYBO</item>
-        <item>SYCE</item>
-        <item>SYKE</item>
-        <item>SYLI</item>
         <item>SYNC</item>
-        <item>SYNE</item>
-        <item>SYPH</item>
         <item>TABS</item>
-        <item>TABU</item>
-        <item>TACE</item>
         <item>TACH</item>
         <item>TACK</item>
         <item>TACO</item>
         <item>TACT</item>
         <item>TADS</item>
-        <item>TAEL</item>
         <item>TAGS</item>
-        <item>TAHR</item>
         <item>TAIL</item>
-        <item>TAIN</item>
         <item>TAKA</item>
         <item>TAKE</item>
-        <item>TALA</item>
         <item>TALC</item>
         <item>TALE</item>
-        <item>TALI</item>
         <item>TALK</item>
         <item>TALL</item>
         <item>TAME</item>
@@ -3396,7 +2456,6 @@
         <item>TANG</item>
         <item>TANK</item>
         <item>TANS</item>
-        <item>TAOS</item>
         <item>TAPA</item>
         <item>TAPE</item>
         <item>TAPS</item>
@@ -3407,12 +2466,8 @@
         <item>TARS</item>
         <item>TART</item>
         <item>TASK</item>
-        <item>TASS</item>
-        <item>TATE</item>
         <item>TATS</item>
-        <item>TAUS</item>
         <item>TAUT</item>
-        <item>TAVS</item>
         <item>TAWS</item>
         <item>TAXA</item>
         <item>TAXI</item>
@@ -3425,41 +2480,27 @@
         <item>TECH</item>
         <item>TEDS</item>
         <item>TEED</item>
-        <item>TEEL</item>
         <item>TEEM</item>
         <item>TEEN</item>
         <item>TEES</item>
-        <item>TEFF</item>
-        <item>TEGG</item>
-        <item>TEGS</item>
-        <item>TELA</item>
         <item>TELE</item>
         <item>TELL</item>
-        <item>TELS</item>
         <item>TEMP</item>
         <item>TEND</item>
         <item>TENS</item>
         <item>TENT</item>
-        <item>TEPA</item>
         <item>TERM</item>
         <item>TERN</item>
         <item>TEST</item>
-        <item>TETH</item>
-        <item>TETS</item>
-        <item>TEWS</item>
         <item>TEXT</item>
-        <item>THAE</item>
         <item>THAN</item>
         <item>THAT</item>
         <item>THAW</item>
         <item>THEE</item>
         <item>THEM</item>
         <item>THEN</item>
-        <item>THEW</item>
         <item>THEY</item>
         <item>THIN</item>
-        <item>THIO</item>
-        <item>THIR</item>
         <item>THIS</item>
         <item>THOU</item>
         <item>THRO</item>
@@ -3476,7 +2517,6 @@
         <item>TIES</item>
         <item>TIFF</item>
         <item>TIKE</item>
-        <item>TIKI</item>
         <item>TILE</item>
         <item>TILL</item>
         <item>TILS</item>
@@ -3490,31 +2530,17 @@
         <item>TIPI</item>
         <item>TIPS</item>
         <item>TIRE</item>
-        <item>TIRL</item>
-        <item>TIRO</item>
-        <item>TITI</item>
-        <item>TITS</item>
-        <item>TIVY</item>
         <item>TOAD</item>
         <item>TOBY</item>
-        <item>TODS</item>
-        <item>TODY</item>
-        <item>TOEA</item>
         <item>TOED</item>
         <item>TOES</item>
-        <item>TOFF</item>
-        <item>TOFT</item>
         <item>TOFU</item>
         <item>TOGA</item>
         <item>TOGS</item>
         <item>TOIL</item>
-        <item>TOIT</item>
         <item>TOKE</item>
-        <item>TOLA</item>
         <item>TOLD</item>
-        <item>TOLE</item>
         <item>TOLL</item>
-        <item>TOLU</item>
         <item>TOMB</item>
         <item>TOME</item>
         <item>TOMS</item>
@@ -3524,27 +2550,19 @@
         <item>TONY</item>
         <item>TOOK</item>
         <item>TOOL</item>
-        <item>TOOM</item>
         <item>TOON</item>
         <item>TOOT</item>
         <item>TOPE</item>
-        <item>TOPH</item>
-        <item>TOPI</item>
         <item>TOPO</item>
         <item>TOPS</item>
-        <item>TORA</item>
-        <item>TORC</item>
         <item>TORE</item>
         <item>TORI</item>
         <item>TORN</item>
-        <item>TORO</item>
-        <item>TORR</item>
         <item>TORS</item>
         <item>TORT</item>
         <item>TORY</item>
         <item>TOSH</item>
         <item>TOSS</item>
-        <item>TOST</item>
         <item>TOTE</item>
         <item>TOTS</item>
         <item>TOUR</item>
@@ -3552,32 +2570,23 @@
         <item>TOWN</item>
         <item>TOWS</item>
         <item>TOWY</item>
-        <item>TOYO</item>
         <item>TOYS</item>
-        <item>TRAD</item>
         <item>TRAM</item>
         <item>TRAP</item>
         <item>TRAY</item>
         <item>TREE</item>
-        <item>TREF</item>
         <item>TREK</item>
-        <item>TRES</item>
-        <item>TRET</item>
         <item>TREY</item>
         <item>TRIG</item>
         <item>TRIM</item>
         <item>TRIO</item>
         <item>TRIP</item>
         <item>TROD</item>
-        <item>TROG</item>
         <item>TROP</item>
         <item>TROT</item>
-        <item>TROW</item>
         <item>TROY</item>
         <item>TRUE</item>
-        <item>TRUG</item>
         <item>TSAR</item>
-        <item>TSKS</item>
         <item>TUBA</item>
         <item>TUBE</item>
         <item>TUBS</item>
@@ -3586,108 +2595,57 @@
         <item>TUFF</item>
         <item>TUFT</item>
         <item>TUGS</item>
-        <item>TUIS</item>
-        <item>TULE</item>
-        <item>TUMP</item>
         <item>TUNA</item>
         <item>TUNE</item>
-        <item>TUNG</item>
-        <item>TUNS</item>
-        <item>TUPS</item>
         <item>TURD</item>
         <item>TURF</item>
-        <item>TURK</item>
         <item>TURN</item>
-        <item>TUSH</item>
         <item>TUSK</item>
         <item>TUTS</item>
         <item>TUTU</item>
-        <item>TWAE</item>
-        <item>TWAS</item>
         <item>TWAT</item>
         <item>TWEE</item>
         <item>TWIG</item>
         <item>TWIN</item>
         <item>TWIT</item>
         <item>TWOS</item>
-        <item>TYEE</item>
-        <item>TYER</item>
-        <item>TYES</item>
-        <item>TYIN</item>
         <item>TYKE</item>
-        <item>TYNE</item>
         <item>TYPE</item>
         <item>TYPO</item>
-        <item>TYPP</item>
-        <item>TYPY</item>
-        <item>TYRE</item>
         <item>TYRO</item>
-        <item>TZAR</item>
-        <item>UDON</item>
         <item>UDOS</item>
-        <item>UGHS</item>
         <item>UGLY</item>
-        <item>UKES</item>
-        <item>ULAN</item>
         <item>ULNA</item>
         <item>ULUS</item>
-        <item>ULVA</item>
         <item>UMBO</item>
         <item>UMPS</item>
-        <item>UNAI</item>
-        <item>UNAU</item>
-        <item>UNBE</item>
         <item>UNCI</item>
-        <item>UNCO</item>
-        <item>UNDE</item>
         <item>UNDO</item>
-        <item>UNDY</item>
         <item>UNIT</item>
         <item>UNTO</item>
-        <item>UPAS</item>
-        <item>UPBY</item>
-        <item>UPDO</item>
         <item>UPON</item>
-        <item>URBS</item>
-        <item>URDS</item>
         <item>UREA</item>
         <item>URGE</item>
         <item>URIC</item>
         <item>URNS</item>
-        <item>URPS</item>
-        <item>URSA</item>
-        <item>URUS</item>
         <item>USED</item>
         <item>USER</item>
         <item>USES</item>
-        <item>UTAS</item>
-        <item>UTES</item>
         <item>UVEA</item>
-        <item>VACS</item>
-        <item>VAGI</item>
         <item>VAIL</item>
         <item>VAIN</item>
-        <item>VAIR</item>
         <item>VALE</item>
         <item>VAMP</item>
         <item>VANE</item>
-        <item>VANG</item>
         <item>VANS</item>
-        <item>VARA</item>
-        <item>VARS</item>
         <item>VARY</item>
         <item>VASA</item>
         <item>VASE</item>
         <item>VAST</item>
         <item>VATS</item>
         <item>VATU</item>
-        <item>VAUS</item>
-        <item>VAVS</item>
-        <item>VAWS</item>
         <item>VEAL</item>
-        <item>VEEP</item>
         <item>VEER</item>
-        <item>VEES</item>
         <item>VEIL</item>
         <item>VEIN</item>
         <item>VELA</item>
@@ -3695,81 +2653,53 @@
         <item>VENA</item>
         <item>VEND</item>
         <item>VENT</item>
-        <item>VERA</item>
         <item>VERB</item>
-        <item>VERT</item>
         <item>VERY</item>
         <item>VEST</item>
         <item>VETO</item>
         <item>VETS</item>
-        <item>VEXT</item>
         <item>VIAL</item>
         <item>VIBE</item>
         <item>VICE</item>
         <item>VIDE</item>
         <item>VIDS</item>
         <item>VIED</item>
-        <item>VIER</item>
         <item>VIES</item>
         <item>VIEW</item>
-        <item>VIGA</item>
-        <item>VIGS</item>
         <item>VILE</item>
-        <item>VILL</item>
         <item>VIMS</item>
-        <item>VINA</item>
         <item>VINE</item>
         <item>VINO</item>
-        <item>VINY</item>
         <item>VIOL</item>
-        <item>VIRL</item>
         <item>VISA</item>
         <item>VISE</item>
         <item>VITA</item>
         <item>VIVA</item>
         <item>VIVE</item>
-        <item>VOES</item>
         <item>VOID</item>
         <item>VOLE</item>
         <item>VOLT</item>
         <item>VOTE</item>
         <item>VOWS</item>
-        <item>VROW</item>
-        <item>VUGG</item>
-        <item>VUGH</item>
-        <item>VUGS</item>
-        <item>WABS</item>
-        <item>WACK</item>
         <item>WADE</item>
-        <item>WADI</item>
         <item>WADS</item>
-        <item>WADY</item>
-        <item>WAES</item>
-        <item>WAFF</item>
         <item>WAFT</item>
         <item>WAGE</item>
         <item>WAGS</item>
         <item>WAIF</item>
         <item>WAIL</item>
         <item>WAIN</item>
-        <item>WAIR</item>
         <item>WAIT</item>
         <item>WAKE</item>
         <item>WALE</item>
         <item>WALK</item>
         <item>WALL</item>
-        <item>WALY</item>
-        <item>WAME</item>
         <item>WAND</item>
         <item>WANE</item>
-        <item>WANK</item>
         <item>WANS</item>
         <item>WANT</item>
-        <item>WANY</item>
-        <item>WAPS</item>
         <item>WARD</item>
         <item>WARE</item>
-        <item>WARK</item>
         <item>WARM</item>
         <item>WARN</item>
         <item>WARP</item>
@@ -3778,16 +2708,10 @@
         <item>WARY</item>
         <item>WASH</item>
         <item>WASP</item>
-        <item>WAST</item>
         <item>WATS</item>
         <item>WATT</item>
-        <item>WAUK</item>
-        <item>WAUL</item>
-        <item>WAUR</item>
         <item>WAVE</item>
         <item>WAVY</item>
-        <item>WAWL</item>
-        <item>WAWS</item>
         <item>WAXY</item>
         <item>WAYS</item>
         <item>WEAK</item>
@@ -3798,15 +2722,11 @@
         <item>WEDS</item>
         <item>WEED</item>
         <item>WEEK</item>
-        <item>WEEL</item>
         <item>WEEN</item>
         <item>WEEP</item>
-        <item>WEER</item>
         <item>WEES</item>
-        <item>WEET</item>
         <item>WEFT</item>
         <item>WEIR</item>
-        <item>WEKA</item>
         <item>WELD</item>
         <item>WELL</item>
         <item>WELT</item>
@@ -3821,15 +2741,11 @@
         <item>WHAM</item>
         <item>WHAP</item>
         <item>WHAT</item>
-        <item>WHEE</item>
         <item>WHEN</item>
         <item>WHET</item>
         <item>WHEW</item>
         <item>WHEY</item>
-        <item>WHID</item>
-        <item>WHIG</item>
         <item>WHIM</item>
-        <item>WHIN</item>
         <item>WHIP</item>
         <item>WHIR</item>
         <item>WHIT</item>
@@ -3839,7 +2755,6 @@
         <item>WHOP</item>
         <item>WHUP</item>
         <item>WHYS</item>
-        <item>WICH</item>
         <item>WICK</item>
         <item>WIDE</item>
         <item>WIFE</item>
@@ -3863,22 +2778,14 @@
         <item>WISE</item>
         <item>WISH</item>
         <item>WISP</item>
-        <item>WISS</item>
-        <item>WIST</item>
-        <item>WITE</item>
         <item>WITH</item>
         <item>WITS</item>
-        <item>WIVE</item>
-        <item>WOAD</item>
         <item>WOES</item>
-        <item>WOGS</item>
         <item>WOKE</item>
         <item>WOKS</item>
-        <item>WOLD</item>
         <item>WOLF</item>
         <item>WOMB</item>
         <item>WONK</item>
-        <item>WONS</item>
         <item>WONT</item>
         <item>WOOD</item>
         <item>WOOF</item>
@@ -3890,8 +2797,6 @@
         <item>WORK</item>
         <item>WORM</item>
         <item>WORN</item>
-        <item>WORT</item>
-        <item>WOST</item>
         <item>WOTS</item>
         <item>WOVE</item>
         <item>WOWS</item>
@@ -3899,20 +2804,9 @@
         <item>WREN</item>
         <item>WRIT</item>
         <item>WUSS</item>
-        <item>WYCH</item>
         <item>WYES</item>
-        <item>WYLE</item>
-        <item>WYND</item>
-        <item>WYNN</item>
-        <item>WYNS</item>
-        <item>WYTE</item>
-        <item>XYST</item>
         <item>YACK</item>
-        <item>YAFF</item>
-        <item>YAGI</item>
-        <item>YAGS</item>
         <item>YAKS</item>
-        <item>YALD</item>
         <item>YAMS</item>
         <item>YANG</item>
         <item>YANK</item>
@@ -3920,42 +2814,23 @@
         <item>YARD</item>
         <item>YARE</item>
         <item>YARN</item>
-        <item>YAUD</item>
-        <item>YAUP</item>
         <item>YAWL</item>
         <item>YAWN</item>
         <item>YAWP</item>
         <item>YAWS</item>
-        <item>YAYS</item>
         <item>YEAH</item>
         <item>YEAN</item>
         <item>YEAR</item>
         <item>YEAS</item>
-        <item>YECH</item>
-        <item>YEGG</item>
-        <item>YELD</item>
-        <item>YELK</item>
         <item>YELL</item>
         <item>YELP</item>
         <item>YENS</item>
-        <item>YEPS</item>
-        <item>YERK</item>
         <item>YETI</item>
-        <item>YETT</item>
-        <item>YEUK</item>
         <item>YEWS</item>
         <item>YIDS</item>
-        <item>YILL</item>
         <item>YINS</item>
-        <item>YIPE</item>
         <item>YIPS</item>
-        <item>YIRD</item>
-        <item>YIRR</item>
         <item>YLEM</item>
-        <item>YOBS</item>
-        <item>YOCK</item>
-        <item>YODH</item>
-        <item>YODS</item>
         <item>YOGA</item>
         <item>YOGH</item>
         <item>YOGI</item>
@@ -3966,21 +2841,12 @@
         <item>YONI</item>
         <item>YORE</item>
         <item>YOUR</item>
-        <item>YOUS</item>
-        <item>YOWE</item>
         <item>YOWL</item>
-        <item>YOWS</item>
         <item>YUAN</item>
-        <item>YUCA</item>
-        <item>YUCH</item>
         <item>YUCK</item>
-        <item>YUGA</item>
         <item>YUKS</item>
         <item>YULE</item>
-        <item>YUPS</item>
         <item>YURT</item>
-        <item>YUTZ</item>
-        <item>YWIS</item>
         <item>ZAGS</item>
         <item>ZANY</item>
         <item>ZAPS</item>
@@ -3989,15 +2855,10 @@
         <item>ZEBU</item>
         <item>ZEDS</item>
         <item>ZEES</item>
-        <item>ZEIN</item>
-        <item>ZEKS</item>
-        <item>ZEPS</item>
-        <item>ZERK</item>
         <item>ZERO</item>
         <item>ZEST</item>
         <item>ZETA</item>
         <item>ZIGS</item>
-        <item>ZILL</item>
         <item>ZINC</item>
         <item>ZINE</item>
         <item>ZING</item>
@@ -4005,17 +2866,12 @@
         <item>ZIPS</item>
         <item>ZITI</item>
         <item>ZITS</item>
-        <item>ZOEA</item>
-        <item>ZOIC</item>
         <item>ZONA</item>
         <item>ZONE</item>
         <item>ZONK</item>
         <item>ZOOM</item>
         <item>ZOON</item>
         <item>ZOOS</item>
-        <item>ZORI</item>
-        <item>ZOUK</item>
-        <item>ZYME</item>
         <item>ACE</item>
         <item>ACT</item>
         <item>ADD</item>
@@ -4026,7 +2882,6 @@
         <item>AIL</item>
         <item>AIM</item>
         <item>AIR</item>
-        <item>ALB</item>
         <item>ALE</item>
         <item>ALL</item>
         <item>ALP</item>
@@ -4039,31 +2894,24 @@
         <item>ARE</item>
         <item>ARK</item>
         <item>ARM</item>
-        <item>ARS</item>
         <item>ART</item>
         <item>ASH</item>
         <item>ASK</item>
         <item>ASP</item>
         <item>ASS</item>
         <item>ATE</item>
-        <item>ATT</item>
         <item>AUK</item>
         <item>AVA</item>
-        <item>AVE</item>
-        <item>AVO</item>
-        <item>AWA</item>
         <item>AWE</item>
         <item>AWL</item>
         <item>AWN</item>
         <item>AXE</item>
         <item>AYE</item>
-        <item>AYS</item>
         <item>AZO</item>
         <item>BAA</item>
         <item>BAD</item>
         <item>BAG</item>
         <item>BAH</item>
-        <item>BAL</item>
         <item>BAM</item>
         <item>BAN</item>
         <item>BAP</item>
@@ -4076,15 +2924,12 @@
         <item>BEG</item>
         <item>BEL</item>
         <item>BEN</item>
-        <item>BES</item>
         <item>BET</item>
-        <item>BEY</item>
         <item>BIB</item>
         <item>BID</item>
         <item>BIG</item>
         <item>BIN</item>
         <item>BIO</item>
-        <item>BIS</item>
         <item>BIT</item>
         <item>BIZ</item>
         <item>BOA</item>
@@ -4093,14 +2938,12 @@
         <item>BOG</item>
         <item>BOO</item>
         <item>BOP</item>
-        <item>BOS</item>
         <item>BOT</item>
         <item>BOW</item>
         <item>BOX</item>
         <item>BOY</item>
         <item>BRA</item>
         <item>BRO</item>
-        <item>BRR</item>
         <item>BUB</item>
         <item>BUD</item>
         <item>BUG</item>
@@ -4111,7 +2954,6 @@
         <item>BUT</item>
         <item>BUY</item>
         <item>BYE</item>
-        <item>BYS</item>
         <item>CAB</item>
         <item>CAD</item>
         <item>CAM</item>
@@ -4122,7 +2964,6 @@
         <item>CAW</item>
         <item>CAY</item>
         <item>CEE</item>
-        <item>CEL</item>
         <item>CEP</item>
         <item>CHI</item>
         <item>CIG</item>
@@ -4134,7 +2975,6 @@
         <item>CON</item>
         <item>COO</item>
         <item>COP</item>
-        <item>COR</item>
         <item>COS</item>
         <item>COT</item>
         <item>COW</item>
@@ -4155,42 +2995,29 @@
         <item>DAD</item>
         <item>DAG</item>
         <item>DAH</item>
-        <item>DAK</item>
         <item>DAL</item>
         <item>DAM</item>
-        <item>DAN</item>
         <item>DAP</item>
-        <item>DAW</item>
         <item>DAY</item>
         <item>DEB</item>
-        <item>DEE</item>
-        <item>DEF</item>
         <item>DEL</item>
         <item>DEN</item>
         <item>DEV</item>
         <item>DEW</item>
-        <item>DEX</item>
-        <item>DEY</item>
         <item>DIB</item>
         <item>DID</item>
         <item>DIE</item>
-        <item>DIF</item>
         <item>DIG</item>
         <item>DIM</item>
         <item>DIN</item>
         <item>DIP</item>
         <item>DIS</item>
-        <item>DIT</item>
         <item>DOC</item>
         <item>DOE</item>
         <item>DOG</item>
-        <item>DOL</item>
-        <item>DOM</item>
         <item>DON</item>
-        <item>DOR</item>
         <item>DOS</item>
         <item>DOT</item>
-        <item>DOW</item>
         <item>DRY</item>
         <item>DUB</item>
         <item>DUD</item>
@@ -4206,37 +3033,25 @@
         <item>EAT</item>
         <item>EAU</item>
         <item>EBB</item>
-        <item>ECU</item>
-        <item>EDH</item>
-        <item>EDS</item>
         <item>EEK</item>
         <item>EEL</item>
         <item>EFF</item>
-        <item>EFS</item>
         <item>EFT</item>
         <item>EGG</item>
         <item>EGO</item>
         <item>EKE</item>
-        <item>ELD</item>
         <item>ELF</item>
         <item>ELK</item>
         <item>ELL</item>
         <item>ELM</item>
-        <item>ELS</item>
-        <item>EME</item>
-        <item>EMS</item>
         <item>EMU</item>
         <item>END</item>
-        <item>ENG</item>
-        <item>ENS</item>
         <item>EON</item>
         <item>ERA</item>
         <item>ERE</item>
         <item>ERG</item>
         <item>ERN</item>
         <item>ERR</item>
-        <item>ERS</item>
-        <item>ESS</item>
         <item>ETA</item>
         <item>ETH</item>
         <item>EVE</item>
@@ -4244,21 +3059,15 @@
         <item>EYE</item>
         <item>FAB</item>
         <item>FAD</item>
-        <item>FAG</item>
         <item>FAN</item>
         <item>FAR</item>
-        <item>FAS</item>
         <item>FAT</item>
         <item>FAX</item>
         <item>FAY</item>
         <item>FED</item>
         <item>FEE</item>
-        <item>FEH</item>
         <item>FEM</item>
         <item>FEN</item>
-        <item>FER</item>
-        <item>FES</item>
-        <item>FET</item>
         <item>FEU</item>
         <item>FEW</item>
         <item>FEY</item>
@@ -4272,64 +3081,42 @@
         <item>FIR</item>
         <item>FIT</item>
         <item>FIX</item>
-        <item>FIZ</item>
         <item>FLU</item>
         <item>FLY</item>
         <item>FOB</item>
         <item>FOE</item>
         <item>FOG</item>
-        <item>FOH</item>
-        <item>FON</item>
         <item>FOP</item>
         <item>FOR</item>
-        <item>FOU</item>
         <item>FOX</item>
-        <item>FOY</item>
         <item>FRO</item>
         <item>FRY</item>
-        <item>FUB</item>
         <item>FUD</item>
         <item>FUG</item>
         <item>FUN</item>
         <item>FUR</item>
         <item>GAB</item>
         <item>GAD</item>
-        <item>GAE</item>
         <item>GAG</item>
         <item>GAL</item>
         <item>GAM</item>
-        <item>GAN</item>
         <item>GAP</item>
         <item>GAR</item>
         <item>GAS</item>
         <item>GAT</item>
-        <item>GAY</item>
-        <item>GED</item>
         <item>GEE</item>
         <item>GEL</item>
         <item>GEM</item>
         <item>GEN</item>
         <item>GET</item>
-        <item>GEY</item>
-        <item>GHI</item>
-        <item>GIB</item>
-        <item>GID</item>
-        <item>GIE</item>
         <item>GIG</item>
         <item>GIN</item>
-        <item>GIP</item>
-        <item>GIT</item>
         <item>GNU</item>
         <item>GOA</item>
         <item>GOB</item>
-        <item>GOD</item>
         <item>GOO</item>
-        <item>GOR</item>
-        <item>GOS</item>
         <item>GOT</item>
-        <item>GOX</item>
         <item>GOY</item>
-        <item>GUL</item>
         <item>GUM</item>
         <item>GUN</item>
         <item>GUT</item>
@@ -4338,12 +3125,9 @@
         <item>GYM</item>
         <item>GYP</item>
         <item>HAD</item>
-        <item>HAE</item>
         <item>HAG</item>
         <item>HAH</item>
-        <item>HAJ</item>
         <item>HAM</item>
-        <item>HAO</item>
         <item>HAP</item>
         <item>HAS</item>
         <item>HAT</item>
@@ -4352,24 +3136,19 @@
         <item>HEH</item>
         <item>HEM</item>
         <item>HEN</item>
-        <item>HEP</item>
         <item>HER</item>
-        <item>HES</item>
         <item>HET</item>
         <item>HEW</item>
         <item>HEX</item>
         <item>HEY</item>
         <item>HIC</item>
         <item>HID</item>
-        <item>HIE</item>
         <item>HIM</item>
-        <item>HIN</item>
         <item>HIP</item>
         <item>HIS</item>
         <item>HIT</item>
         <item>HMM</item>
         <item>HOB</item>
-        <item>HOD</item>
         <item>HOE</item>
         <item>HOG</item>
         <item>HON</item>
@@ -4383,16 +3162,11 @@
         <item>HUG</item>
         <item>HUH</item>
         <item>HUM</item>
-        <item>HUN</item>
-        <item>HUP</item>
         <item>HUT</item>
-        <item>HYP</item>
         <item>ICE</item>
-        <item>ICH</item>
         <item>ICK</item>
         <item>ICY</item>
         <item>IDS</item>
-        <item>IFF</item>
         <item>IFS</item>
         <item>IGG</item>
         <item>ILK</item>
@@ -4413,52 +3187,29 @@
         <item>JAR</item>
         <item>JAW</item>
         <item>JAY</item>
-        <item>JEE</item>
         <item>JET</item>
-        <item>JEU</item>
-        <item>JEW</item>
         <item>JIB</item>
         <item>JIG</item>
-        <item>JIN</item>
         <item>JOB</item>
         <item>JOE</item>
         <item>JOG</item>
         <item>JOT</item>
-        <item>JOW</item>
         <item>JOY</item>
         <item>JUG</item>
-        <item>JUN</item>
         <item>JUS</item>
         <item>JUT</item>
-        <item>KAB</item>
-        <item>KAE</item>
-        <item>KAF</item>
-        <item>KAS</item>
-        <item>KAT</item>
         <item>KAY</item>
         <item>KEA</item>
         <item>KEF</item>
         <item>KEG</item>
         <item>KEN</item>
-        <item>KEP</item>
-        <item>KEX</item>
         <item>KEY</item>
-        <item>KHI</item>
         <item>KID</item>
-        <item>KIF</item>
         <item>KIN</item>
         <item>KIP</item>
-        <item>KIR</item>
-        <item>KIS</item>
         <item>KIT</item>
-        <item>KOA</item>
-        <item>KOB</item>
         <item>KOI</item>
         <item>KOP</item>
-        <item>KOR</item>
-        <item>KOS</item>
-        <item>KUE</item>
-        <item>KYE</item>
         <item>LAB</item>
         <item>LAC</item>
         <item>LAD</item>
@@ -4467,8 +3218,6 @@
         <item>LAP</item>
         <item>LAR</item>
         <item>LAS</item>
-        <item>LAT</item>
-        <item>LAV</item>
         <item>LAW</item>
         <item>LAX</item>
         <item>LAY</item>
@@ -4477,20 +3226,14 @@
         <item>LEE</item>
         <item>LEG</item>
         <item>LEI</item>
-        <item>LEK</item>
         <item>LES</item>
         <item>LET</item>
-        <item>LEU</item>
         <item>LEV</item>
-        <item>LEX</item>
         <item>LEY</item>
-        <item>LEZ</item>
         <item>LIB</item>
         <item>LID</item>
         <item>LIE</item>
-        <item>LIN</item>
         <item>LIP</item>
-        <item>LIS</item>
         <item>LIT</item>
         <item>LOB</item>
         <item>LOG</item>
@@ -4500,13 +3243,11 @@
         <item>LOW</item>
         <item>LOX</item>
         <item>LUG</item>
-        <item>LUM</item>
         <item>LUV</item>
         <item>LUX</item>
         <item>LYE</item>
         <item>MAC</item>
         <item>MAD</item>
-        <item>MAE</item>
         <item>MAG</item>
         <item>MAN</item>
         <item>MAP</item>
@@ -4518,70 +3259,47 @@
         <item>MAY</item>
         <item>MED</item>
         <item>MEG</item>
-        <item>MEL</item>
         <item>MEM</item>
         <item>MEN</item>
         <item>MET</item>
         <item>MEW</item>
         <item>MHO</item>
-        <item>MIB</item>
         <item>MIC</item>
         <item>MID</item>
-        <item>MIG</item>
         <item>MIL</item>
-        <item>MIM</item>
-        <item>MIR</item>
-        <item>MIS</item>
         <item>MIX</item>
         <item>MOA</item>
         <item>MOB</item>
-        <item>MOC</item>
         <item>MOD</item>
-        <item>MOG</item>
-        <item>MOL</item>
         <item>MOM</item>
         <item>MON</item>
         <item>MOO</item>
         <item>MOP</item>
-        <item>MOR</item>
-        <item>MOS</item>
         <item>MOT</item>
         <item>MOW</item>
         <item>MUD</item>
         <item>MUG</item>
         <item>MUM</item>
-        <item>MUN</item>
-        <item>MUS</item>
-        <item>MUT</item>
-        <item>MYC</item>
         <item>NAB</item>
-        <item>NAE</item>
         <item>NAG</item>
         <item>NAH</item>
-        <item>NAM</item>
         <item>NAN</item>
         <item>NAP</item>
-        <item>NAW</item>
         <item>NAY</item>
         <item>NEB</item>
         <item>NEE</item>
-        <item>NEG</item>
         <item>NET</item>
         <item>NEW</item>
         <item>NIB</item>
         <item>NIL</item>
-        <item>NIM</item>
         <item>NIP</item>
         <item>NIT</item>
         <item>NIX</item>
         <item>NOB</item>
         <item>NOD</item>
         <item>NOG</item>
-        <item>NOH</item>
         <item>NOM</item>
-        <item>NOO</item>
         <item>NOR</item>
-        <item>NOS</item>
         <item>NOT</item>
         <item>NOW</item>
         <item>NTH</item>
@@ -4593,41 +3311,26 @@
         <item>OAK</item>
         <item>OAR</item>
         <item>OAT</item>
-        <item>OBA</item>
-        <item>OBE</item>
         <item>OBI</item>
-        <item>OCA</item>
-        <item>ODA</item>
         <item>ODD</item>
         <item>ODE</item>
-        <item>ODS</item>
-        <item>OES</item>
         <item>OFF</item>
         <item>OFT</item>
         <item>OHM</item>
         <item>OHO</item>
-        <item>OHS</item>
         <item>OIL</item>
-        <item>OKA</item>
-        <item>OKE</item>
         <item>OLD</item>
         <item>OLE</item>
         <item>OMS</item>
         <item>ONE</item>
         <item>ONO</item>
-        <item>ONS</item>
         <item>OOH</item>
-        <item>OOT</item>
-        <item>OPE</item>
         <item>OPS</item>
         <item>OPT</item>
-        <item>ORA</item>
         <item>ORB</item>
         <item>ORC</item>
         <item>ORE</item>
-        <item>ORS</item>
         <item>ORT</item>
-        <item>OSE</item>
         <item>OUD</item>
         <item>OUR</item>
         <item>OUT</item>
@@ -4635,11 +3338,8 @@
         <item>OWE</item>
         <item>OWL</item>
         <item>OWN</item>
-        <item>OXO</item>
         <item>OXY</item>
-        <item>PAC</item>
         <item>PAD</item>
-        <item>PAH</item>
         <item>PAL</item>
         <item>PAM</item>
         <item>PAN</item>
@@ -4648,14 +3348,10 @@
         <item>PAS</item>
         <item>PAT</item>
         <item>PAW</item>
-        <item>PAX</item>
         <item>PAY</item>
         <item>PEA</item>
         <item>PEC</item>
-        <item>PED</item>
-        <item>PEE</item>
         <item>PEG</item>
-        <item>PEH</item>
         <item>PEN</item>
         <item>PEP</item>
         <item>PER</item>
@@ -4663,23 +3359,18 @@
         <item>PET</item>
         <item>PEW</item>
         <item>PHI</item>
-        <item>PHT</item>
         <item>PIA</item>
         <item>PIC</item>
         <item>PIE</item>
         <item>PIG</item>
         <item>PIN</item>
         <item>PIP</item>
-        <item>PIS</item>
         <item>PIT</item>
-        <item>PIU</item>
         <item>PIX</item>
         <item>PLY</item>
         <item>POD</item>
-        <item>POH</item>
         <item>POI</item>
         <item>POL</item>
-        <item>POM</item>
         <item>POO</item>
         <item>POP</item>
         <item>POT</item>
@@ -4688,21 +3379,12 @@
         <item>PRO</item>
         <item>PRY</item>
         <item>PSI</item>
-        <item>PST</item>
         <item>PUB</item>
-        <item>PUD</item>
         <item>PUG</item>
-        <item>PUL</item>
         <item>PUN</item>
         <item>PUP</item>
-        <item>PUR</item>
         <item>PUS</item>
         <item>PUT</item>
-        <item>PYA</item>
-        <item>PYE</item>
-        <item>PYX</item>
-        <item>QAT</item>
-        <item>QIS</item>
         <item>QUA</item>
         <item>RAD</item>
         <item>RAG</item>
@@ -4712,17 +3394,12 @@
         <item>RAM</item>
         <item>RAN</item>
         <item>RAP</item>
-        <item>RAS</item>
         <item>RAT</item>
         <item>RAW</item>
-        <item>RAX</item>
         <item>RAY</item>
-        <item>REB</item>
         <item>REC</item>
         <item>RED</item>
-        <item>REE</item>
         <item>REF</item>
-        <item>REG</item>
         <item>REI</item>
         <item>REM</item>
         <item>REP</item>
@@ -4734,10 +3411,8 @@
         <item>RIA</item>
         <item>RIB</item>
         <item>RID</item>
-        <item>RIF</item>
         <item>RIG</item>
         <item>RIM</item>
-        <item>RIN</item>
         <item>RIP</item>
         <item>ROB</item>
         <item>ROC</item>
@@ -4752,34 +3427,22 @@
         <item>RUM</item>
         <item>RUN</item>
         <item>RUT</item>
-        <item>RYA</item>
         <item>RYE</item>
         <item>SAB</item>
         <item>SAC</item>
         <item>SAD</item>
-        <item>SAE</item>
         <item>SAG</item>
-        <item>SAL</item>
         <item>SAP</item>
         <item>SAT</item>
-        <item>SAU</item>
         <item>SAW</item>
         <item>SAX</item>
         <item>SAY</item>
         <item>SEA</item>
         <item>SEC</item>
         <item>SEE</item>
-        <item>SEG</item>
-        <item>SEI</item>
-        <item>SEL</item>
-        <item>SEN</item>
-        <item>SER</item>
         <item>SET</item>
         <item>SEW</item>
-        <item>SEX</item>
-        <item>SHA</item>
         <item>SHE</item>
-        <item>SHH</item>
         <item>SHY</item>
         <item>SIB</item>
         <item>SIC</item>
@@ -4790,69 +3453,49 @@
         <item>SIS</item>
         <item>SIT</item>
         <item>SIX</item>
-        <item>SKA</item>
         <item>SKI</item>
         <item>SKY</item>
         <item>SLY</item>
         <item>SOB</item>
         <item>SOD</item>
         <item>SOL</item>
-        <item>SOM</item>
         <item>SON</item>
         <item>SOP</item>
-        <item>SOS</item>
         <item>SOT</item>
-        <item>SOU</item>
         <item>SOW</item>
         <item>SOX</item>
         <item>SOY</item>
         <item>SPA</item>
         <item>SPY</item>
-        <item>SRI</item>
         <item>STY</item>
         <item>SUB</item>
         <item>SUE</item>
-        <item>SUK</item>
         <item>SUM</item>
         <item>SUN</item>
         <item>SUP</item>
-        <item>SUQ</item>
-        <item>SYN</item>
         <item>TAB</item>
         <item>TAD</item>
-        <item>TAE</item>
         <item>TAG</item>
-        <item>TAJ</item>
         <item>TAM</item>
         <item>TAN</item>
-        <item>TAO</item>
         <item>TAP</item>
         <item>TAR</item>
-        <item>TAS</item>
         <item>TAT</item>
         <item>TAU</item>
-        <item>TAV</item>
         <item>TAW</item>
         <item>TAX</item>
         <item>TEA</item>
         <item>TED</item>
         <item>TEE</item>
-        <item>TEG</item>
-        <item>TEL</item>
         <item>TEN</item>
-        <item>TET</item>
-        <item>TEW</item>
         <item>THE</item>
-        <item>THO</item>
         <item>THY</item>
         <item>TIC</item>
         <item>TIE</item>
-        <item>TIL</item>
         <item>TIN</item>
         <item>TIP</item>
         <item>TIS</item>
         <item>TIT</item>
-        <item>TOD</item>
         <item>TOE</item>
         <item>TOG</item>
         <item>TOM</item>
@@ -4867,64 +3510,35 @@
         <item>TSK</item>
         <item>TUB</item>
         <item>TUG</item>
-        <item>TUI</item>
-        <item>TUN</item>
-        <item>TUP</item>
         <item>TUT</item>
         <item>TUX</item>
-        <item>TWA</item>
         <item>TWO</item>
-        <item>TYE</item>
         <item>UDO</item>
         <item>UGH</item>
-        <item>UKE</item>
         <item>ULU</item>
         <item>UMM</item>
         <item>UMP</item>
-        <item>UNS</item>
-        <item>UPO</item>
         <item>UPS</item>
-        <item>URB</item>
-        <item>URD</item>
         <item>URN</item>
-        <item>URP</item>
         <item>USE</item>
-        <item>UTA</item>
-        <item>UTE</item>
-        <item>UTS</item>
-        <item>VAC</item>
         <item>VAN</item>
-        <item>VAR</item>
         <item>VAS</item>
         <item>VAT</item>
-        <item>VAU</item>
-        <item>VAV</item>
-        <item>VAW</item>
-        <item>VEE</item>
         <item>VEG</item>
         <item>VET</item>
         <item>VEX</item>
         <item>VIA</item>
         <item>VID</item>
         <item>VIE</item>
-        <item>VIG</item>
         <item>VIM</item>
         <item>VIS</item>
-        <item>VOE</item>
         <item>VOW</item>
-        <item>VOX</item>
-        <item>VUG</item>
-        <item>VUM</item>
-        <item>WAB</item>
         <item>WAD</item>
-        <item>WAE</item>
         <item>WAG</item>
         <item>WAN</item>
-        <item>WAP</item>
         <item>WAR</item>
         <item>WAS</item>
         <item>WAT</item>
-        <item>WAW</item>
         <item>WAX</item>
         <item>WAY</item>
         <item>WEB</item>
@@ -4932,38 +3546,28 @@
         <item>WEE</item>
         <item>WEN</item>
         <item>WET</item>
-        <item>WHA</item>
         <item>WHO</item>
         <item>WHY</item>
         <item>WIG</item>
         <item>WIN</item>
-        <item>WIS</item>
         <item>WIT</item>
         <item>WIZ</item>
         <item>WOE</item>
-        <item>WOG</item>
         <item>WOK</item>
         <item>WON</item>
         <item>WOO</item>
         <item>WOP</item>
-        <item>WOS</item>
         <item>WOT</item>
         <item>WOW</item>
         <item>WRY</item>
-        <item>WUD</item>
         <item>WYE</item>
-        <item>WYN</item>
-        <item>XIS</item>
-        <item>YAG</item>
         <item>YAH</item>
         <item>YAK</item>
         <item>YAM</item>
         <item>YAP</item>
-        <item>YAR</item>
         <item>YAW</item>
         <item>YAY</item>
         <item>YEA</item>
-        <item>YEH</item>
         <item>YEN</item>
         <item>YEP</item>
         <item>YES</item>
@@ -4972,10 +3576,7 @@
         <item>YID</item>
         <item>YIN</item>
         <item>YIP</item>
-        <item>YOB</item>
-        <item>YOD</item>
         <item>YOK</item>
-        <item>YOM</item>
         <item>YON</item>
         <item>YOU</item>
         <item>YOW</item>
@@ -4984,19 +3585,12 @@
         <item>YUP</item>
         <item>ZAG</item>
         <item>ZAP</item>
-        <item>ZAS</item>
-        <item>ZAX</item>
         <item>ZED</item>
         <item>ZEE</item>
-        <item>ZEK</item>
-        <item>ZEP</item>
         <item>ZIG</item>
         <item>ZIN</item>
         <item>ZIP</item>
         <item>ZIT</item>
-        <item>ZOA</item>
         <item>ZOO</item>
-        <item>ZUZ</item>
-        <item>ZZZ</item>
     </string-array>
 </resources>
