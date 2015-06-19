@@ -18,7 +18,7 @@ public class Letter {
     private double wobbleDir;
     private float x;
     private float y;
-    private int speed = 2;
+    private int speed = 4;
     private char letter;
     private Bitmap bitmap;
     private RectF rect;
@@ -111,13 +111,13 @@ public class Letter {
         } else {
             if (wobble) {
                 wobbleDir += 5;
-                if (wobbleDir > dir + 45) {
+                if (wobbleDir > dir + 30) {
                     wobble = !wobble;
                 }
 
             } else {
                 wobbleDir -= 5;
-                if (wobbleDir < dir - 45) {
+                if (wobbleDir < dir - 30) {
                     wobble = !wobble;
                 }
             }

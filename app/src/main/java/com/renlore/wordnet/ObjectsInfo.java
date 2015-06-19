@@ -12,7 +12,7 @@ public class ObjectsInfo {
     public static final double balloonDirMovingRight = 0;
     public static final double balloonDirMovingLeft = 180;
     public static final Rect activeZone = new Rect(0, 0, GameAreaManager.getBaseWidth(), GameAreaManager.getBaseHeight() - 60);
-    public static final Point balloonReceivePoint = new Point(GameAreaManager.getBaseCenterX(), GameAreaManager.getBaseHeight() - 120);
+    public static final Point balloonReceivePoint = new Point(GameAreaManager.getBaseCenterX(), GameAreaManager.getBaseHeight() - 110);
     public static final Point board1Center = new Point(63, 328);
     public static final Point board2Center = new Point(173, 328);
     public static final Point board3Center = new Point(63, 387);

@@ -34,23 +34,11 @@ public class PlayState extends State {
     private String[] wordBonus;
     private String capturedLetters = "";
     private List<String> selectedWords = new ArrayList<String>();
-
-    private int letterSlot(int slot, int slotSpacing) {
-        return slotSpacing + slotSpacing * slot;
-    }
-
-    private int getSlot() {
-        int slot = randGen.nextInt(NUM_SLOTS);
-        if (slotTracker[slot] > 100) {
-            slotTracker[slot] = 0;
-            return slot;
-        } else {
-            return -1;
-        }
-    }
+    private Typeface typeface;
 
     @Override
     public void init() {
+        typeface = Typeface.createFromAsset(WordNet.context.getAssets(), "fonts/JOKERMAN.TTF");
         wordBonus = WordNet.context.getResources().getStringArray(R.array.wordBonus);
         Arrays.fill(slotTracker, 0);
         letterPool = new String();
@@ -68,12 +56,61 @@ public class PlayState extends State {
         }
     }
 
+    @Override
+    public void update() {
+        List<Letter> foundLetters = new ArrayList<Letter>();
+        List<Bullet> foundBullets = new ArrayList<Bullet>();
+        List<String> foundString = new ArrayList<String>();
+        List<Captured> foundCaptured = new ArrayList<Captured>();
+
+        addBullets();
+        addLetters();
+        updateCaughtLetters(foundLetters); // This is the caught balloon
+        updateLetter(foundLetters); // The free balloons
+        updateBullets(foundBullets, foundLetters); // The flying net
+        updateWordCapture(foundString);
+        updateCaptured(foundCaptured); // this is the net is stupid naming indeed
+    }
+
+    @Override
+    public void render(Canvas canvas) {
+        renderBackground(canvas);
+        renderCharacter(canvas);
+        renderQuitButton(canvas);
+        renderBullets(canvas);
+        renderLetters(canvas);
+        renderCaughtLetters(canvas);
+        renderCaptures(canvas);
+        renderWords(canvas);
+        renderExtraSpace(canvas);
+    }
+
+
+    @Override
+    public boolean onTouch(MotionEvent e) {
+        if (e.getAction() == MotionEvent.ACTION_DOWN) {
+            if ((e.getY() > GameAreaManager.getBottom() - GameAreaManager.toScale(50)) && (e.getX() > GameAreaManager.getRight() - GameAreaManager.toScale(100))) {
+                setCurrentState(new EndState());
+            } else {
+                Log.d(TAG, "X: " + e.getX() + ", Y: " + e.getY());
+                AudioHandler.playSwosh();
+                double angle = Math.atan2(GameAreaManager.dY2bY((int) e.getY()) - 370, GameAreaManager.dX2bX((int) e.getX()) - GameAreaManager.getBaseCenterX());
+                bulletsToAdd.add(new Bullet(GraphicsHandler.getThrownnet(),
+                        angle,
+                        GraphicsHandler.genBulletRect(GameAreaManager.getBaseCenterX(), 370)
+                ));
+            }
+        }
+
+        return true;
+    }
+
     private void addLetters() {
         for (int i = 0; i < NUM_SLOTS; i++) {
             slotTracker[i]++;
         }
         int chance = randGen.nextInt(100);
-        if (chance <= 1) {
+        if (chance <= 2) {
             int slot = getSlot();
             if (slot != -1) {
                 Rect rect = GraphicsHandler.genLetterRect(ObjectsInfo.balloonStartPointLeft.x, letterSlot(slot, SLOT_SPACING) - 60);
@@ -81,7 +118,7 @@ public class PlayState extends State {
                 char c = letterPool.charAt(letterPoolInd++);
                 letters.add(new Letter(GraphicsHandler.getLetterBMfromChar(c), c, ObjectsInfo.balloonDirMovingRight, rect));
             }
-        } else if (chance <= 3) {
+        } else if (chance <= 5) {
             int slot = getSlot();
             if (slot != -1) {
                 Rect rect = GraphicsHandler.genLetterRect(ObjectsInfo.balloonStartPointRight.x, letterSlot(slot, SLOT_SPACING));
@@ -113,7 +150,6 @@ public class PlayState extends State {
         for (Letter thisLetter : letters) {
             thisLetter.update();
             if (!Rect.intersects(ObjectsInfo.activeZone, thisLetter.getRect())) {
-//                if (thisLetter.getRect().bottom <= 0) {
                 foundLetters.add(thisLetter);
             }
         }
@@ -125,7 +161,6 @@ public class PlayState extends State {
         for (Bullet thisBullet : bullets) {
             thisBullet.update();
             if (!ObjectsInfo.activeZone.contains(thisBullet.getDrawRect())) {
-//            if (thisBullet.getY() <= 0 || thisBullet.getX() <= 0 || thisBullet.getX() >= 480) {
                 foundBullets.add(thisBullet);
             } else {
                 for (Letter thisLetter : letters) {
@@ -186,39 +221,43 @@ public class PlayState extends State {
 
     private void updateCaptured(List<Captured> foundCaptured) {
         for (Captured thisCaptured : captures) {
-            if (thisCaptured.update() <= 0) {
+//            if (thisCaptured.update() <= 0) {
+            thisCaptured.update();
+            if (thisCaptured.wpReached()) {
                 foundCaptured.add(thisCaptured);
             }
         }
         captures.removeAll(foundCaptured);
     }
 
-    @Override
-    public void update() {
-        List<Letter> foundLetters = new ArrayList<Letter>();
-        List<Bullet> foundBullets = new ArrayList<Bullet>();
-        List<String> foundString = new ArrayList<String>();
-        List<Captured> foundCaptured = new ArrayList<Captured>();
-
-        addBullets();
-        addLetters();
-        updateCaughtLetters(foundLetters);
-        updateLetter(foundLetters);
-        updateBullets(foundBullets, foundLetters);
-        updateWordCapture(foundString);
-        updateCaptured(foundCaptured);
+    private int letterSlot(int slot, int slotSpacing) {
+        return slotSpacing + slotSpacing * slot;
     }
 
-    @Override
-    public void render(Canvas canvas) {
-        Paint paint = new Paint();
-        paint.setStyle(Paint.Style.FILL);
-        paint.setColor(Color.RED);
+    private int getSlot() {
+        int slot = randGen.nextInt(NUM_SLOTS);
+        if (slotTracker[slot] > 100) {
+            slotTracker[slot] = 0;
+            return slot;
+        } else {
+            return -1;
+        }
+    }
+
+    private void renderBackground(Canvas canvas) {
         canvas.drawBitmap(GraphicsHandler.getBackground(), GameAreaManager.dix(0), GameAreaManager.diy(0), null);
+    }
+
+    private void renderCharacter(Canvas canvas) {
         canvas.drawBitmap(GraphicsHandler.getCharacter(),
                 GameAreaManager.getCenterX() - (GraphicsHandler.getCharacter().getWidth() / 2),
                 GameAreaManager.diy(420) - GraphicsHandler.getCharacter().getHeight(),
                 null);
+    }
+
+    private void renderQuitButton(Canvas canvas) {
+        Paint paint = new Paint();
+        paint.setStyle(Paint.Style.FILL);
         paint.setColor(Color.GRAY);
         canvas.drawRect(GameAreaManager.getRight() - GameAreaManager.toScale(100), GameAreaManager.getBottom() - GameAreaManager.toScale(50),
                 GameAreaManager.getRight(), GameAreaManager.getBottom(), paint);
@@ -226,50 +265,54 @@ public class PlayState extends State {
         paint.setTextSize(30);
         canvas.drawText("QUIT", GameAreaManager.getRight() - GameAreaManager.toScale(90),
                 GameAreaManager.getBottom() - GameAreaManager.toScale(10), paint);
+
+    }
+
+    private void renderBullets(Canvas canvas) {
+        Paint paint = new Paint();
+        paint.setColor(Color.GRAY);
+        paint.setStrokeWidth(10f);
         for (Bullet thisBullet : bullets) {
+            canvas.drawLine(
+                    GameAreaManager.dix(ObjectsInfo.balloonReceivePoint.x),
+                    GameAreaManager.diy(ObjectsInfo.balloonReceivePoint.y),
+                    GameAreaManager.dix(thisBullet.getX()),
+                    GameAreaManager.diy(thisBullet.getY()),
+                    paint);
             canvas.drawBitmap(thisBullet.getBitmap(), null, GameAreaManager.toScaleRect(thisBullet.getDrawRect()), null);
         }
+    }
+
+    private void renderLetters(Canvas canvas) {
         for (Letter thisLetter : letters) {
             canvas.drawBitmap(thisLetter.getBitmap(), null, GameAreaManager.toScaleRect(thisLetter.getRect()), null);
         }
+    }
+
+    private void renderCaptures(Canvas canvas) {
+        Paint paint = new Paint();
+        paint.setColor(Color.GRAY);
+        paint.setStrokeWidth(10f);
         for (Captured thisCaptured : captures) {
+            canvas.drawLine(
+                    GameAreaManager.dix(ObjectsInfo.balloonReceivePoint.x),
+                    GameAreaManager.diy(ObjectsInfo.balloonReceivePoint.y),
+                    GameAreaManager.dix(thisCaptured.getX()),
+                    GameAreaManager.diy(thisCaptured.getY()),
+                    paint);
             canvas.drawBitmap(thisCaptured.getBitmap(), null, GameAreaManager.toScaleRect(thisCaptured.getRect()), null);
         }
+    }
+
+    private void renderCaughtLetters(Canvas canvas) {
         for (Letter thisLetter : caughtLetters) {
             canvas.drawBitmap(thisLetter.getBitmap(), null, GameAreaManager.toScaleRect(thisLetter.getRect()), null);
         }
-        paint.setColor(0xFF966026);
-        paint.setTypeface(Typeface.create("Jokerman", Typeface.BOLD));
-        Rect bounds = new Rect();
-        paint.setTextSize((int) (26 * GameAreaManager.getScale()));
-        paint.getTextBounds("A", 0, 1, bounds);
-        if (capturedLetters.length() > 0) {
-//            paint.getTextBounds(capturedLetters, 0, capturedLetters.length() - 1, bounds);
-            canvas.drawText(capturedLetters,
-                    GameAreaManager.dix(ObjectsInfo.board5Center.x) - paint.measureText(capturedLetters) / 2,
-                    GameAreaManager.diy(ObjectsInfo.board5Center.y) + bounds.height() / 2,
-                    paint);
-        }
-//        paint.getTextBounds(selectedWords.get(0), 0, selectedWords.get(0).length() - 1, bounds);
-        canvas.drawText(selectedWords.get(0),
-                GameAreaManager.dix(ObjectsInfo.board1Center.x) - paint.measureText(selectedWords.get(0)) / 2,
-                GameAreaManager.diy(ObjectsInfo.board1Center.y) + bounds.height() / 2,
-                paint);
-//        paint.getTextBounds(selectedWords.get(1), 0, selectedWords.get(1).length() - 1, bounds);
-        canvas.drawText(selectedWords.get(1),
-                GameAreaManager.dix(ObjectsInfo.board2Center.x) - paint.measureText(selectedWords.get(1)) / 2,
-                GameAreaManager.diy(ObjectsInfo.board2Center.y) + bounds.height() / 2,
-                paint);
-//        paint.getTextBounds(selectedWords.get(2), 0, selectedWords.get(2).length() - 1, bounds);
-        canvas.drawText(selectedWords.get(2),
-                GameAreaManager.dix(ObjectsInfo.board3Center.x) - paint.measureText(selectedWords.get(2)) / 2,
-                GameAreaManager.diy(ObjectsInfo.board3Center.y) + bounds.height() / 2,
-                paint);
-//        paint.getTextBounds(selectedWords.get(3), 0, selectedWords.get(3).length() - 1, bounds);
-        canvas.drawText(selectedWords.get(3),
-                GameAreaManager.dix(ObjectsInfo.board4Center.x) - paint.measureText(selectedWords.get(3)) / 2,
-                GameAreaManager.diy(ObjectsInfo.board4Center.y) + bounds.height() / 2,
-                paint);
+    }
+
+    private void renderExtraSpace(Canvas canvas) {
+        Paint paint = new Paint();
+        paint.setStyle(Paint.Style.FILL);
         paint.setColor(Color.BLACK);
         canvas.drawRect(0, 0, GameAreaManager.getDeviceWidth(), GameAreaManager.getTop(), paint);
         canvas.drawRect(0, 0, GameAreaManager.getLeft(), GameAreaManager.getDeviceHeight(), paint);
@@ -277,22 +320,34 @@ public class PlayState extends State {
         canvas.drawRect(GameAreaManager.getRight(), 0, GameAreaManager.getDeviceWidth(), GameAreaManager.getDeviceHeight(), paint);
     }
 
-    @Override
-    public boolean onTouch(MotionEvent e) {
-        if (e.getAction() == MotionEvent.ACTION_DOWN) {
-            if ((e.getY() > GameAreaManager.getBottom() - GameAreaManager.toScale(50)) && (e.getX() > GameAreaManager.getRight() - GameAreaManager.toScale(100))) {
-                setCurrentState(new EndState());
-            } else {
-                Log.d(TAG, "X: " + e.getX() + ", Y: " + e.getY());
-                AudioHandler.playSwosh();
-                double angle = Math.atan2(GameAreaManager.dY2bY((int) e.getY()) - 370, GameAreaManager.dX2bX((int) e.getX()) - GameAreaManager.getBaseCenterX());
-                bulletsToAdd.add(new Bullet(GraphicsHandler.getThrownnet(),
-                        angle,
-                        GraphicsHandler.genBulletRect(GameAreaManager.getBaseCenterX(), 370)
-                ));
-            }
+    private void renderWords(Canvas canvas) {
+        Paint paint = new Paint();
+        paint.setColor(0xFF966026);
+        paint.setTypeface(Typeface.create(typeface, Typeface.BOLD));
+        Rect bounds = new Rect();
+        paint.setTextSize((int) (26 * GameAreaManager.getScale()));
+        paint.getTextBounds("A", 0, 1, bounds);
+        if (capturedLetters.length() > 0) {
+            canvas.drawText(capturedLetters,
+                    GameAreaManager.dix(ObjectsInfo.board5Center.x) - paint.measureText(capturedLetters) / 2,
+                    GameAreaManager.diy(ObjectsInfo.board5Center.y) + bounds.height() / 2,
+                    paint);
         }
-
-        return true;
+        canvas.drawText(selectedWords.get(0),
+                GameAreaManager.dix(ObjectsInfo.board1Center.x) - paint.measureText(selectedWords.get(0)) / 2,
+                GameAreaManager.diy(ObjectsInfo.board1Center.y) + bounds.height() / 2,
+                paint);
+        canvas.drawText(selectedWords.get(1),
+                GameAreaManager.dix(ObjectsInfo.board2Center.x) - paint.measureText(selectedWords.get(1)) / 2,
+                GameAreaManager.diy(ObjectsInfo.board2Center.y) + bounds.height() / 2,
+                paint);
+        canvas.drawText(selectedWords.get(2),
+                GameAreaManager.dix(ObjectsInfo.board3Center.x) - paint.measureText(selectedWords.get(2)) / 2,
+                GameAreaManager.diy(ObjectsInfo.board3Center.y) + bounds.height() / 2,
+                paint);
+        canvas.drawText(selectedWords.get(3),
+                GameAreaManager.dix(ObjectsInfo.board4Center.x) - paint.measureText(selectedWords.get(3)) / 2,
+                GameAreaManager.diy(ObjectsInfo.board4Center.y) + bounds.height() / 2,
+                paint);
     }
 }
