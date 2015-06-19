@@ -75,7 +75,7 @@ public class Letter {
         this.rect = rect;
     }
 
-    public Letter(Bitmap bitmap, char letter, double dir, Rect rect) {
+    public Letter(Bitmap bitmap, char letter, double dir, Rect rect, int speed) {
         this.bitmap = bitmap;
         this.letter = letter;
         this.dir = dir;
@@ -86,6 +86,7 @@ public class Letter {
         this.wobble = randGen.nextBoolean();
         this.currentLocation = new PointF(this.x, this.y);
         this.wp = new Waypoint(this.currentLocation, 20);
+        this.speed = speed;
     }
 
     public char getLetter() {

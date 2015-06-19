@@ -9,6 +9,7 @@ import android.view.MotionEvent;
 public class LoadState extends State {
     @Override
     public void init() {
+        GameAreaManager.init();
         GraphicsHandler.load();
         AudioHandler.load();
     }

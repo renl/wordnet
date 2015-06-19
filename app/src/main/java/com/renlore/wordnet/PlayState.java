@@ -35,6 +35,7 @@ public class PlayState extends State {
     private String capturedLetters = "";
     private List<String> selectedWords = new ArrayList<String>();
     private Typeface typeface;
+    private boolean played3ofaKind = false;
 
     @Override
     public void init() {
@@ -57,7 +58,7 @@ public class PlayState extends State {
     }
 
     @Override
-    public void update() {
+    public void update(long delta) {
         List<Letter> foundLetters = new ArrayList<Letter>();
         List<Bullet> foundBullets = new ArrayList<Bullet>();
         List<String> foundString = new ArrayList<String>();
@@ -73,9 +74,9 @@ public class PlayState extends State {
     }
 
     @Override
-    public void render(Canvas canvas) {
+    public void render(Canvas canvas, long delta) {
         renderBackground(canvas);
-        renderCharacter(canvas);
+        renderCharacter(canvas, delta);
         renderQuitButton(canvas);
         renderBullets(canvas);
         renderLetters(canvas);
@@ -90,6 +91,7 @@ public class PlayState extends State {
     public boolean onTouch(MotionEvent e) {
         if (e.getAction() == MotionEvent.ACTION_DOWN) {
             if ((e.getY() > GameAreaManager.getBottom() - GameAreaManager.toScale(50)) && (e.getX() > GameAreaManager.getRight() - GameAreaManager.toScale(100))) {
+                AudioHandler.releaseAll();
                 setCurrentState(new EndState());
             } else {
                 Log.d(TAG, "X: " + e.getX() + ", Y: " + e.getY());
@@ -110,21 +112,45 @@ public class PlayState extends State {
             slotTracker[i]++;
         }
         int chance = randGen.nextInt(100);
-        if (chance <= 2) {
+        if (chance < 5) {
             int slot = getSlot();
             if (slot != -1) {
-                Rect rect = GraphicsHandler.genLetterRect(ObjectsInfo.balloonStartPointLeft.x, letterSlot(slot, SLOT_SPACING) - 60);
-                if (letterPoolInd >= letterPool.length()) letterPoolInd = 0;
-                char c = letterPool.charAt(letterPoolInd++);
-                letters.add(new Letter(GraphicsHandler.getLetterBMfromChar(c), c, ObjectsInfo.balloonDirMovingRight, rect));
+                Rect rect = GraphicsHandler.genLetterRect(
+                        ObjectsInfo.balloonStartPointLeft.x,
+                        letterSlot(slot, SLOT_SPACING) - 60
+                );
+//                if (letterPoolInd >= letterPool.length()) letterPoolInd = 0;
+//                char c = letterPool.charAt(letterPoolInd++);
+                char c = letterPool.charAt(randGen.nextInt(letterPool.length()));
+                letters.add(
+                        new Letter(
+                                GraphicsHandler.getLetterBMfromChar(c),
+                                c,
+                                ObjectsInfo.balloonDirMovingRight,
+                                rect,
+                                randGen.nextInt(3) + 2
+                        )
+                );
             }
-        } else if (chance <= 5) {
+        } else if (chance < 10) {
             int slot = getSlot();
             if (slot != -1) {
-                Rect rect = GraphicsHandler.genLetterRect(ObjectsInfo.balloonStartPointRight.x, letterSlot(slot, SLOT_SPACING));
-                if (letterPoolInd >= letterPool.length()) letterPoolInd = 0;
-                char c = letterPool.charAt(letterPoolInd++);
-                letters.add(new Letter(GraphicsHandler.getLetterBMfromChar(c), c, ObjectsInfo.balloonDirMovingLeft, rect));
+                Rect rect = GraphicsHandler.genLetterRect(
+                        ObjectsInfo.balloonStartPointRight.x,
+                        letterSlot(slot, SLOT_SPACING)
+                );
+//                if (letterPoolInd >= letterPool.length()) letterPoolInd = 0;
+//                char c = letterPool.charAt(letterPoolInd++);
+                char c = letterPool.charAt(randGen.nextInt(letterPool.length()));
+                letters.add(
+                        new Letter(
+                                GraphicsHandler.getLetterBMfromChar(c),
+                                c,
+                                ObjectsInfo.balloonDirMovingLeft,
+                                rect,
+                                randGen.nextInt(3) + 2
+                        )
+                );
             }
 
         }
@@ -172,6 +198,7 @@ public class PlayState extends State {
                         thisLetter.setSpeed(10);
                         foundLetters.add(thisLetter);
                         caughtLetters.add(thisLetter);
+
                         capturedLetters += thisLetter.getLetter();
                         if (capturedLetters.length() > 10) {
                             capturedLetters = capturedLetters.substring(1);
@@ -188,12 +215,62 @@ public class PlayState extends State {
     }
 
     private void updateWordCapture(List<String> foundString) {
+        // Words in order and combined
         for (String thisString : selectedWords) {
             if (capturedLetters.contains(thisString)) {
                 AudioHandler.playAchieve();
                 foundString.add(thisString);
+                capturedLetters = "";
             }
         }
+        // Words in order but not combined
+        if (capturedLetters.length() > 0) {
+            int checkIndex;
+            boolean foundSomething = false;
+            for (String thisString : selectedWords) {
+                boolean found = false;
+                StringBuilder checkCapturedLetters = new StringBuilder(capturedLetters);
+                for (char c : thisString.toCharArray()) {
+                    checkIndex = checkCapturedLetters.indexOf(String.valueOf(c));
+                    if (checkIndex != -1) {
+                        found = true;
+                        checkCapturedLetters.setCharAt(checkIndex, '0');
+                    } else {
+                        found = false;
+                        break;
+                    }
+                }
+                if (found) {
+                    foundSomething = true;
+                    foundString.add(thisString);
+                }
+            }
+            if (foundSomething) {
+                AudioHandler.playAchieve();
+                capturedLetters = "";
+            }
+        }
+        // 3 of a kind letters
+        if (capturedLetters.length() >= 3) {
+            if (capturedLetters.charAt(capturedLetters.length() - 1) == capturedLetters.charAt(capturedLetters.length() - 2) &&
+                    capturedLetters.charAt(capturedLetters.length() - 1) == capturedLetters.charAt(capturedLetters.length() - 3)) {
+                if (!played3ofaKind) {
+                    AudioHandler.playAchieve();
+                    played3ofaKind = true;
+                }
+            } else played3ofaKind = false;
+        }
+
+        // 4 of a kind letters
+        if (capturedLetters.length() >= 4) {
+            if (capturedLetters.charAt(capturedLetters.length() - 1) == capturedLetters.charAt(capturedLetters.length() - 2) &&
+                    capturedLetters.charAt(capturedLetters.length() - 1) == capturedLetters.charAt(capturedLetters.length() - 3) &&
+                    capturedLetters.charAt(capturedLetters.length() - 1) == capturedLetters.charAt(capturedLetters.length() - 4)) {
+                AudioHandler.playAchieve();
+                capturedLetters = "";
+            }
+        }
+
         if (!foundString.isEmpty()) {
             letterPool = new String();
             selectedWords.removeAll(foundString);
@@ -236,7 +313,7 @@ public class PlayState extends State {
 
     private int getSlot() {
         int slot = randGen.nextInt(NUM_SLOTS);
-        if (slotTracker[slot] > 100) {
+        if (slotTracker[slot] > 50) {
             slotTracker[slot] = 0;
             return slot;
         } else {
@@ -248,7 +325,7 @@ public class PlayState extends State {
         canvas.drawBitmap(GraphicsHandler.getBackground(), GameAreaManager.dix(0), GameAreaManager.diy(0), null);
     }
 
-    private void renderCharacter(Canvas canvas) {
+    private void renderCharacter(Canvas canvas, long delta) {
         canvas.drawBitmap(GraphicsHandler.getCharacter(),
                 GameAreaManager.getCenterX() - (GraphicsHandler.getCharacter().getWidth() / 2),
                 GameAreaManager.diy(420) - GraphicsHandler.getCharacter().getHeight(),

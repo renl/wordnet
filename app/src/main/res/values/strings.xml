@@ -3,8 +3,7 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string-array name="wordBonus">
-        <item>ABLE</item>
+    <string-array name="wordBonus"><item>ABLE</item>
         <item>ABLY</item>
         <item>ABOS</item>
         <item>ABUT</item>
@@ -960,7 +959,6 @@
         <item>GAVE</item>
         <item>GAWK</item>
         <item>GAWP</item>
-        <item>GAYS</item>
         <item>GAZE</item>
         <item>GEAR</item>
         <item>GEED</item>
@@ -1309,10 +1307,6 @@
         <item>JUTS</item>
         <item>KAKA</item>
         <item>KAKI</item>
-        <item>KALE</item>
-        <item>KAME</item>
-        <item>KAMI</item>
-        <item>KANA</item>
         <item>KART</item>
         <item>KATA</item>
         <item>KAVA</item>
@@ -3160,15 +3154,11 @@
         <item>HUB</item>
         <item>HUE</item>
         <item>HUG</item>
-        <item>HUH</item>
         <item>HUM</item>
         <item>HUT</item>
         <item>ICE</item>
         <item>ICK</item>
         <item>ICY</item>
-        <item>IDS</item>
-        <item>IFS</item>
-        <item>IGG</item>
         <item>ILK</item>
         <item>ILL</item>
         <item>IMP</item>
@@ -3176,10 +3166,7 @@
         <item>INN</item>
         <item>INS</item>
         <item>ION</item>
-        <item>IRE</item>
         <item>IRK</item>
-        <item>ISM</item>
-        <item>ITS</item>
         <item>IVY</item>
         <item>JAB</item>
         <item>JAG</item>

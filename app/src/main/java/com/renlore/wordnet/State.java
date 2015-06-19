@@ -13,9 +13,9 @@ public abstract class State {
 
     public abstract void init();
 
-    public abstract void update();
+    public abstract void update(long delta);
 
-    public abstract void render(Canvas canvas);
+    public abstract void render(Canvas canvas, long delta);
 
     public abstract boolean onTouch(MotionEvent e);
 }

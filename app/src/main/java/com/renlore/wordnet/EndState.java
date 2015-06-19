@@ -27,7 +27,7 @@ public class EndState extends State {
     @Override
     public boolean onTouch(MotionEvent e) {
         if (e.getAction() == MotionEvent.ACTION_DOWN) {
-            AudioHandler.releaseAll();
+//            AudioHandler.releaseAll();
             WordNet.gamePanel.thread.setRunning(false);
             ((Activity)WordNet.context).finish();
         }

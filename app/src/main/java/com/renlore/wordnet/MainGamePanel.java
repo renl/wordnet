@@ -35,9 +35,6 @@ public class MainGamePanel extends SurfaceView implements SurfaceHolder.Callback
     private void initGame(Context context) {
         getHolder().addCallback(this);
         setFocusable(true);
-        GameAreaManager.init();
-        GraphicsHandler.load();
-        AudioHandler.load();
         setCurrentState(new LoadState());
         thread = new MainThread(getHolder(), this);
     }
@@ -74,11 +71,11 @@ public class MainGamePanel extends SurfaceView implements SurfaceHolder.Callback
         return true;
     }
 
-    protected void render(Canvas canvas) {
-        currentState.render(canvas);
+    protected void render(Canvas canvas, long delta) {
+        currentState.render(canvas, delta);
     }
 
-    public void update(long tickcount) {
-        currentState.update();
+    public void update(long delta) {
+        currentState.update(delta);
     }
 }

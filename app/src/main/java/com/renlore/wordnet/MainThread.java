@@ -21,9 +21,10 @@ public class MainThread extends Thread {
 
     @Override
     public void run() {
-        long tickcount = 0L;
         long nextFrameTime = System.currentTimeMillis();
         long timeDiff;
+        long updateTime = System.currentTimeMillis();
+        long renderTime = System.currentTimeMillis();
         while (running) {
 
             Canvas canvas = null;
@@ -32,11 +33,12 @@ public class MainThread extends Thread {
                 synchronized (surfaceHolder) {
 
                     while (System.currentTimeMillis() > nextFrameTime) {
-                        tickcount++;
-                        this.gamePanel.update(tickcount);
+                        this.gamePanel.update(System.currentTimeMillis() - updateTime);
+                        updateTime = System.currentTimeMillis();
                         nextFrameTime += FRAME_PERIOD;
                     }
-                    this.gamePanel.render(canvas);
+                    this.gamePanel.render(canvas, System.currentTimeMillis() - renderTime);
+                    renderTime = System.currentTimeMillis();
                     if (System.currentTimeMillis() < nextFrameTime) {
                         try {
                             timeDiff = nextFrameTime - System.currentTimeMillis();
